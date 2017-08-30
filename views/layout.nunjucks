@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="css/master.css" />
+</head>
+<body>
+    {# Search component #}
+    {% include "search.nunjucks" %}
+
+    {# Categories component #}
+    <section class='left'>
+    {# {% extends "categories.nunjucks" %} #}
+    <h1>Left</h1>
+    </section>
+
+    {# Detail component #}
+    <section class='right'>
+    {# {% extends "detail.nunjucks" %} #}
+    </section>
+</body>
+</html>

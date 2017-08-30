@@ -1,0 +1,25 @@
+{% block css %}
+<link rel="stylesheet" href="css/master.css" />
+<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+{% endblock %}
+
+{% block header %}
+  <div class="search">
+    {# Left #}
+    <div class="left">
+      <span>
+        <a href="#">All IT eBooks</a>
+      </span>
+      <span>
+        <a href="#">Categories</a>
+      </span>
+    </div>
+
+    {# Right #}
+    <div class="right">
+      <span>
+        <a href="#">Search</a>
+      </span>
+    </div>
+  </div>
+{% endblock %}
