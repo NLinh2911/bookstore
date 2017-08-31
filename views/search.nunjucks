@@ -4,22 +4,18 @@
 {% endblock %}
 
 {% block header %}
-  <div class="search">
-    {# Left #}
-    <div class="left">
-      <span>
-        <a href="#">All IT eBooks</a>
-      </span>
-      <span>
-        <a href="#">Categories</a>
-      </span>
-    </div>
+  <div id="search">
+    <div class="wrapper">
+        {# Left #}
+        <div class="left">
+            <a href="#">All IT eBooks</a>
+            <a href="#">Categories</a>
+        </div>
 
-    {# Right #}
-    <div class="right">
-      <span>
-        <a href="#">Search</a>
-      </span>
-    </div>
+        {# Right #}
+        <div class="right">
+            <a href="#">Search</a>
+        </div>
+      </div>
   </div>
 {% endblock %}

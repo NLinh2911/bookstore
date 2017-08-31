@@ -8,14 +8,16 @@
     "express": "^4.15.4",
     "nunjucks": "^3.0.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  },
   "scripts": {
     "test": "node test",
     "start": "node ./bin/www"
   },
-  "repository" :
-  { "type" : "git"
-  , "url" : "https://github.com/NLinh2911/bookstore"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NLinh2911/bookstore"
   },
   "author": "Techmaster team",
   "license": "ISC"
