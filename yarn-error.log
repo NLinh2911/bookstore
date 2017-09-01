@@ -1,0 +1,56 @@
+Arguments: 
+  /usr/local/bin/node /usr/bin/yarn install
+
+PATH: 
+  /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/msi/.rvm/bin
+
+Yarn version: 
+  0.21.3
+
+Node version: 
+  7.10.0
+
+Platform: 
+  linux x64
+
+npm manifest: 
+  {
+    "name": "nightmare-by-example",
+    "version": "1.0.0",
+    "description": "demo how to use nightmare for UI testing and crawling",
+    "main": "index.js",
+    "scripts": {
+      "test": "mocha"
+    },
+    "keywords": [
+      "nightmarejs",
+      "javascript",
+      "testing",
+      "crawling"
+    ],
+    "author": "Linh Ngo",
+    "license": "ISC",
+    "devDependencies": {
+      "mocha": "^3.4.2",
+      "nightmare": "^2.10.0"
+    },
+    "dependencies": {
+      "async": "^2.5.0",
+      "image-downloader": "^3.2.2",
+      "mongoose": "^4.11.4",
+      "pg-promise": "^6.3.5",
+      "shelljs": "^0.7.8"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: getaddrinfo EAI_AGAIN registry.yarnpkg.com:443
+      at Object.exports._errnoException (util.js:1050:11)
+      at errnoException (dns.js:33:15)
+      at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:73:26)
