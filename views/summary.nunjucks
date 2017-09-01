@@ -1,0 +1,35 @@
+{% block header %}
+  {% for book in books %} 
+  {% if (loop.index == 1)%}
+  <h2 class="page-header marginless">{{book.categories}} eBooks</h2>
+  {% endif %}
+    <article class="book">
+      <div class="thumbnail">
+        <a href="/{{ book.categories | lower | replace(' ', '-') }}/{{ book.title | lower | replace(' ', '-') }}">
+          <img src="{{ book.thumbnail }}" height="160" width="130" alt="{{book.title}}"/>
+        </a>
+      </div>
+      <div class="body">
+        <header class="header">
+          <h3 class="title marginless">
+            <a href="/categories/{{ book.categories | lower | replace(' ', '-') }}/{{ book.category | lower | replace(' ', '-') }}/{{ book.title | lower | replace(' ', '-') }}">
+              {{book.title}}
+            </a>
+          </h3>
+          <h5 class="author marginless">
+          By: {% for item in book.author %} <a href="/author/{{ item | replace(' ', '-') }}">
+             {{item}} 
+             {% endfor %}
+            {# {{book.author | emoji}} #}
+          </a>
+          </h5>
+        <header>
+        <div class="summary">
+          <p>
+            {{book.content}}
+          </p>
+        </div>
+      </div>
+    </article>
+  {% endfor %}
+{% endblock %}

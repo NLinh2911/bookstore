@@ -5,6 +5,7 @@
     --light-blue: #abccdb;
     --cherry-red: #c40000;
     --white: #fff;
+    --black: #000;
     --light-grey-200: #EEEEEE;
     --light-grey-400: #BDBDBD
 }
@@ -67,29 +68,55 @@ section.right {
     width: 60vw;
 }
 
+.page-header {
+    margin-top: 1%;
+    margin-bottom: 2%;
+    font-weight: lighter;
+}
 
-.post {
+.book {
     display: flex;
     flex-flow: row wrap;
-    padding-top: 1%;
+    padding-top: 2%;
+    padding-bottom: 2%;
     border-top: solid 1px var(--light-grey-200);
-    width: 52vw;
+    width: 55vw;
 }
 
-.post .thumbnail {
-    width: 8vw
+.book .thumbnail {
+    margin-right: 3%;
 }
 
-.post .body {
-    width: 44vw;
+.book .thumbnail img {
+    max-width: 130px;
+    width: 100%;
+    max-height: 160px;
+    height: 100%;
 }
 
-.post .body .author {
-    color: var(--light-grey-400)
+.book .body {
+    width: 100%;
+    max-width: 41vw;
 }
 
-.post .body .summary {
-    width: 42vw;
+.book .body .title a {
+    color: var(--black)
+}
+
+.book .body .author, .book .body .author a{
+    color: var(--light-grey-400);
+    font-style: italic;
+    font-size: 0.75rem
+}
+
+.book .body .author a:hover {
+    color: var(--dark-blue)
+}
+
+.book .body .summary {
+    width: 100%;
+    min-width: 42vw;
+    font-size: 0.9rem
 }
 
 
