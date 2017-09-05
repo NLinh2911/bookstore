@@ -4,6 +4,9 @@ const app = express()
 const bodyParser = require('body-parser')
 const urlencodedParser = bodyParser.urlencoded({ extended: false })
 
+//Database
+const {db} = require('./pgp')
+
 //Import Routes
 const index = require('./routes/index')
 const detail = require('./routes/detail')
@@ -17,10 +20,9 @@ nunjucks.configure('views', {
     express: app
 })
 
-
 // View engine setup
 app.set('views', './views')
-app.set('view engine', 'nunjucks')
+app.set('view engine', 'njk')
 
 app.use(express.static(__dirname + '/public'));
 

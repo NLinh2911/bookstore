@@ -1,9 +1,9 @@
-{% extends "layout.nunjucks" %}
+{% extends "layout.njk" %}
 
 {# Search component #}
   <section>
     {% block search %}
-      {% include "search.nunjucks" %}
+      {% include "search.njk" %}
     {% endblock %}
   </section>
 
@@ -11,7 +11,7 @@
     {# Categories component #}
     <section class='left'>
     {% block left %}
-      {% include "categories.nunjucks" %}
+      {% include "categories.njk" %}
     {% endblock %}
     </section>
 

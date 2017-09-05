@@ -1,7 +1,12 @@
 const express = require("express");
 const router = express.Router()
 
-// add a filter
+const {db} = require('../pgp')
+
+
+// Top Category database
+const Category = require('../models/category')
+const category = new Category(db)
 
 let books = [
   {
@@ -21,9 +26,19 @@ let books = [
     'content': 'By taking you through the development of a real web application from beginning to end, the second edition of this hands-on guide demonstrates the practical advantages of test-driven development (TDD) with Python. You’ll learn how to write and run tests before building each part of your app, and then develop…'
   }
 ]
+
+
 // Home page
-router.get('/', function(req, res, next) {
-    res.render('layout', {title: 'IT Book Store', books})
+router.get('/', async function(req, res, next) {
+  let getCategory = await category.getCategory()
+
+  res.render('layout', {title: 'IT Book Store', books, getCategory})
 })
+
+
+router.get('/top-category', function (req, res, next) {
+  
+})
+
 
 module.exports = router

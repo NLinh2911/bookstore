@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>{{title}}</title>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <link rel="stylesheet" href="/css/master.css" />
 </head>
 <body>
@@ -12,7 +13,7 @@
   {# Search component #}
   <section>
     {% block search %}
-      {% include "search.nunjucks" %}
+      {% include "search.njk" %}
     {% endblock %}
   </section>
 
@@ -20,14 +21,14 @@
     {# Categories component #}
     <section class='left'>
     {% block left %}
-      {% include "categories.nunjucks" %}
+      {% include "categories.njk" %}
     {% endblock %}
     </section>
 
     {# Detail component #}
     <section class='right'>
     {% block right %}
-      {% include "summary.nunjucks" %}
+      {% include "summary.njk" %}
     {% endblock %}
     </section>
   </div>
