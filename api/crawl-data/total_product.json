@@ -1,0 +1,1437 @@
+[
+  {
+    "author": [
+      "Matthew Kirk"
+    ],
+    "category": [
+      "Data Mining"
+    ],
+    "description": "Book Description:\n\nGain the confidence you need to apply machine learning in your daily work. With this practical guide, author Matthew Kirk shows you how to integrate and test machine learning algorithms in your code, without the academic subtext.\n\nFeaturing graphs and highlighted code examples throughout, the book features tests with Python’s Numpy, Pandas, Scikit-Learn, and SciPy data science libraries. If you’re a software engineer or business analyst interested in data science, this book will help you:\n\nReference real-world examples to test each algorithm through engaging, hands-on exercises\nApply test-driven development (TDD) to write and run tests before you start coding\nExplore techniques for improving your machine-learning models with data extraction and feature development\nWatch out for the risks of machine learning, such as underfitting or overfitting data\nWork with K-Nearest Neighbors, neural networks, clustering, and other algorithms",
+    "download_link": "http://file.allitebooks.com/20170831/Thoughtful%20Machine%20Learning%20with%20Python.pdf",
+    "file_format": "PDF",
+    "file_size": "8.6 MB",
+    "image": "Thoughtful-Machine-Learning-with-Python.jpg",
+    "isbn_10": "1491924136",
+    "language": "English",
+    "pages": 216,
+    "read_link": "http://www.allitebooks.com/read/index.php?id=28047",
+    "sub_title": "A Test-Driven Approach",
+    "title": "Thoughtful Machine Learning with Python",
+    "year": 2017,
+    "id": 1
+  },
+  {
+    "author": [
+      "Holden Karau",
+      "Rachel Warren"
+    ],
+    "category": [
+      "Datebases"
+    ],
+    "description": "Book Description:\n\nApache Spark is amazing when everything clicks. But if you haven’t seen the performance improvements you expected, or still don’t feel confident enough to use Spark in production, this practical book is for you. Authors Holden Karau and Rachel Warren demonstrate performance optimizations to help your Spark queries run faster and handle larger data sizes, while using fewer resources.\n\nIdeal for software engineers, data engineers, developers, and system administrators working with large-scale data applications, this book describes techniques that can reduce data infrastructure costs and developer hours. Not only will you gain a more comprehensive understanding of Spark, you’ll also learn how to make it sing.\n\nWith this book, you’ll explore:\n\nHow Spark SQL’s new interfaces improve performance over SQL’s RDD data structure\nThe choice between data joins in Core Spark and Spark SQL\nTechniques for getting the most out of standard RDD transformations\nHow to work around performance issues in Spark’s key/value pair paradigm\nWriting high-performance Spark code without Scala or the JVM\nHow to test for functionality and performance when applying suggested improvements\nUsing Spark MLlib and Spark ML machine learning libraries\nSpark’s Streaming components and external community packages",
+    "download_link": "http://file.allitebooks.com/20170831/High%20Performance%20Spark.pdf",
+    "file_format": "PDF",
+    "file_size": "7.1 MB",
+    "image": "High-Performance-Spark.jpg",
+    "isbn_10": "1491943203",
+    "language": "English",
+    "pages": 358,
+    "read_link": "http://www.allitebooks.com/read/index.php?id=28044",
+    "sub_title": "Best Practices for Scaling and Optimizing Apache Spark",
+    "title": "High Performance Spark",
+    "year": 2017,
+    "id": 2
+  },
+  {
+    "author": [
+      "Andreas M. Antonopoulos"
+    ],
+    "category": [
+      "Security"
+    ],
+    "description": "Book Description:\n\nJoin the technological revolution that’s taking the world of finance by storm. Mastering Bitcoin is your guide through the seemingly complex world of bitcoin, providing the knowledge you need to participate in the internet of money. Whether you’re building the next killer app, investing in a startup, or simply curious about the technology, this revised and expanded second edition provides essential detail to get you started.\nBitcoin, the first successful decentralized digital currency, is still in its early stages and yet it’s already spawned a multi-billion dollar global economy. This economy is open to anyone with the knowledge and passion to participate. Mastering Bitcoin provides the knowledge. You simply supply the passion.\nThe second edition includes:\n\nA broad introduction to bitcoin–ideal for non-technical users, investors, and business executives\nAn explanation of the technical foundations of bitcoin and cryptographic currencies for developers, engineers, and software and systems architects\nDetails of the bitcoin decentralized network, peer-to-peer architecture, transaction lifecycle, and security principles\nNew developments such as Segregated Witness, Payment Channels, and Lightning Network\nImproved explanations of keys, addresses and wallets\nUser stories, analogies, examples, and code snippets illustrating key technical concepts",
+    "download_link": "http://file.allitebooks.com/20170829/Mastering%20Bitcoin,%202nd%20Edition.pdf",
+    "file_format": "PDF",
+    "file_size": "11.5 MB",
+    "image": "Mastering-Bitcoin,-2nd-Edition.jpg",
+    "isbn_10": "1491954388",
+    "language": "English",
+    "pages": 408,
+    "read_link": "http://www.allitebooks.com/read/index.php?id=28038",
+    "sub_title": "Programming the Open Blockchain",
+    "title": "Mastering Bitcoin, 2nd Edition",
+    "year": 2017,
+    "id": 3
+  },
+  {
+    "author": [
+      "Christine Bresnahan",
+      "Richard Blum"
+    ],
+    "category": [
+      "Linux"
+    ],
+    "description": "Book Description:\n\nFull coverage of the latest LPI-level 2 exams, with bonus online test bank\n\nLPIC-2 is the one-stop preparation resource for the Linux Professional Institute’s Advanced Level certification exam. With 100 percent coverage of all exam objectives, this book provides clear and concise coverage of the Linux administration topics you’ll need to know for exams 201 and 202. Practical examples highlight the real-world applications of important concepts, and together, the author team provides insights based on almost fifty years in the IT industry. This brand new second edition has been completely revamped to align with the latest versions of the exams, with authoritative coverage of the Linux kernel, system startup, advanced storage, network configuration, system maintenance, web services, security, troubleshooting, and more. You also get access to online learning tools including electronic flashcards, chapter tests, practice exams, and a glossary of critical terms to help you solidify your understanding of upper-level Linux administration topics.\n\nThe LPI-level 2 certification confirms your advanced Linux skill set, and the demand for qualified professionals continues to grow. This book gives you the conceptual guidance and hands-on practice you need to pass the exam with flying colors.\n\nUnderstand all of the material for both LPIC-2 exams\nGain insight into real-world applications\nTest your knowledge with chapter tests and practice exams\nAccess online study aids for more thorough preparation\nOrganizations are flocking to the open-source Linux as an excellent, low-cost, secure alternative to expensive operating systems like Microsoft Windows. As the Linux market share continues to climb, organizations are scrambling to find network and server administrators with expert Linux knowledge and highly practical skills. The LPI-level 2 certification makes you the professional they need, and LPIC-2 is your ideal guide to getting there.",
+    "download_link": "http://file.allitebooks.com/20170829/PIC-2%20Linux%20Professional%20Institute%20Certification%20Study%20Guide,%202nd%20Edition.pdf",
+    "file_format": "PDF",
+    "file_size": "14.8 MB",
+    "image": "PIC-2:-Linux-Professional-Institute-Certification-Study-Guide,-2nd-Edition.jpg",
+    "isbn_10": "1119150795",
+    "language": "English",
+    "pages": 768,
+    "read_link": "http://www.allitebooks.com/read/index.php?id=28035",
+    "sub_title": "Exam 201 and Exam 202",
+    "title": "PIC-2: Linux Professional Institute Certification Study Guide, 2nd Edition",
+    "year": 2016,
+    "id": 4
+  },
+  {
+    "author": [
+      "Antonio Lopez"
+    ],
+    "category": [
+      "PHP"
+    ],
+    "description": "Book Description:\n\nPHP is a great language for building web applications. It is essentially a server-side scripting language that is also used for general purpose programming. PHP 7 is the latest version with a host of new features, and it provides major backwards-compatibility breaks.\n\nThis book begins with the fundamentals of PHP programming by covering the basic concepts such as variables, functions, class, and objects. You will set up PHP server on your machine and learn to read and write procedural PHP code. After getting an understanding of OOP as a paradigm, you will execute MySQL queries on your database. Moving on, you will find out how to use MVC to create applications from scratch and add tests. Then, you will build REST APIs and perform behavioral tests on your applications.\n\nBy the end of the book, you will have the skills required to read and write files, debug, test, and work with MySQL.\n\nWhat you will learn\n\nSet up a server on your machine with PHP\nUse PHP syntax with the built-in server to create apps\nApply the OOP paradigm to PHP to write richer code\nUse MySQL to manage data in your web applications\nCreate a web application from scratch using MVC\nAdd tests to your web application and write testable code\nUse an existing PHP framework to build and manage your applications\nBuild REST APIs for your PHP applications\nTest the behavior of web applications with Behat",
+    "download_link": "http://file.allitebooks.com/20170827/Learning%20PHP%207.pdf",
+    "file_format": "PDF",
+    "file_size": "5.8 MB",
+    "image": "Learning-PHP-7.jpg",
+    "isbn_10": "1785880543",
+    "language": "English",
+    "pages": 414,
+    "read_link": "http://www.allitebooks.com/read/index.php?id=28029",
+    "sub_title": "Learn the art of PHP programming through this example-rich book filled to the brim with tutorials every PHP developer needs to know",
+    "title": "Learning PHP 7",
+    "year": 2016,
+    "id": 5
+  },
+  {
+    "author": [
+      "Bryan WC Chung"
+    ],
+    "category": [
+      "Programming"
+    ],
+    "description": "Book Description:\n\nApply the Processing language to tasks involved in computer vision–tasks such as edge and corner detection, recognition of motion between frames in a video, recognition of objects, matching of feature points and shapes in different frames for tracking purposes, and more. You will manipulate images through creative effects, geometric transformation, blending of multiple images, and so forth. Examples are provided.\nPro Processing for Images and Computer Vision with OpenCV is a step-by-step training tool that guides you through a series of worked examples in linear order. Each chapter begins with a basic demonstration, including the code to recreate it on your own system. Then comes a creative challenge by which to engage and develop mastery of the chapter’s topic. The book also includes hints and tips relating to visual arts, interaction design, and industrial best practices.\nThis book is intended for any developer of artistic and otherwise visual applications, such as in augmented reality and digital effects, with a need to manipulate images, and to recognize and manipulate objects within those images. The book is specifically targeted at those making use of the Processing language that is common in artistic fields, and to Java programmers because of Processing’s easy integration into the Java programming environment.\nWhat You’ll Learn\nMake use of OpenCV, the open source library for computer vision in the Processing environment\nCapture live video streams and examine them frame-by-frame for objects in motion\nRecognize shapes and objects through techniques of detecting lines, edges, corners, and more\nTransform images by scaling, translating, rotating, and additionally through various distortion effects\nApply techniques such as background subtraction to isolate motion of objects in live video streams\nDetect and track human faces and other objects by matching feature points in different images or video frames\nWho This Book Is For\nMedia artists, designers, and creative coders",
+    "download_link": "http://file.allitebooks.com/20170827/Pro%20Processing%20for%20Images%20and%20Computer%20Vision%20with%20OpenCV.pdf",
+    "file_format": "PDF",
+    "file_size": "11.6 MB",
+    "image": "Pro-Processing-for-Images-and-Computer-Vision-with-OpenCV.jpg",
+    "isbn_10": "1484227743",
+    "language": "English",
+    "pages": 292,
+    "read_link": "http://www.allitebooks.com/read/index.php?id=28026",
+    "sub_title": "Solutions for Media Artists and Creative Coders",
+    "title": "Pro Processing for Images and Computer Vision with OpenCV",
+    "year": 2017,
+    "id": 6
+  },
+  {
+    "author": [
+      "Nathan Haines"
+    ],
+    "category": [
+      "Operating Systems"
+    ],
+    "description": "Book Description:\n\nDiscover how to get the most out of Ubuntu for work, home, and play.  Learning a new operating system can feel daunting, especially if you’re used to Windows or OS X. If you’ve been afraid to try Ubuntu because you don’t know where to start, this book introduces you to a wide selection of software and settings that will make your computer ready to work for you.\n\nYou’ll see how Ubuntu can make your computing life easy. In addition to a tour of Ubuntu’s modern and easy-to-use interface, you’ll also learn how Ubuntu’s Software Updater keeps all of your software secure and up-to-date. Browsing the Internet becomes faster and safer. Creating documents and sharing with others is built right in. Enjoying your music and movie libraries helps you unwind.\nUbuntu is the world’s third most popular operating system and powers desktop and laptop computers, servers, private and public clouds, and embedded devices. There’s never been a better time to install Ubuntu and move to an open source way of life. Completely updated for this exciting second edition, Beginning Ubuntu for Windows and Mac Users will help you start your journey into Free and Open Source Software with Ubuntu 16.04 LTS.\nWhat You’ll Learn\nUnderstand the advantages of Ubuntu and its variants―Kubuntu, Xubuntu, and more\nInstall Ubuntu on its own or alongside your computer’s existing operating system\nSearch Ubuntu’s catalog of thousands of applications―all ready to install with a single click\nWork with files and disks that were created with Windows and OS X\nRun simple, interesting tasks and games using the command line\nCustomize Ubuntu in powerful ways and get work done with virtual machines\nWho This Book Is For\nAnyone who wants to move to using an open source operating system.",
+    "download_link": "http://file.allitebooks.com/20170826/Beginning%20Ubuntu%20for%20Windows%20and%20Mac%20Users,%202nd%20Edition.pdf",
+    "file_format": "PDF",
+    "file_size": "11.9 MB",
+    "image": "Beginning-Ubuntu-for-Windows-and-Mac-Users,-2nd-Edition.jpg",
+    "isbn_10": "1484229991",
+    "language": "English",
+    "pages": 196,
+    "read_link": "http://www.allitebooks.com/read/index.php?id=28022",
+    "sub_title": "Start your Journey into Free and Open Source Software",
+    "title": "Beginning Ubuntu for Windows and Mac Users, 2nd Edition",
+    "year": 2017,
+    "id": 7
+  },
+  {
+    "author": [
+      "Pradeep Macharla"
+    ],
+    "category": [
+      "Programming"
+    ],
+    "description": "Book Description:\n\nMaster continuous integration, deployment and automated testing for Android apps. You’ll see how to set up and tear down sandbox environments to test the end-user experience, where you’ll learn how to manage a mobile device in addition to the build machine. Android Continuous Integration applies a real-world CI pattern that has been thoroughly tested and implemented.\nThis book starts with continuous integration concepts and the tools and code needed to become proficient in continuous integration for Android apps. You’ll also follow acceptance test driven development (ATDD) best practice, giving you all the skills you need to become a better, more effective developer. Finally, you’ll learn about the Appium mobile automation library and the Jenkins continuous integration tool.\nWhat You Will Learn\nUnderstand how to build an Android mobile app from source\nSet up a development or debuggi\nng environment for mobile apps\n\nIntegrate with the Nexus dependency management and application release tool\nWork with the SonarQube code quality analyzer\nUse debugging tools in Android\nWho This Book Is For\nProduct owners/business analysts, QA/test engineers, developers and build/deploy engineers.",
+    "download_link": "http://file.allitebooks.com/20170826/Android%20Continuous%20Integration.pdf",
+    "file_format": "PDF",
+    "file_size": "7.8 MB",
+    "image": "Android-Continuous-Integration.jpg",
+    "isbn_10": "1484227956",
+    "language": "English",
+    "pages": 141,
+    "read_link": "http://www.allitebooks.com/read/index.php?id=28017",
+    "sub_title": "Build-Deploy-Test Automation for Android Mobile Apps",
+    "title": "Android Continuous Integration",
+    "year": 2017,
+    "id": 8
+  },
+  {
+    "author": [
+      "Mark McDonnell"
+    ],
+    "category": [
+      "Programming"
+    ],
+    "description": "Book Description:\n\nGet up to speed with Clojure in this quick and practical primer. You’ll learn the nuts and bolts of functional programming, data structures, sequences, destructuring, pattern matching, polymorphism, concurrency, conventions, and more. Author Mark McDonnell talks about organization with namespaces; how to change the language via macros; object-oriented programming; and creating command-line apps. Finally, he shows you how to write Clojure from shell languages and interfaces such as Vim.\nAfter reading and using Quick Clojure, you’ll come away with first-hand knowledge and advice on how to quickly adopt, use, and apply Clojure without all the theoretical baggage that bigger books can sometimes bring.\nWhat You’ll Learn\nWork with data structures and their syntax\nDiscover OOP in Clojure with patterns, polymorphisms, pattern matching, and concurrency\nUse conventions, organization, and namespaces in Clojure\nCreate command-line apps\nBuild various Clojure projects with the Leiningen IDE tool and framework\nWho This Book Is For\nProgrammers with experience.  A Java background would be helpful, but not required.",
+    "download_link": "http://file.allitebooks.com/20170825/Quick%20Clojure.pdf",
+    "file_format": "PDF",
+    "file_size": "2.3 MB",
+    "image": "Quick-Clojure.jpg",
+    "isbn_10": "1484229517",
+    "language": "English",
+    "pages": 200,
+    "read_link": "http://www.allitebooks.com/read/index.php?id=28008",
+    "sub_title": "Effective Functional Programming",
+    "title": "Quick Clojure",
+    "year": 2017,
+    "id": 9
+  },
+  {
+    "author": [
+      "Joshua Cook"
+    ],
+    "category": [
+      "Data Processing"
+    ],
+    "description": "Book Description:\n\nLearn Docker “infrastructure as code” technology to define a system for performing standard but non-trivial data tasks on medium- to large-scale data sets, using Jupyter as the master controller.\nIt is not uncommon for a real-world data set to fail to be easily managed. The set may not fit well into access memory or may require prohibitively long processing. These are significant challenges to skilled software engineers and they can render the standard Jupyter system unusable.\nAs a solution to this problem, Docker for Data Science proposes using Docker. You will learn how to use existing pre-compiled public images created by the major open-source technologies―Python, Jupyter, Postgres―as well as using the Dockerfile to extend these images to suit your specific purposes. The Docker-Compose technology is examined and you will learn how it can be used to build a linked system with Python churning data behind the scenes and Jupyter managing these background tasks. Best practices in using existing images are explored as well as developing your own images to deploy state-of-the-art machine learning and optimization algorithms.\nWhat  You’ll Learn\nMaster interactive development using the Jupyter platform\nRun and build Docker containers from scratch and from publicly available open-source images\nWrite infrastructure as code using the docker-compose tool and its docker-compose.yml file type\nDeploy a multi-service data science application across a cloud-based system\nWho This Book Is For\nData scientists, machine learning engineers, artificial intelligence researchers, Kagglers, and software developers",
+    "download_link": "http://file.allitebooks.com/20170825/Docker%20for%20Data%20Science.pdf",
+    "file_format": "PDF",
+    "file_size": "7.1 MB",
+    "image": "Docker-for-Data-Science.jpg",
+    "isbn_10": "1484230116",
+    "language": "English",
+    "pages": 257,
+    "read_link": "http://www.allitebooks.com/read/index.php?id=28012",
+    "sub_title": "Building Scalable and Extensible Data Infrastructure Around the Jupyter Notebook Server",
+    "title": "Docker for Data Science",
+    "year": 2017,
+    "id": 10
+  },
+  {
+    "author": [
+      "Harry J.W. Percival"
+    ],
+    "category": [
+      "Python"
+    ],
+    "description": "Book Description:\n\nBy taking you through the development of a real web application from beginning to end, the second edition of this hands-on guide demonstrates the practical advantages of test-driven development (TDD) with Python. You’ll learn how to write and run tests before building each part of your app, and then develop the minimum amount of code required to pass those tests. The result? Clean code that works.\n\nIn the process, you’ll learn the basics of Django, Selenium, Git, jQuery, and Mock, along with current web development techniques. If you’re ready to take your Python skills to the next level, this book—updated for Python 3.6—clearly demonstrates how TDD encourages simple designs and inspires confidence.\n\nDive into the TDD workflow, including the unit test/code cycle and refactoring\nUse unit tests for classes and functions, and functional tests for user interactions within the browser\nLearn when and how to use mock objects, and the pros and cons of isolated vs. integrated tests\nTest and automate your deployments with a staging server\nApply tests to the third-party plugins you integrate into your site\nRun tests automatically by using a Continuous Integration environment\nUse TDD to build a REST API with a front-end Ajax interface",
+    "download_link": "http://file.allitebooks.com/20170822/Test-Driven%20Development%20with%20Python,%202nd%20Edition.pdf",
+    "file_format": "PDF",
+    "file_size": "11.6 MB",
+    "image": "Test-Driven-Development-with-Python,-2nd-Edition.jpg",
+    "isbn_10": "1491958707",
+    "language": "English",
+    "pages": 614,
+    "read_link": "http://www.allitebooks.com/read/index.php?id=28005",
+    "sub_title": "Obey the Testing Goat: Using Django, Selenium, and JavaScript",
+    "title": "Test-Driven Development with Python, 2nd Edition",
+    "year": 2017,
+    "id": 11
+  },
+  {
+    "author": [
+      "Jose Argudo"
+    ],
+    "category": [
+      "Web Development"
+    ],
+    "description": "Book Description:\n\nThis book is for developers who are new to CodeIgniter. Basic skills in PHP and MySQL are required, but only rudimentary object-oriented knowledge is needed. If you’re looking for a better way to develop PHP applications, or want to find out more about the CodeIgniter framework as a viable option for one of your own projects, this book will help you. This book takes a step- by-step approach, presenting the main features of CodeIgniter in a systematic way and explaining them clearly. It is packed with examples, ideas, and screenshots to help you master this great framework. The code examples are very practical so you can even use them in your own projects. By following this book, you can use CodeIgniter in the best possible way and maximize your learning.",
+    "download_link": "http://file.allitebooks.com/20170820/CodeIgniter%201.7.pdf",
+    "file_format": "PDF",
+    "file_size": "3.1 MB",
+    "image": "CodeIgniter-1.7.jpg",
+    "isbn_10": "1847199488",
+    "language": "English",
+    "pages": 300,
+    "read_link": "http://www.allitebooks.com/read/index.php?id=28002",
+    "sub_title": "Improve your PHP coding productivity with the free compact open source MVC CodeIgniter framework!",
+    "title": "CodeIgniter 1.7",
+    "year": 2009,
+    "id": 12
+  },
+  {
+    "author": [
+      "Adam Boduch"
+    ],
+    "category": [
+      "JavaScript"
+    ],
+    "description": "Book Description:\n\nWhilst React has become Facebook’s poster-child for clean, complex, and modern web development, it has quietly been underpinned by its simplicity. It’s just a view. The real beauty in React is actually the architectural pattern that handles data in and out of React applications: Flux. With Flux, you’re able to build data-rich applications that engage your users, and scale to meet every demand. It is a key part of the Facebook technology stack that serves billions of users every day.\n\nThis book will start by introducing the Flux pattern and help you get an understanding of what it is and how it works. After this, we’ll build real-world React applications that highlight the power and simplicity of Flux in action. Finally, we look at the landscape of Flux and explore the Alt and Redux libraries that make React and Flux developments easier.\n\nFilled with fully-worked examples and code-first explanations, by the end of the book, you’ll not only have a rock solid understanding of the architecture, but will be ready to implement Flux architecture in anger.\n\nWhat you will learn\n\nUnderstand the Flux pattern and how it will impact your React applications\nBuild real-world applications that rely on Flux\nHandle asynchronous actions in your application\nImplement immutable stores with Immutable.js\nReplace React.js with alternate View components such as jQuery and Handlebars\nTest and benchmark your Flux architecture using Jest―Facebook’s enhancement of the Jasmine library",
+    "download_link": "http://file.allitebooks.com/20170820/Flux%20Architecture.pdf",
+    "file_format": "PDF",
+    "file_size": "2.1 MB",
+    "image": "Flux-Architecture.jpg",
+    "isbn_10": "1786465817",
+    "language": "English",
+    "pages": 352,
+    "read_link": "http://www.allitebooks.com/read/index.php?id=27999",
+    "sub_title": "Learn to build powerful and scalable applications with Flux, the architecture that serves billons of Facebook users every day",
+    "title": "Flux Architecture",
+    "year": 2016,
+    "id": 13
+  },
+  {
+    "author": [
+      "D. Young"
+    ],
+    "category": [
+      "Computer Science"
+    ],
+    "description": "Book Description:\n\nTired of an e-mail BCC list that scrolls off the page, or fiddly and hard-to-manage bulk mailing systems? You need PHPList – a high-powered, robust, feature-packed mailing system that will get out of your way and get the job done! You want to know more about PHPList?\n\nPHPList is a popular open source e-mail campaign manager, sporting a powerful web frontend, rich message editor, and an advanced feature set.\n\nPHPList 2 E-mail Campaign Manager will guide you from basic installation and setup through management, reporting, and automation of PHPList, the world’s most popular open source e-mail campaign manager. It also covers advanced customization and configuration of PHPList.\n\nWe start with a basic configuration, and finish with a full-featured e-mail management engine. You will work your way up from basic installation to advanced topics such as bounce automation, user and click-through tracking, and integration with third-party tools such as WordPress, Joomla!, Drupal, and Blogger.\n\nAdvanced topics such as securing your installation against spammers, attacks, and vulnerabilities are covered, as well as additional advanced and experimental features offered by PHPList.\n\nThis book is an invaluable guide for any e-mail publisher who wants a robust and powerful engine to manage their small-to-huge e-mail distribution empire.\n\nThis book is a step-by-step, in-depth guide to the features and usage of the world’s most popular open source e-mail campaign manager, PHPList.\n\nWhat you will learn from this book\n\nInstall and set up PHPList on your web hosting platform\nIntegrate subscription with third-party publishing platforms\nConfigure intelligent bounce handling\nIntegrate membership and features with Joomla!, Drupal, WordPress, and Blogger\nAutomate list management and bounce processing\nGain insight with user and click tracking reports\nLeverage advanced features for greater flexibility and results\nSecure PHPList from attacks and future vulnerabilities\nTroubleshoot common issues\nAvoid dealing with spammers by implementing CAPTCHAs",
+    "download_link": "http://file.allitebooks.com/20170819/PHPList%202%20E-mail%20Campaign%20Manager.pdf",
+    "file_format": "PDF",
+    "file_size": "18.5 MB",
+    "image": "PHPList-2-E-mail-Campaign-Manager.jpg",
+    "isbn_10": "1849511047",
+    "language": "English",
+    "pages": 236,
+    "read_link": "http://www.allitebooks.com/read/index.php?id=27996",
+    "sub_title": "Get to grips with the PHPList e-mail announcement delivery system!",
+    "title": "PHPList 2 E-mail Campaign Manager",
+    "year": 2011,
+    "id": 14
+  },
+  {
+    "author": [
+      "Jagdeep Jain",
+      "Sai Matam"
+    ],
+    "category": [
+      "Programming"
+    ],
+    "description": "Book Description:\n\nQuickly ramp up your practical knowledge of Apache JMeter for software performance testing and focus on actual business problems. This step-by-step guide covers what you will need to know to write and execute test scripts, and verify the results.\n\nPro Apache JMeter covers almost every aspect of Apache JMeter in detail and includes helpful screenshots and a case study. A performance primer chapter provides a high-level summary of terms used in performance testing on a day-to-day basis that also is useful for non-technical readers.\n\nA sample web application Digital Toys has been developed and test scripts are provided for you to try while progressing through the chapters.\n\nWhat You’ll Learn\n\nCreate and execute an Apache JMeter test plan\nInterpret the results of your test plan\nUnderstand distributed testing using Apache JMeter\nUse Apache JMeter advanced features such as JDBC, REST, FTP, AJAX, SOAP, and mobile performance testing\nRead a sample case study covering end-to-end planning and execution of a performance testing project\nGenerate and analyze a performance dashboard\nWho This Book Is For\n\nSoftware performance testing professionals, quality assurance professionals, architects, engineers, project managers, product managers",
+    "download_link": "http://file.allitebooks.com/20170818/Pro%20Apache%20JMeter.pdf",
+    "file_format": "PDF",
+    "file_size": "21.3 MB",
+    "image": "Pro-Apache-JMeter.jpg",
+    "isbn_10": "1484229606",
+    "language": "English",
+    "pages": 335,
+    "read_link": "http://www.allitebooks.com/read/index.php?id=27993",
+    "sub_title": "Web Application Performance Testing",
+    "title": "Pro Apache JMeter",
+    "year": 2017,
+    "id": 15
+  },
+  {
+    "author": [
+      "Nishith Pathak"
+    ],
+    "category": [
+      ".NET"
+    ],
+    "description": "Book Description:\n\nGet introduced to the world of artificial intelligence with this accessible and practical guide. Build applications that make intelligent use of language and user interaction to better compete in today’s marketplace. Discover how your application can deeply understand and interpret content on the web or a user’s machine, intelligently react to direct user interaction through speech or text, or make smart recommendations on products or services that are tailored to each individual user.\n\nWith Microsoft Cognitive Services, you can do all this and more utilizing a set of easy-to-use APIs that can be consumed on the desktop, web, or mobile devices. Developers normally think of AI implementation as a tough task involving writing complex algorithms. This book aims to remove the anxiety by creating a cognitive application with a few lines of code. There is a wide range of Cognitive Services APIs available. This book focuses on some of the most useful and powerful ways that your application can make intelligent use of language.\n\nArtificial Intelligence for .NET: Speech, Language, and Search will show you how you can start building amazing capabilities into your applications today.\n\nWhat You’ll Learn\nUnderstand the underpinnings of artificial intelligence through practical examples and scenarios\nGet started building an AI-based application in Visual Studio\nBuild a text-based conversational interface for direct user interaction\nUse the Cognitive Services Speech API to recognize and interpret speech\nLook at different models of language, including natural language processing, and how to apply them in your Visual Studio application\nReuse Bing search capabilities to better understand a user’s intention\nWork with recommendation engines and integrate them into your apps\nWho This Book Is For\nDevelopers working on a range of platforms, from .NET and Windows to mobile devices. Examples are given in C#. No prior experience with AI techniques or theory is required.",
+    "download_link": "http://file.allitebooks.com/20170817/Artificial%20Intelligence%20for%20.NET.pdf",
+    "file_format": "PDF",
+    "file_size": "9.1 MB",
+    "image": "Artificial-Intelligence-for-.NET.jpg",
+    "isbn_10": "1484229487",
+    "language": "English",
+    "pages": 264,
+    "read_link": "http://www.allitebooks.com/read/index.php?id=27988",
+    "sub_title": "Speech, Language, and Search: Building Smart Applications with Microsoft Cognitive Services APIs",
+    "title": "Artificial Intelligence for .NET",
+    "year": 2017,
+    "id": 16
+  },
+  {
+    "author": [
+      "Bihag Thaker",
+      "Ritesh Shah"
+    ],
+    "category": [
+      "SQL"
+    ],
+    "description": "Book Description:\n\nAs a DBA you must have encountered a slow running application on SQL Server, but there are various factors that could be affecting the performance. If you find yourself in this situation, don’t wait, pick up this book and start working towards improving performance of your SQL Server 2012. SQL Server 2012 Performance Tuning Cookbook is divided into three major parts — Performance Monitoring, Performance Tuning, and Performance Management–that are mandatory to deal with performance in any capacity.\n\nSQL Server 2012 Performance Tuning Cookbook offers a great way to manage performance with effective, concise, and practical recipes. You will learn how to diagnose performance issues, fix them, and take precaution to avoid common mistakes.\n\nEach recipe given in this book is an individual task that will address different performance aspects to take your SQL Server’s Performance to a higher level.\n\nThe first part of this book covers Monitoring with SQL Server Profiler, DTA, System statistical function, SPs with DBCC commands, Resource Monitor & Reliability, and Performance Monitor and Execution Plan.\n\nThe second part of the book offers Execution Plan, Dynamic Management Views, and Dynamic Management Functions, SQL Server Cache and Stored Procedure Recompilations, Indexes, Important ways to write effective TSQL, Statistics, Table and Index Partitioning, Advanced Query tuning with Query Hints and Plan Guide, Dealing with Locking, Blocking and Deadlocking and Configuring SQL Server for optimization to boost performance.\n\nThe third and final part gives you knowledge of performance management with help of Policy Based Management and Management with Resource Governor.\n\nWhat will you learn from this book\n\nMonitoring SQL Server Performance with Profiler, Execution Plan, and system statistical function\nFinding performance bottleneck with the help of Resource Monitor and DTA\nCreating and Managing Indexes efficiently to boost performance\nCreating and Managing Partition efficiently\nManaging database files efficiently\nPlanning Guide and Query Hints\nDealing with locking, blocking, and deadlocking\nConfiguring SQL Server instance option for achieving performance benefit\nManaging Performance with Policy based management and Resource Governor",
+    "download_link": "http://file.allitebooks.com/20170814/Microsoft%20SQL%20Server%202012%20Performance%20Tuning%20Cookbook.pdf",
+    "file_format": "PDF",
+    "file_size": "8.9 MB",
+    "image": "Microsoft-SQL-Server-2012-Performance-Tuning-Cookbook.jpg",
+    "isbn_10": "1849685746",
+    "language": "English",
+    "pages": 478,
+    "read_link": "http://www.allitebooks.com/read/index.php?id=27985",
+    "sub_title": "80 recipes to help you tune SQL Server 2012 and achieve optimal performance",
+    "title": "Microsoft SQL Server 2012 Performance Tuning Cookbook",
+    "year": 2012,
+    "id": 17
+  },
+  {
+    "author": [
+      "Bala Subrahmanyam Varanasi",
+      "Rakesh Vidya Chandra"
+    ],
+    "category": [
+      "Python"
+    ],
+    "description": "Book Description:\n\nPython is one of the most popular programming languages of our era; the Python Requests library is one of the world’s best clients, with the highest number of downloads. It allows hassle-free interactions with web applications using simple procedures.\n\nYou will be shown how to mock HTTP Requests using HTTPretty, and will learn to interact with social media using Requests. This book will help you to grasp the art of web scraping with the BeautifulSoup and Python Requests libraries, and will then paddle you through Requests impressive ability to interact with APIs. It will empower you with the best practices for seamlessly drawing data from web apps. Last but not least, you will get the chance to polish your skills by implementing a RESTful Web API with Python and Flask!\n\nWho This Book Is For\n\nIf you are a Python administrator or developer interested in interacting with web APIs and have a passion for creating your own web applications, this is the book for you. Basic knowledge of Python programming, APIs, and web services will be an advantage.\n\nWhat You Will Learn\n\nDemonstrate the use of Python Requests with the help of examples\nUse the Requests module to deal with the inner sections of the request-response cycles\nImplement the RESTful Web API with Python Requests\nAuthenticate Requests using different authentication methods\nEmulate server actions and interact with a mock server\nInteract with social networking sites such as Facebook, Twitter, and reddit\nScrape the Web with Python Requests and BeautifulSoup\nBuild your own web application with Flask",
+    "download_link": "http://file.allitebooks.com/20170813/Python%20Requests%20Essentials.pdf",
+    "file_format": "PDF",
+    "file_size": "1.2 MB",
+    "image": "Python-Requests-Essentials.jpg",
+    "isbn_10": "1784395412",
+    "language": "English",
+    "pages": 122,
+    "read_link": "http://www.allitebooks.com/read/index.php?id=27982",
+    "sub_title": "Learn how to integrate your applications seamlessly with web services using Python Requests",
+    "title": "Python Requests Essentials",
+    "year": 2015,
+    "id": 18
+  },
+  {
+    "author": [
+      "Amol Fasale",
+      "Nirmal Kumar"
+    ],
+    "category": [
+      "Computer Science"
+    ],
+    "description": "Book Description:\n\nYARN is the next generation generic resource platform used to manage resources in a typical cluster and is designed to support multitenancy in its core architecture. As optimal resource utilization is central to the design of YARN, learning how to fully utilize the available fine-grained resources (RAM, CPU cycles, and so on) in the cluster becomes vital.\n\nThis book is an easy-to-follow, self-learning guide to help you start working with YARN. Beginning with an overview of YARN and Hadoop, you will dive into the pitfalls of Hadoop 1.x and how YARN takes us to the next level. You will learn the concepts, terminology, architecture, core components, and key interactions, and cover the installation and administration of a YARN cluster as well as learning about YARN application development with new and emerging data processing frameworks.\n\nWho This Book Is For\n\nIf you have a working knowledge of Hadoop 1.x but want to start afresh with YARN, this book is ideal for you. You will be able to install and administer a YARN cluster and also discover the configuration settings to fine-tune your cluster both in terms of performance and scalability. This book will help you develop, deploy, and run multiple applications/frameworks on the same shared YARN cluster.\n\nWhat You Will Learn\n\nUnderstand how existing MapReduce applications can run on top of YARN and how they are backward compatible\nExplore the YARN concepts, terminologies, architecture, key components, and interaction between the components\nSet up a standalone and multi-node clustered YARN environment\nDesign, develop, and run different frameworks such as MapReduce, Apache Storm, Apache Tez, and Giraffe on top of YARN\nGet to grips with the built-in support for multitenancy in YARN\nDiscover the motivation behind YARN’s architecture design, implementations, and why YARN was needed\nLearn how failures at each level are gracefully handled by the new framework to achieve fault tolerance and scalability",
+    "download_link": "http://file.allitebooks.com/20170813/YARN%20Essentials.pdf",
+    "file_format": "PDF",
+    "file_size": "4.4 MB",
+    "image": "YARN-Essentials.jpg",
+    "isbn_10": "1784391735",
+    "language": "English",
+    "pages": 185,
+    "read_link": "http://www.allitebooks.com/read/index.php?id=27979",
+    "sub_title": "A comprehensive, hands-on guide to install, administer, and configure settings in YARN",
+    "title": "YARN Essentials",
+    "year": 2015,
+    "id": 19
+  },
+  {
+    "author": [
+      "Adam Gibson",
+      "Josh Patterson"
+    ],
+    "category": [
+      "Data Mining"
+    ],
+    "description": "Book Description:\n\nAlthough interest in machine learning has reached a high point, lofty expectations often scuttle projects before they get very far. How can machine learning—especially deep neural networks—make a real difference in your organization? This hands-on guide not only provides the most practical information available on the subject, but also helps you get started building efficient deep learning networks.\n\nAuthors Adam Gibson and Josh Patterson provide theory on deep learning before introducing their open-source Deeplearning4j (DL4J) library for developing production-class workflows. Through real-world examples, you’ll learn methods and strategies for training deep network architectures and running deep learning workflows on Spark and Hadoop with DL4J.\n\nDive into machine learning concepts in general, as well as deep learning in particular\nUnderstand how deep networks evolved from neural network fundamentals\nExplore the major deep network architectures, including Convolutional and Recurrent\nLearn how to map specific deep networks to the right problem\nWalk through the fundamentals of tuning general neural networks and specific deep network architectures\nUse vectorization techniques for different data types with DataVec, DL4J’s workflow tool\nLearn how to use DL4J natively on Spark and Hadoop",
+    "download_link": "http://file.allitebooks.com/20170813/Deep%20Learning.pdf",
+    "file_format": "PDF",
+    "file_size": "19.8 MB",
+    "image": "Deep-Learning.jpg",
+    "isbn_10": "1491914254",
+    "language": "English",
+    "pages": 536,
+    "read_link": "http://www.allitebooks.com/read/index.php?id=27976",
+    "sub_title": "A Practitioner's Approach",
+    "title": "Deep Learning",
+    "year": 2017,
+    "id": 20
+  },
+  {
+    "author": [
+      "Mansib Rahman"
+    ],
+    "category": [
+      "Data in the Enterprise"
+    ],
+    "description": "Book Description:\n\nDevelop applications in Microsoft Kinect 2 using gesture and speech recognition, scanning of objects in 3D, and body tracking. Create motion-sensing applications for entertainment and practical uses, including for commercial products and industrial applications.\n\nBeginning Microsoft Kinect for Windows SDK 2.0 is dense with code and examples to ensure that you understand how to build Kinect applications that can be used in the real world. Techniques and ideas are presented to facilitate incorporation of the Kinect with other technologies.\n\nWhat You Will Learn\n\nSet up Kinect 2 and a workspace for Kinect application development\nAccess audio, color, infrared, and skeletal data streams from Kinect\nUse gesture and speech recognition\nPerform computer vision manipulations on image data streams\nDevelop Windows Store apps and Unity3D applications with Kinect 2\nTake advantage of Kinect Fusion (3D object mapping technology) and Kinect Ripple (Kinect projector infotainment system)\nWho This Book Is For\nDevelopers who want to include the simple but powerful Kinect technology into their projects, including amateurs and hobbyists, and professional developers",
+    "download_link": "http://file.allitebooks.com/20170812/Beginning%20Microsoft%20Kinect%20for%20Windows%20SDK%202.0.pdf",
+    "file_format": "PDF",
+    "file_size": "11.2 MB",
+    "image": "Beginning-Microsoft-Kinect-for-Windows-SDK-2.0.jpg",
+    "isbn_10": "1484223152",
+    "language": "English",
+    "pages": 297,
+    "read_link": "http://www.allitebooks.com/read/index.php?id=27969",
+    "sub_title": "Motion and Depth Sensing for Natural User Interfaces",
+    "title": "Beginning Microsoft Kinect for Windows SDK 2.0",
+    "year": 201,
+    "id": 21
+  },
+  {
+    "author": [
+      "Ben Tyers"
+    ],
+    "category": [
+      "Game Programming"
+    ],
+    "description": "Book Description:\n\nCarry out the pre-planning, design, and programming of role playing games (RPGs) using the popular GameMaker: Studio in this very practical and fun book. Author Ben Tyers teaches you how to create a story or plotline for the RPG, apply aesthetics, and develop core and extended gameplay.\n\nUsing Learn RPGs in GameMaker: Studio, you can design and build your own RPG using the GameMaker: Studio platform. Build your first game application and deploy in an app store, on Facebook, or just on a PC.  Maybe, even, make a few bucks.\n\nWhat You’ll Learn\n\nUse the GameMaker: Studio platform to design and build a role playing game\nCreate a story for game design purposes, using a plot line and defining characters\nDiscover the impact of aesthetics on art style, character separation, scene development, sound design and views\nMaster core gameplay elements such as battles, exploration, scoring, and endings\nWork with extended gameplay elements such as collectibles, quirks, management, and saving\nEmploy the various core and extended gameplay elements as appropriate to your RPG\nWho This Book Is For\n\nGame designers or developers looking to design and build their first role playing game using the GameMaker: Studio platform.",
+    "download_link": "http://file.allitebooks.com/20170811/Learn%20RPGs%20in%20GameMaker%20Studio.pdf",
+    "file_format": "PDF",
+    "file_size": "13.6 MB",
+    "image": "Learn-RPGs-in-GameMaker:-Studio.jpg",
+    "isbn_10": "1484229452",
+    "language": "English",
+    "pages": 318,
+    "read_link": "http://www.allitebooks.com/read/index.php?id=27946",
+    "sub_title": "Build and Design Role Playing Games",
+    "title": "Learn RPGs in GameMaker: Studio",
+    "year": 2017,
+    "id": 22
+  },
+  {
+    "author": [
+      "Jorge Acetozi"
+    ],
+    "category": [
+      "Administration"
+    ],
+    "description": "Book Description:\n\nBuild clustered and scalable Java-based, real-time applications using Spring Framework, Boot, WebSocket, Cassandra, Redis and RabbitMQ. In this book, you’ll tie all this together with a dive-in case study, a real-time scalable chat application under differing scenarios. Pro Java Clustering and Scalabilityalso discusses how to horizontally scale the WebSocket chat application using a full STOMP broker such as RabbitMQ.\nAlthough this is a programming book, it also discusses many interesting infrastructure topics and tips about continuous delivery, Docker, NoSQL (Cassandra and Redis) and other related technologies.\nWhat You Will Learn\nHandle clustering and scalability using various open source Java, microservices, and web services tools and technologies\nUse Spring Framework, Boot, and other Spring technologies\nIntegrate with Redis, RabbitMQ, Cassandra, NoSQL,\nand much more\n\nTest the case study code under various scenarios and stresses\nWho This Book Is For\nExperienced Java developers with at least some prior experience with Java, especially Spring Framework, Boot and other tools, and some web services.",
+    "download_link": "http://file.allitebooks.com/20170811/Pro%20Java%20Clustering%20and%20Scalability.pdf",
+    "file_format": "PDF",
+    "file_size": "3.7 MB",
+    "image": "Pro-Java-Clustering-and-Scalability.jpg",
+    "isbn_10": "1484229843",
+    "language": "English",
+    "pages": 149,
+    "read_link": "http://www.allitebooks.com/read/index.php?id=27945",
+    "sub_title": "Building Real-Time Apps with Spring, Cassandra, Redis, WebSocket and RabbitMQ",
+    "title": "Pro Java Clustering and Scalability",
+    "year": 2017,
+    "id": 23
+  },
+  {
+    "author": [
+      "Jim Sterne"
+    ],
+    "category": [
+      "Marketing & SEO"
+    ],
+    "description": "Book Description:\n\nA straightforward, non-technical guide to the next major marketing tool\n\nArtificial Intelligence for Marketing presents a tightly-focused introduction to machine learning, written specifically for marketing professionals. This book will not teach you to be a data scientist—but it does explain how Artificial Intelligence and Machine Learning will revolutionize your company’s marketing strategy, and teach you how to use it most effectively. Data and analytics have become table stakes in modern marketing, but the field is ever-evolving with data scientists continually developing new algorithms—where does that leave you? How can marketers use the latest data science developments to their advantage? This book walks you through the “need-to-know” aspects of Artificial Intelligence, including natural language processing, speech recognition, and the power of Machine Learning to show you how to make the most of this technology in a practical, tactical way.\n\nSimple illustrations clarify complex concepts, and case studies show how real-world companies are taking the next leap forward. Straightforward, pragmatic, and with no math required, this book will help you:\n\nSpeak intelligently about Artificial Intelligence and its advantages in marketing\nUnderstand how marketers without a Data Science degree can make use of machine learning technology\nCollaborate with data scientists as a subject matter expert to help develop focused-use applications\nHelp your company gain a competitive advantage by leveraging leading-edge technology in marketing\nMarketing and data science are two fast-moving, turbulent spheres that often intersect; that intersection is where marketing professionals pick up the tools and methods to move their company forward. Artificial Intelligence and Machine Learning provide a data-driven basis for more robust and intensely-targeted marketing strategies—and companies that effectively utilize these latest tools will reap the benefit in the marketplace. Artificial Intelligence for Marketing provides a nontechnical crash course to help you stay ahead of the curve.",
+    "download_link": "http://file.allitebooks.com/20170811/Artificial%20Intelligence%20for%20Marketing.pdf",
+    "file_format": "PDF",
+    "file_size": "5.6 MB",
+    "image": "Artificial-Intelligence-for-Marketing.jpg",
+    "isbn_10": "1119406331",
+    "language": "English",
+    "pages": 368,
+    "read_link": "http://www.allitebooks.com/read/index.php?id=27943",
+    "sub_title": "Practical Applications",
+    "title": "Artificial Intelligence for Marketing",
+    "year": 2017,
+    "id": 24
+  },
+  {
+    "author": [
+      "James Cabrera"
+    ],
+    "category": [
+      "Programming",
+      "Administration"
+    ],
+    "description": "Book Description:\n\nLearn the basic principles of modular design, and then put them into action to create sites that are easy to use, look great, and can be adapted within the context of your business needs.\n\nWith author James Cabrera―one of the thought leaders in the modular-design movement―you’ll create a single, scalable project for a sample nameplate site and then adapt that same project to work successfully as a portfolio site, an e-commerce site, and finally as a news/publishing content site. Along the way, you’ll learn the scientific approach to devising a sound and scalable design strategy, followed by establishing a basic foundation using various criteria relevant to that type of site. As each chapter progresses, you’ll add new concepts appropriate for the project type.\n\nModular web and app design isn’t just for so-called “creatives.” It’s a teachable science with principles that can be replicated in a creative manner. This approach makes the design decision making process for businesses much easier (and easier to live with). And modular design is a powerful tool for software designers to replicate effective successful designs across a spectrum of needs.\n\nWhat You’ll Learn\nExamine the design process in a modular way\nAdapt your HTML code to create different types of applications\nEstablish your own modular framework for your specific site’s goals\nDesign for scale\nDevelop a strong foundation skeleton for design\nWho This Book Is For\nUser experience designers, user interface designers, information architects, developers with an interest in design, developers who want to create their own design frameworks.",
+    "download_link": "http://file.allitebooks.com/20170811/Modular%20Design%20Frameworks.pdf",
+    "file_format": "PDF",
+    "file_size": "3.7 MB",
+    "image": "Modular-Design-Frameworks.jpg",
+    "isbn_10": "1484216873",
+    "language": "English",
+    "pages": 86,
+    "read_link": "http://www.allitebooks.com/read/index.php?id=27944",
+    "sub_title": "A Projects-based Guide for UI/UX Designers",
+    "title": "Modular Design Frameworks",
+    "year": 2017,
+    "id": 25
+  },
+  {
+    "author": [
+      "James Denton"
+    ],
+    "category": [
+      "Cloud Computing"
+    ],
+    "description": "Book Description:\n\nThe OpenStack Networking API offers users the ability to create and manage both basic and complex network architectures that blend the virtual and physical network infrastructure.\n\nThis book kicks off by describing various components of Openstack Neutron and installing Ubuntu OpenStack based on Canonical’s process. Further on, you will use various methods to interface with Neutron to create and manage network resources. You will also get to grips with the relationship between ports, networks, and subnets through diagrams and explanations, and see how the logical components are implemented via plugins and agents.\n\nMoving forward, you will learn how virtual switches are implemented and how to build Neutron routers. You will also configure networks, subnets, and routers to provide connectivity to instances using simple examples. At the end, you will configure and manage security groups, and will observe how these rules translate to iptables rules on the host machines.\n\nBy the end of the book, you will be able to build basic network architectures using Neutron networks and routers in no time.\n\nWhat you will learn\n\nInstall the latest Liberty (2015.2) release of OpenStack using RDO in VirtualBox\nDiscover the basics of the Neutron API, including networks, subnets, and ports\nInteract with Neutron using the CLI and Horizon dashboard\nCreate networks and subnets that provide connectivity to instances\nImplement software routers that connect networks and provide network address translation\nSecure instances using Neutron’s security group functionality",
+    "download_link": "http://file.allitebooks.com/20170810/OpenStack%20Networking%20Essentials.pdf",
+    "file_format": "PDF",
+    "file_size": "14.6 MB",
+    "image": "OpenStack-Networking-Essentials.jpg",
+    "isbn_10": "1785283278",
+    "language": "English",
+    "pages": 174,
+    "read_link": "http://www.allitebooks.com/read/index.php?id=27937",
+    "sub_title": "Build and manage networks in OpenStack using Neutron",
+    "title": "OpenStack Networking Essentials",
+    "year": 2016,
+    "id": 26
+  },
+  {
+    "author": [
+      "Rex van der Spuy"
+    ],
+    "category": [
+      "Game Programming"
+    ],
+    "description": "Book Description:\n\nMaster the most important skills and techniques you need to know for professional HTML5 and JavaScript 2D game development. This book delves into many of the great classic techniques of video game design.\n\nYou’ll discover how to develop games and game levels using Tiled Editor, how to implement tile-based collision, how to design advanced pathfinding and enemy AI systems, the fundamentals of broad-phase collision, and how to make isometric games. All the techniques and supporting code are explained in an easy-to-understand manner and written in a general way so that they can be applied to any game engine or technology that you’re comfortable using.\n\nYou’ll find detailed working examples, with dozens of illustrations and many concepts you can freely apply to your own projects. All the math and programming techniques are elaborately explained and examples are open-ended to encourage you to think of original ways to use these techniques in your own games. You can use what you learn in this book as the basis for making games for desktops, mobile phones, tablets, or the Web.\n\nThe Advanced Game Developer’s Toolkit is a great next step if you already have some JavaScript game-making- experience, or a great continuation if you’ve already read Advanced Game Design with HTML5 and JavaScript by the same author.\n\nWhat You’ll Learn\n\nWork with advanced tile-based design techniques for puzzle, platform and maze games\nUse Tiled Editor to build game worlds\nBuild path-finding and AI systems using Line of Sight and A* (A-Star)\nMake isometric games\nManage complexity to build games of any size that scale seamlessly\nWho This Book Is For\n\nVideo game developers with some experience who want to learn the essential techniques they need to know to take their skills to the next level and for readers who want to understand and fine-tune every line of code they write, without resorting to quick fixes.",
+    "download_link": "http://file.allitebooks.com/20170810/The%20Advanced%20Game%20Developer's%20Toolkit.pdf",
+    "file_format": "PDF",
+    "file_size": "5.4 MB",
+    "image": "The-Advanced-Game-Developer’s-Toolkit.jpg",
+    "isbn_10": "1484210980",
+    "language": "English",
+    "pages": 185,
+    "read_link": "http://www.allitebooks.com/read/index.php?id=27931",
+    "sub_title": "Create Amazing Web-based Games with JavaScript and HTML5",
+    "title": "The Advanced Game Developer’s Toolkit",
+    "year": 2017,
+    "id": 27
+  },
+  {
+    "author": [
+      "Chandan Dutta Chowdhury",
+      "Sriram Subramanian"
+    ],
+    "category": [
+      "Cloud Computing"
+    ],
+    "description": "Book Description:\n\nNetworking in OpenStack has evolved from Nova Network to Neutron. This has resulted in a rich suite of networking services available to OpenStack users and administrators. Advanced services such as routers, firewall, and load balancers use building blocks such as network and subnets. Recent improvements support powerful customization using plugins. The evolution of Neutron continues as it integrates with tools like Ceilometer and Heat.\n\nThis book will explore the built-in capabilities of Neutron to effectively deploy cloud solutions. You will begin with the most fundamental constructs of OpenStack Networking for switching and routing. You will then learn how to provide your tenants with services like firewalls and load-balancers. The step-by-step recipes will help you configure and troubleshoot networking problems in your cloud. This book will also introduce you to advanced topics like Ceilometer, Heat, and other upcoming tools in OpenStack\n\nWho This Book Is For\n\nThis book is aimed at network and system administrators who want to deploy and manage OpenStack-based cloud and IT infrastructure. If you have basic knowledge of OpenStack and virtualization, this book will help you leverage the rich functionality of OpenStack Networking in your cloud deployments.\n\nWhat You Will Learn\n\nOperate OpenStack Networking for public and private clouds\nConfigure advanced routing services for your workloads\nSecure data traffic using firewall-as-a-service capabilities of OpenStack\nDiscover how to leverage VXLAN to implement SDN in your OpenStack cloud\nMonitor the virtual networks using Ceilometer\nDevelop plugins to enhance and customize OpenStack Networking\nProvide HA and VPN connectivity for your virtual machines\nTroubleshoot and solve common problems with OpenStack Networking",
+    "download_link": "http://file.allitebooks.com/20170810/OpenStack%20Networking%20Cookbook.pdf",
+    "file_format": "PDF",
+    "file_size": "15.1 MB",
+    "image": "OpenStack-Networking-Cookbook.jpg",
+    "isbn_10": "1785286102",
+    "language": "English",
+    "pages": 282,
+    "read_link": "http://www.allitebooks.com/read/index.php?id=27934",
+    "sub_title": "Harness the power of OpenStack Networking for public and private clouds using 90 hands-on recipes",
+    "title": "OpenStack Networking Cookbook",
+    "year": 2015,
+    "id": 28
+  },
+  {
+    "author": [
+      "Pedro Teixeira"
+    ],
+    "category": [
+      "JavaScript"
+    ],
+    "description": "Book Description:\n\nNode.js is a platform that lets you use JavaScript to easily program scalable network applications and web services. Learn about the main concepts behind Node.js to get you started with this exciting technology.\n\nInstant NodeJS Starter will begin with installation and your first Hello World HTTP server. This book will show you how you can use Node.js core modules and also how you can use patterns to create your own modules. It will also teach you about NPM and how you can use it to install any of the many available third-party libraries. The book then goes on to explain the three main patterns you need to understand to be able to fully use Node.js: the callback pattern, EventEmitter, and streams. All these patterns are presented with practical code examples that you can use immediately, getting you started quickly on this exciting technology.\n\nInstant NodeJS Starter starts with the installation of Node.js and then shows you how to create your first Node.js HTTP server. By showing you the main Node.js concepts together with some working code samples, by the end of the book you will have created a set of working Node.js scripts to create servers and clients.You will learn how you can include and use Node.js core modules, and how you can use patterns to create your own modules. You will also learn how you can use NPM to pick, install, and use any of the many available third-party modules in your applications. You will learn how you can use the callback pattern and EventEmitter to control the asynchronous flow and the power of Node.js streams to make your application more scalable and responsive.\n\nInstant Node.js Starter will show you the main concepts behind Node.js so that you feel comfortable to start building your scalable, event-driven network applications using JavaScript.\n\nWhat you will learn from this book\n\nCreate your first Node.js HTTP server\nInclude Node.js core modules\nManage asynchronous flow using callback patterns\nExplore EventEmitter patterns",
+    "download_link": "http://file.allitebooks.com/20170809/Instant%20Node.js%20Starter.pdf",
+    "file_format": "PDF",
+    "file_size": "0.9 MB",
+    "image": "Instant-Node.js-Starter.jpg",
+    "isbn_10": "1782165568",
+    "language": "English",
+    "pages": 48,
+    "read_link": "http://www.allitebooks.com/read/index.php?id=27928",
+    "sub_title": "Program your scalable network applications and web services with Node.js with this book and ebook",
+    "title": "Instant Node.js Starter",
+    "year": 2013,
+    "id": 29
+  },
+  {
+    "author": [
+      "Phillip Whitt"
+    ],
+    "category": [
+      "Graphics & Design"
+    ],
+    "description": "Book Description:\n\nLearn digital image editing without the expense of using subscription-based editors. This book will pave the way for you to leverage Pixlr Editor, a free, web-based image editing solution that works on virtually any computer platform.\n\nYou’ll learn image editing first hand by using the practice images with the corresponding tutorials―everything from creating simple graphics to enhancing and retouching photos. Explore all of the features you’d expect in a high end photo editing application; layers, history (multiple undos), and an array of powerful tools for handling almost any editing task.\n\nPowerful image editing used to require purchasing and installing expensive, complicated image editing software on your computer. Beginning Pixlr Editor takes an easy-to-access and convenient look at the alternative from the Pixlr family of tools and utilities and offers you advanced editing techniques so you can enhance, retouch, and edit your digital images like a pro.\n\nWhat You’ll Learn:\nEasily access Pixlr Editor from any computer with a high speed Internet connection\nCreate an new image, or open an image from your computer, a URL, or the Pixlr library\nSave your images on to your computer or the Pixlr library\nNavigate the the Pixlr interface\nUse the Tools, Layers, image Adjustments, History, and much more\nWho This Book Is For:\nBeginner and those with some image editing experience (anyone accustomed to Adobe Photoshop will instantly feel at home with Pixlr Editor).",
+    "download_link": "http://file.allitebooks.com/20170806/Beginning%20Pixlr%20Editor.pdf",
+    "file_format": "PDF",
+    "file_size": "14.2 MB",
+    "image": "Beginning-Pixlr-Editor.jpg",
+    "isbn_10": "1484226976",
+    "language": "English",
+    "pages": 237,
+    "read_link": "http://www.allitebooks.com/read/index.php?id=27922",
+    "sub_title": "Learn to Edit Digital Photos Using this Free Web-Based App",
+    "title": "Beginning Pixlr Editor",
+    "year": 2017,
+    "id": 30
+  },
+  {
+    "author": [
+      "Chetan Giridhar"
+    ],
+    "category": [
+      "Python"
+    ],
+    "description": "Book Description:\n\nThis book gives you a great selection of recipes to automate your business processes with Python, and provides a platform for you to understand how Python is useful to make time consuming and repetitive business tasks more efficient. Python is a mature high level language, has object-oriented programming features, powers various apps, has a huge set of modules, and great community support. Python is extremely easy to use, can help you get complex tasks done efficiently and is an apt choice for our needs.\nWith a classic problem-solution based approach and real-world examples, you will delve into things that automate your business processes. You will begin by learning about the Python modules to work with Web, Worksheets, Presentations and PDFs. You’ll leverage Python recipes to automate processes in HR, Finance and making them efficient and reliable. For instance, company payroll — an integral process in HR will be automated with Python recipes.\n\nA few chapters of this book will also help you gain knowledge on working with bots and computer vision. You will learn how to build bots for automating business use cases by integrating artificial intelligence. You’ll also understand how Python is helpful in face detection and building a scanner of your own. You will see how to effectively and easily use Python code to manage SMS and voice notifications, opening a world of possibilities using cloud telephony to solve your business needs. Moving forward, you will learn to work with APIs, Webhooks and Emails to automate Marketing and Customer Support processes.\n\nFinally, using the various Python libraries, this book will arm you with knowledge to customize data solutions and generate reports to meet your business needs. This book will help you up-skill and make your business processes efficient with the various Python recipes covered in this book.\n\nWhat you will learn\nTo automate business processes and make them efficient with Python recipes\nExplore the power of REST APIs and implement Web hooks. Work with Twitter  REST APIs and post automated tweets with Python.\nUnderstand the world of Cloud telephony and implement business use cases with SMS and Voice Notification with Python bindings.\nManipulate images and learn how to use Python’s Computer Vision for face detection and automate business tasks. Have you thought of making your organisation go paperless?\nLearn about conversational bots and implement one of your own using Python. You will also learn to integrate AI to your bots.\nUnderstand Data analysis and generate interesting insights on your data using Python’s modules for data filtering and visualisation.",
+    "download_link": "http://file.allitebooks.com/20170804/Automate%20it.pdf",
+    "file_format": "PDF",
+    "file_size": "29.5 MB",
+    "image": "Automate-it!.jpg",
+    "isbn_10": "1786460513",
+    "language": "English",
+    "pages": 392,
+    "read_link": "http://www.allitebooks.com/read/index.php?id=27913",
+    "sub_title": "Recipes to upskill your business",
+    "title": "Automate it!",
+    "year": 2017,
+    "id": 31
+  },
+  {
+    "author": [
+      "Rex van der Spuy"
+    ],
+    "category": [
+      "Game Programming"
+    ],
+    "description": "Book Description:\n\nMaster the most important skills and techniques you need to know for professional HTML5 and JavaScript 2D game development. This book delves into many of the great classic techniques of video game design.\n\nYou’ll discover how to develop games and game levels using Tiled Editor, how to implement tile-based collision, how to design advanced pathfinding and enemy AI systems, the fundamentals of broad-phase collision, and how to make isometric games. All the techniques and supporting code are explained in an easy-to-understand manner and written in a general way so that they can be applied to any game engine or technology that you’re comfortable using.\n\nYou’ll find detailed working examples, with dozens of illustrations and many concepts you can freely apply to your own projects. All the math and programming techniques are elaborately explained and examples are open-ended to encourage you to think of original ways to use these techniques in your own games. You can use what you learn in this book as the basis for making games for desktops, mobile phones, tablets, or the Web.\n\nThe Advanced Game Developer’s Toolkit is a great next step if you already have some JavaScript game-making- experience, or a great continuation if you’ve already read Advanced Game Design with HTML5 and JavaScript by the same author.\n\nWhat You’ll Learn\n\nWork with advanced tile-based design techniques for puzzle, platform and maze games\nUse Tiled Editor to build game worlds\nBuild path-finding and AI systems using Line of Sight and A* (A-Star)\nMake isometric games\nManage complexity to build games of any size that scale seamlessly\nWho This Book Is For\n\nVideo game developers with some experience who want to learn the essential techniques they need to know to take their skills to the next level and for readers who want to understand and fine-tune every line of code they write, without resorting to quick fixes.",
+    "download_link": "http://file.allitebooks.com/20170810/The%20Advanced%20Game%20Developer's%20Toolkit.pdf",
+    "file_format": "PDF",
+    "file_size": "5.4 MB",
+    "image": "The-Advanced-Game-Developer’s-Toolkit.jpg",
+    "isbn_10": "1484210980",
+    "language": "English",
+    "pages": 185,
+    "read_link": "http://www.allitebooks.com/read/index.php?id=27931",
+    "sub_title": "Create Amazing Web-based Games with JavaScript and HTML5",
+    "title": "The Advanced Game Developer’s Toolkit",
+    "year": 2017,
+    "id": 32
+  },
+  {
+    "author": [
+      "Chandan Dutta Chowdhury",
+      "Sriram Subramanian"
+    ],
+    "category": [
+      "Cloud Computing"
+    ],
+    "description": "Book Description:\n\nNetworking in OpenStack has evolved from Nova Network to Neutron. This has resulted in a rich suite of networking services available to OpenStack users and administrators. Advanced services such as routers, firewall, and load balancers use building blocks such as network and subnets. Recent improvements support powerful customization using plugins. The evolution of Neutron continues as it integrates with tools like Ceilometer and Heat.\n\nThis book will explore the built-in capabilities of Neutron to effectively deploy cloud solutions. You will begin with the most fundamental constructs of OpenStack Networking for switching and routing. You will then learn how to provide your tenants with services like firewalls and load-balancers. The step-by-step recipes will help you configure and troubleshoot networking problems in your cloud. This book will also introduce you to advanced topics like Ceilometer, Heat, and other upcoming tools in OpenStack\n\nWho This Book Is For\n\nThis book is aimed at network and system administrators who want to deploy and manage OpenStack-based cloud and IT infrastructure. If you have basic knowledge of OpenStack and virtualization, this book will help you leverage the rich functionality of OpenStack Networking in your cloud deployments.\n\nWhat You Will Learn\n\nOperate OpenStack Networking for public and private clouds\nConfigure advanced routing services for your workloads\nSecure data traffic using firewall-as-a-service capabilities of OpenStack\nDiscover how to leverage VXLAN to implement SDN in your OpenStack cloud\nMonitor the virtual networks using Ceilometer\nDevelop plugins to enhance and customize OpenStack Networking\nProvide HA and VPN connectivity for your virtual machines\nTroubleshoot and solve common problems with OpenStack Networking",
+    "download_link": "http://file.allitebooks.com/20170810/OpenStack%20Networking%20Cookbook.pdf",
+    "file_format": "PDF",
+    "file_size": "15.1 MB",
+    "image": "OpenStack-Networking-Cookbook.jpg",
+    "isbn_10": "1785286102",
+    "language": "English",
+    "pages": 282,
+    "read_link": "http://www.allitebooks.com/read/index.php?id=27934",
+    "sub_title": "Harness the power of OpenStack Networking for public and private clouds using 90 hands-on recipes",
+    "title": "OpenStack Networking Cookbook",
+    "year": 2015,
+    "id": 33
+  },
+  {
+    "author": [
+      "Pedro Teixeira"
+    ],
+    "category": [
+      "JavaScript"
+    ],
+    "description": "Book Description:\n\nNode.js is a platform that lets you use JavaScript to easily program scalable network applications and web services. Learn about the main concepts behind Node.js to get you started with this exciting technology.\n\nInstant NodeJS Starter will begin with installation and your first Hello World HTTP server. This book will show you how you can use Node.js core modules and also how you can use patterns to create your own modules. It will also teach you about NPM and how you can use it to install any of the many available third-party libraries. The book then goes on to explain the three main patterns you need to understand to be able to fully use Node.js: the callback pattern, EventEmitter, and streams. All these patterns are presented with practical code examples that you can use immediately, getting you started quickly on this exciting technology.\n\nInstant NodeJS Starter starts with the installation of Node.js and then shows you how to create your first Node.js HTTP server. By showing you the main Node.js concepts together with some working code samples, by the end of the book you will have created a set of working Node.js scripts to create servers and clients.You will learn how you can include and use Node.js core modules, and how you can use patterns to create your own modules. You will also learn how you can use NPM to pick, install, and use any of the many available third-party modules in your applications. You will learn how you can use the callback pattern and EventEmitter to control the asynchronous flow and the power of Node.js streams to make your application more scalable and responsive.\n\nInstant Node.js Starter will show you the main concepts behind Node.js so that you feel comfortable to start building your scalable, event-driven network applications using JavaScript.\n\nWhat you will learn from this book\n\nCreate your first Node.js HTTP server\nInclude Node.js core modules\nManage asynchronous flow using callback patterns\nExplore EventEmitter patterns",
+    "download_link": "http://file.allitebooks.com/20170809/Instant%20Node.js%20Starter.pdf",
+    "file_format": "PDF",
+    "file_size": "0.9 MB",
+    "image": "Instant-Node.js-Starter.jpg",
+    "isbn_10": "1782165568",
+    "language": "English",
+    "pages": 48,
+    "read_link": "http://www.allitebooks.com/read/index.php?id=27928",
+    "sub_title": "Program your scalable network applications and web services with Node.js with this book and ebook",
+    "title": "Instant Node.js Starter",
+    "year": 2013,
+    "id": 34
+  },
+  {
+    "author": [
+      "Phillip Whitt"
+    ],
+    "category": [
+      "Graphics & Design"
+    ],
+    "description": "Book Description:\n\nLearn digital image editing without the expense of using subscription-based editors. This book will pave the way for you to leverage Pixlr Editor, a free, web-based image editing solution that works on virtually any computer platform.\n\nYou’ll learn image editing first hand by using the practice images with the corresponding tutorials―everything from creating simple graphics to enhancing and retouching photos. Explore all of the features you’d expect in a high end photo editing application; layers, history (multiple undos), and an array of powerful tools for handling almost any editing task.\n\nPowerful image editing used to require purchasing and installing expensive, complicated image editing software on your computer. Beginning Pixlr Editor takes an easy-to-access and convenient look at the alternative from the Pixlr family of tools and utilities and offers you advanced editing techniques so you can enhance, retouch, and edit your digital images like a pro.\n\nWhat You’ll Learn:\nEasily access Pixlr Editor from any computer with a high speed Internet connection\nCreate an new image, or open an image from your computer, a URL, or the Pixlr library\nSave your images on to your computer or the Pixlr library\nNavigate the the Pixlr interface\nUse the Tools, Layers, image Adjustments, History, and much more\nWho This Book Is For:\nBeginner and those with some image editing experience (anyone accustomed to Adobe Photoshop will instantly feel at home with Pixlr Editor).",
+    "download_link": "http://file.allitebooks.com/20170806/Beginning%20Pixlr%20Editor.pdf",
+    "file_format": "PDF",
+    "file_size": "14.2 MB",
+    "image": "Beginning-Pixlr-Editor.jpg",
+    "isbn_10": "1484226976",
+    "language": "English",
+    "pages": 237,
+    "read_link": "http://www.allitebooks.com/read/index.php?id=27922",
+    "sub_title": "Learn to Edit Digital Photos Using this Free Web-Based App",
+    "title": "Beginning Pixlr Editor",
+    "year": 2017,
+    "id": 35
+  },
+  {
+    "author": [
+      "Robert Ciesla"
+    ],
+    "category": [
+      "Game Programming"
+    ],
+    "description": "Book Description:\n\nGet a head start in your game development career with this all-genre guide for absolute beginners. Whether you’re into action games, role-playing games, or interactive fiction, we’ve got you covered. Mostly Codeless Game Development empowers new developers with little or no previous programming experience and explores all major areas of game development in a succinct, entertaining fashion.\nHave you dreamed of making your own video game? Do you find the prospect daunting? Fear not. A new generation of game engines has emerged. Lengthy and complicated feats of programming are largely a thing of the past in video game development. To create commercially viable games you simply need the right tools, many of which are discussed in this book. A gigantic software team isn’t a must-have prerequisite for success. The one-person operation is back.\nWhat You Will Learn\nMaster the concepts and jargon used in game creation for the beginner\nFind the best game development suite for your project\nMake the most out of related graphics and audio production software\nDiscover video game marketing essentials\nWho This Book Is For\nPeople with no programming experience who desire a career in the video game industry as producers or independent, single-person developers.",
+    "download_link": "http://file.allitebooks.com/20170721/Mostly%20Codeless%20Game%20Development.pdf",
+    "file_format": "PDF",
+    "file_size": "4.5 MB",
+    "image": "Mostly-Codeless-Game-Development.jpg",
+    "isbn_10": "148422969X",
+    "language": "English",
+    "pages": 219,
+    "read_link": "http://www.allitebooks.com/read/index.php?id=27830",
+    "sub_title": "New School Game Engines",
+    "title": "Mostly Codeless Game Development",
+    "year": 2017,
+    "id": 36
+  },
+  {
+    "author": [
+      "Taweh Beysolow II"
+    ],
+    "category": [
+      "Programming"
+    ],
+    "description": "Book Description:\n\nUnderstand deep learning, the nuances of its different models, and where these models can be applied.\n\nThe abundance of data and demand for superior products/services have driven the development of advanced computer science techniques, among them image and speech recognition. Introduction to Deep Learning Using Rprovides a theoretical and practical understanding of the models that perform these tasks by building upon the fundamentals of data science through machine learning and deep learning. This step-by-step guide will help you understand the disciplines so that you can apply the methodology in a variety of contexts. All examples are taught in the R statistical language, allowing students and professionals to implement these techniques using open source tools.\n\nWhat You’ll Learn\n\nUnderstand the intuition and mathematics that power deep learning models\nUtilize various algorithms using the R programming language and its packages\nUse best practices for experimental design and variable selection\nPractice the methodology to approach and effectively solve problems as a data scientist\nEvaluate the effectiveness of algorithmic solutions and enhance their predictive power\nWho This Book Is For\nStudents, researchers, and data scientists who are familiar with programming using R. This book also is also of use for those who wish to learn how to appropriately deploy these algorithms in applications where they would be most useful.",
+    "download_link": "http://file.allitebooks.com/20170721/Introduction%20to%20Deep%20Learning%20Using%20R.pdf",
+    "file_format": "PDF",
+    "file_size": "7.2 MB",
+    "image": "Introduction-to-Deep-Learning-Using-R.jpg",
+    "isbn_10": "1484227336",
+    "language": "English",
+    "pages": 277,
+    "read_link": "http://www.allitebooks.com/read/index.php?id=27835",
+    "sub_title": "A Step-by-Step Guide to Learning and Implementing Deep Learning Models Using R",
+    "title": "Introduction to Deep Learning Using R",
+    "year": 2017,
+    "id": 37
+  },
+  {
+    "author": [
+      "Saptaparna Mukherjee (Das)",
+      "Suman Mukherjee"
+    ],
+    "category": [
+      "Data Processing"
+    ],
+    "description": "Book Description:\n\nLeverage the flexibility and power of SAP MII to integrate your business operations with your manufacturing processes. You’ll explore important new features of the product and see how to apply best practices to connect all the stakeholders in your business.\nThis book starts with an overview of SAP’s manufacturing integration and intelligence application and explains why it is so important. You’ll then see how it is applied in various manufacturing sectors.\nThe biggest challenge in manufacturing industries is to reduce the manual work and human intervention so that the process becomes automatic. SAP MII explains how to bridge the gap between management and production and bring sound vital information to the shop floor in real time.\nWith this book you’ll see how to ensure existing manufacturing and information systems share a common interface for all users in your enterprise.\nWhat You’ll Learn\nUnderstand the functional aspects of SAP MII\nImplement SAP MII in different Manufacturing sectors\nExplore new technical features of SAP MII 12.x\nIntegrate scenarios with SAP MII\nDiscover practice guidelines\nWho This Book is for\nAll levels of SAP manufacturing professionals.",
+    "download_link": "http://file.allitebooks.com/20170721/SAP%20MII.pdf",
+    "file_format": "PDF",
+    "file_size": "17.8 MB",
+    "image": "SAP-MII.jpg",
+    "isbn_10": "1484228138",
+    "language": "English",
+    "pages": 337,
+    "read_link": "http://www.allitebooks.com/read/index.php?id=27827",
+    "sub_title": "Functional and Technical Concepts in Manufacturing Industries",
+    "title": "SAP MII",
+    "year": 2017,
+    "id": 38
+  },
+  {
+    "author": [
+      "Javier Fernandez Gonzalez"
+    ],
+    "category": [
+      "Java"
+    ],
+    "description": "Book Description:\n\nConcurrency programming allows several large tasks to be divided into smaller sub-tasks, which are further processed as individual tasks that run in parallel. All the sub-tasks are combined together once the required results are achieved; they are then merged to get the final output. The whole process is very complex. This process goes from the design of concurrent algorithms to the testing phase where concurrent applications need extra attention. Java includes a comprehensive API with a lot of ready-to-use components to implement powerful concurrency applications in an easy way, but with a high flexibility to adapt these components to your needs.\n\nThe book starts with a full description of design principles of concurrent applications and how to parallelize a sequential algorithm. We’ll show you how to use all the components of the Java Concurrency API from basics to the most advanced techniques to implement them in powerful concurrency applications in Java.\n\nYou will be using real-world examples of complex algorithms related to machine learning, data mining, natural language processing, image processing in client / server environments. Next, you will learn how to use the most important components of the Java 8 Concurrency API: the Executor framework to execute multiple tasks in your applications, the phaser class to implement concurrent tasks divided into phases, and the Fork/Join framework to implement concurrent tasks that can be split into smaller problems (using the divide and conquer technique). Toward the end, we will cover the new inclusions in Java 8 API, the Map and Reduce model, and the Map and Collect model. The book will also teach you about the data structures and synchronization utilities to avoid data-race conditions and other critical problems. Finally, the book ends with a detailed description of the tools and techniques that you can use to test a Java concurrent application.\n\nWho This Book Is For\n\nIf you are a competent Java developer with a good understanding of concurrency but have no knowledge of how to effectively implement concurrent programs or use streams to make processes more efficient, then this book is for you.\n\nWhat You Will Learn\n\nDesign concurrent applications by converting a sequential algorithm into a concurrent one\nDiscover how to avoid all the possible problems you can get in concurrent algorithms\nUse the Executor framework to manage concurrent tasks without creating threads\nExtend and modify Executors to adapt their behavior to your needs\nSolve problems using the divide and conquer technique and the Fork/Join framework\nProcess massive data sets with parallel streams and Map/Reduce implementation\nControl data-race conditions using concurrent data structures and synchronization mechanisms\nTest and monitor concurrent applications",
+    "download_link": "http://file.allitebooks.com/20170720/Mastering%20Concurrency%20Programming%20with%20Java%208.pdf",
+    "file_format": "PDF",
+    "file_size": "30.6 MB",
+    "image": "Mastering-Concurrency-Programming-with-Java-8.jpg",
+    "isbn_10": "1785886126",
+    "language": "English",
+    "pages": 430,
+    "read_link": "http://www.allitebooks.com/read/index.php?id=27824",
+    "sub_title": "Master the principles and techniques of multithreaded programming with the Java 8 Concurrency API",
+    "title": "Mastering Concurrency Programming with Java 8",
+    "year": 2016,
+    "id": 39
+  },
+  {
+    "author": [
+      "Deepak Grover",
+      "Hanu Prateek Kunduru"
+    ],
+    "category": [
+      "Programming"
+    ],
+    "description": "Book Description:\n\nLearn ES6 best practices for code optimization and organization and walk through practical, common examples of how to implement complete components of your applications. While this book covers the basic concepts of modern JavaScript, it primarily focuses on the new syntax, data-types, functionalities, and everything else that’s new in ES6, the latest standard of JavaScript.\nYou’ll examine how to use ES6 in functional programming and explore the new more modular and object-oriented approach to JavaScript. This book will help you sharpen and upgrade your JavaScript language skills so you to easily explore modern ES6 based frameworks or libraries such as ReactJS, ReactNative, Angular4 and Vue.js.\nES6 for Humans  is a complete guide to writing ES6 and will enable you to start taking advantage of this exciting new version of JavaScript.\nWhat You’ll Learn\nUse all the new features added to JavaScript\nCompare ES5 and ES6 in varied situations\nRefresh your core JavaScript fundamentals\nUnderstand the modular and object-oriented approach to JavaScript\nWho this Book Is For\nAny Javascript developer who wants to fully understand and dive into the new features of ES6/ES2015.\nDevelopers with some background in programming, preferably in JavaScript.\nA basic understanding of coding concepts and exposure to object-oriented programming is expected.",
+    "download_link": "http://file.allitebooks.com/20170719/ES6%20for%20Humans.pdf",
+    "file_format": "PDF",
+    "file_size": "1.6 MB",
+    "image": "ES6-for-Humans.jpg",
+    "isbn_10": "1484226224",
+    "language": "English",
+    "pages": 137,
+    "read_link": "http://www.allitebooks.com/read/index.php?id=27820",
+    "sub_title": "The Latest Standard of JavaScript: ES2015 and Beyond",
+    "title": "ES6 for Humans",
+    "year": 2017,
+    "id": 40
+  },
+  {
+    "author": [
+      "Marshall Copeland"
+    ],
+    "category": [
+      ".NET"
+    ],
+    "description": "Book Description:\n\nPrevent destructive attacks to your Azure public cloud infrastructure, remove vulnerabilities, and instantly report cloud security readiness. This book provides comprehensive guidance from a security insider’s perspective.\nCyber Security on Azure explains how this ‘security as a service’ (SECaaS) business solution can help you better manage security risk and enable data security control using encryption options such as Advanced Encryption Standard (AES) cryptography. Discover best practices to support network security groups, web application firewalls, and database auditing for threat protection. Configure custom security notifications of potential cyberattack vectors to prevent unauthorized access by hackers, hacktivists, and industrial spies.\nWhat You’ll Learn\nThis book provides step-by-step guidance on how to:\nSupport enterprise security policies\nImprove cloud security\nConfigure intrusion detection\nIdentify potential vulnerabilities\nPrevent enterprise security failures\nWho This Book Is For\n\nIT, cloud, and security administrators; CEOs, CIOs, and other business professionals",
+    "download_link": "http://file.allitebooks.com/20170719/Cyber%20Security%20on%20Azure.pdf",
+    "file_format": "PDF",
+    "file_size": "12.3 MB",
+    "image": "Cyber-Security-on-Azure.jpg",
+    "isbn_10": "1484227395",
+    "language": "English",
+    "pages": 208,
+    "read_link": "http://www.allitebooks.com/read/index.php?id=27814",
+    "sub_title": "An IT Professional’s Guide to Microsoft Azure Security Center",
+    "title": "Cyber Security on Azure",
+    "year": 2017,
+    "id": 41
+  },
+  {
+    "author": [
+      "Ram Kulkarni"
+    ],
+    "category": [
+      "Java"
+    ],
+    "description": "Book Description:\n\nJava EE is a technology for developing enterprise class, scalable applications. With recent changes to Java EE specifications, JEE application development has become a lot simpler. However, recent changes have also added many new specifications, some of which compete with existing JEE specification. Along with JEE specifications and APIs, it is also very important to understand the entire application development process and tools that can help simplify and accelerate JEE application development.\n\nThis guide provides a complete overview of developing JEE applications using Eclipse. The many features of the Eclipse IDE are explained. These enable the rapid development, debugging, testing, and deployment of JEE applications. You’ll explore not just different JEE technologies and how to use them (JSP, JSF, JPA, JDBC, EJB, web services etc.), but also suitable technologies for different scenarios.\n\nThe book starts with how to set up the development environment for JEE applications and then goes on to describe many JEE specifications in detail, with an emphasis on examples. You’ll learn how to deploy an example application on Tomcat and Glassfish Application Server.\n\nYou’ll create a simple application that reads from a queue, processes the request, and publishes results to a topic and Eclipse MAT (Memory Analysis Tool) to debug memory issues.\n\nWho This Book Is For\n\nIf you are a Java developer who has little or no experience in JEE application development or you have experience in JEE technology but are looking for tips to simplify and accelerate your development process, then this book is for you.\n\nWhat You Will Learn\n\nSet up Eclipse, Tomcat, and Glassfish server for JEE application development\nUse JSP, Servlet, JSF, and EJBs to create a user interface and write business logic\nCreate JEE database applications using JDBC and JPA\nHandle asynchronous messages using MDBs for better scalability\nDeploy and debug JEE applications and create SOAP and REST web services\nWrite unit tests and calculate code coverage\nTroubleshoot application performance and memory issues",
+    "download_link": "http://file.allitebooks.com/20170717/Java%20EE%20Development%20with%20Eclipse,%202nd%20Edition.pdf",
+    "file_format": "PDF",
+    "file_size": "17.4 MB",
+    "image": "Java-EE-Development-with-Eclipse,-2nd-Edition.jpg",
+    "isbn_10": "1785285343",
+    "language": "English",
+    "pages": 390,
+    "read_link": "http://www.allitebooks.com/read/index.php?id=27805",
+    "sub_title": "Develop, debug, test, and troubleshoot Java EE 7 applications rapidly with Eclipse",
+    "title": "Java EE Development with Eclipse, 2nd Edition",
+    "year": 2015,
+    "id": 42
+  },
+  {
+    "author": [
+      "Josh Juneau"
+    ],
+    "category": [
+      "Java"
+    ],
+    "description": "Book Description:\n\nQuickly find solutions to dozens of common programming problems encountered while building Java applications. Content is presented in the popular problem-solution format. Look up the programming problem that you want to resolve. Read the solution. Apply the solution directly in your own code. Problem solved!\n\nThis revised edition covers important new features such as Java 9’s JShell and the new modularity features enabling you to separate code into independent modules that perform discrete tasks. Also covered are the new garbage collection algorithm and completely revamped process API. Enhanced JSON coverage is provided as well as a new chapter on JavaServer Faces development for web applications.\n\nWhat You’ll Learn\nDevelop Java SE applications using the latest in Java SE technology\nExploit advanced features like modularity and lambdas\nUse JShell to quickly develop solutions\nBuild dynamic web applications with JavaScript and Project Nashorn\nCreate great-looking web interfaces with JavaServer Faces\nGenerate graphics and work with media such as sound and video\nAdd internationalization support to your Java applications\nWho This Book Is For\nBoth beginning Java programmers and advanced Java developers",
+    "download_link": "http://file.allitebooks.com/20170718/Java%209%20Recipes,%203rd%20Edition.pdf",
+    "file_format": "PDF",
+    "file_size": "6.5 MB",
+    "image": "Java-9-Recipes,-3rd-Edition.jpg",
+    "isbn_10": "1484219759",
+    "language": "English",
+    "pages": 626,
+    "read_link": "http://www.allitebooks.com/read/index.php?id=27808",
+    "sub_title": "A Problem-Solution Approach",
+    "title": "Java 9 Recipes, 3rd Edition",
+    "year": 2017,
+    "id": 43
+  },
+  {
+    "author": [
+      "Christer Kaitila"
+    ],
+    "category": [
+      "Game Programming"
+    ],
+    "description": "Book Description:\n\nGame jams are fun. They are a creative, exciting, social experience. The goal of a game jam is to design a video game, either alone or in teams, as fast as is humanly possible; usually in a single weekend.\n\nThe Game Jam Survival Guide, written to help you have more fun and achieve greater results at your next game jam by building a successful game without burning out, leads readers through each 12-hour phase of a 48-hour weekend game jam.\n\nWeekend warriors: dominate your next game jam! If you follow the system shared in this book, you will be able to build an amazing game that you’re proud of and will entertain players, all in just one crazy 48-hour game jam weekend … and survive to tell the tale!.\n\nEmbrace the best practices and techniques of past game jam winners and avoid common pitfalls along the way to the finish line. You too can survive a 48-hour game development marathon with your mind intact and an amazing game to show off to friends and family!\n\nWith The Game Jam Survival Guide you will learn the secret techniques that master game jammers use to create winning entries. It starts by showing you great ways to brainstorm and design a game based on a theme. It then moves on to highlight the best tools and techniques to finish a game in a weekend of coding. Anecdotes and advice from past winners and losers combined with humorous words of encouragement are sure to help you on your way. The author presents a list of game jams around the world, online communities worth checking out, fantastic game engines, and art resources. Finally, learn how to monetize your game by gaining sponsorship from big gaming websites. It’s the fun way to make your own video game in one weekend!\n\nWhat you will learn from this book\n\nPreparing for the jam: conquer the theme, pick design aids, prototype quickly, choose the right tools for the job, and cut the right corners.\nBombastic brainstorming: power up your idea generator and run with a theme, gain more votes and please the masses.\nBuilding a game jam entry: pick your weapons, follow your plan, cut the bells-n-whistles, scramble over “the wall”, submit a game on time, and with a little luck, attain fame and fortune.\nWhy Mike “PoV” Kasprzak (Ludum Dare administrator) thinks game jams are a good introduction to the realities of the game industry.\nThe reasons why Dr. Mike Reddy (organizer of the Global Game Jam) thinks designing on paper is essential.\nThe best ways to find creative inspiration and develop an idea to fit a theme according to Eric McQuiggan (founding member of The Dirty Rectangles) and Chevy Ray Johnston (author of the FlashPunk engine).\nWhat Foaad Khosmood (director of the Global Game Jam) suggests you do to ensure you finish before the deadline.\nThe worst way to prepare according to Pekka “pekuja” Kujansuu and the best way according to Phil Hassey (Ludum Dare administrators)\nWhat one piece of advice Jason P. Kaplan (founder of the Game Prototype Challenge) would give to newcomers.",
+    "download_link": "http://file.allitebooks.com/20170716/The%20Game%20Jam%20Survival%20Guide.pdf",
+    "file_format": "PDF",
+    "file_size": "2.2 MB",
+    "image": "The-Game-Jam-Survival-Guide.jpg",
+    "isbn_10": "1849692505",
+    "language": "English",
+    "pages": 114,
+    "read_link": "http://www.allitebooks.com/read/index.php?id=27796",
+    "sub_title": "Build a game in one crazy weekend and survive to tell the tale!",
+    "title": "The Game Jam Survival Guide",
+    "year": 2012,
+    "id": 44
+  },
+  {
+    "author": [
+      "Greg Lukosek"
+    ],
+    "category": [
+      "C#"
+    ],
+    "description": "Book Description:\n\nUnity is a cross-platform game engine that is used to develop 2D and 3D video games. Unity 5 is the latest version, released in March 2015, and adds a real-time global illumination to the games, and its powerful new features help to improve a game’s efficiency.\n\nThis book will get you started with programming behaviors in C# so you can create 2D games in Unity. You will begin by installing Unity and learning about its features, followed by creating a C# script. We will then deal with topics such as unity scripting for you to understand how codes work so you can create and use C# variables and methods. Moving forward, you will find out how to create, store, and retrieve data from collection of objects.\n\nYou will also develop an understanding of loops and their use, and you’ll perform object-oriented programming. This will help you to turn your idea into a ready-to-code project and set up a Unity project for production. Finally, you will discover how to create the GameManager class to manage the game play loop, generate game levels, and develop a simple UI for the game.\n\nBy the end of this book, you will have mastered the art of applying C# in Unity.\n\nWho This Book Is For\n\nThe book is targeted at beginner level Unity developers with no programming experience. If you are a Unity developer and you wish to learn how to write C# scripts and code by creating games, then this book is for you.\n\nWhat You Will Learn\n\nUnderstand the fundamentals of variables, methods, and code syntax in C#\nGet to know about techniques to turn your game idea into working project\nUse loops and collections efficiently in Unity to reduce the amount of code\nDevelop a game using the object-oriented programming principles\nGenerate infinite levels for your game\nCreate and code a good-looking functional UI system for your game\nPublish and share your game with users",
+    "download_link": "http://file.allitebooks.com/20170716/Learning%20C-%20by%20Developing%20Games%20with%20Unity%205.x,%202nd%20Edition.pdf",
+    "file_format": "PDF",
+    "file_size": "4.8 MB",
+    "image": "Learning-C#-by-Developing-Games-with-Unity-5.x,-2nd-Edition.jpg",
+    "isbn_10": "1785287591",
+    "language": "English",
+    "pages": 230,
+    "read_link": "http://www.allitebooks.com/read/index.php?id=27797",
+    "sub_title": "Develop your first interactive 2D platformer game by learning the fundamentals of C#",
+    "title": "Learning C# by Developing Games with Unity 5.x, 2nd Edition",
+    "year": 2016,
+    "id": 45
+  },
+  {
+    "author": [
+      "Bob Familiar",
+      "Jeff Barnes"
+    ],
+    "category": [
+      "Hardware & DIY"
+    ],
+    "description": "Book Description:\n\nLearn how today’s businesses can transform themselves by leveraging real-time data and advanced machine learning analytics.\nThis book provides prescriptive guidance for architects and developers on the design and development of modern Internet of Things (IoT) and Advanced Analytics solutions. In addition, Business in Real-Time Using Azure IoT and Cortana Intelligence Suite offers patterns and practices for those looking to engage their customers and partners through Software-as-a-Service solutions that work on any device.\nWhether you’re working in Health & Life Sciences, Manufacturing, Retail, Smart Cities and Buildings or Process Control, there exists a common platform from which you can create your targeted vertical solutions. Business in Real-Time Using Azure IoT and Cortana Intelligence Suite uses a reference architecture as a road map. Building on Azure’s PaaS services, you’ll see how a solution architecture unfolds that demonstrates a complete end-to-end IoT and Advanced Analytics scenario.\nWhat You’ll Learn:\nAutomate your software product life cycle using PowerShell, Azure Resource Manager Templates, and Visual Studio Team Services\nImplement smart devices using Node.JS and C#\nUse Azure Streaming Analytics to ingest millions of events\nProvide both “Hot” and “Cold” path outputs for real-time alerts, data transformations, and aggregation analytics\nImplement batch processing using Azure Data Factory\nCreate a new form of Actionable Intelligence (AI) to drive mission critical business processes\nProvide rich Data Visualizations across a wide variety of mobile and web devices\nWho This Book is For:\nSolution Architects, Software Developers, Data Architects, Data Scientists, and CIO/CTA Technical Leadership Professionals",
+    "download_link": "http://file.allitebooks.com/20170715/Business%20in%20Real-Time%20Using%20Azure%20IoT%20and%20Cortana%20Intelligence%20Suite.pdf",
+    "file_format": "PDF",
+    "file_size": "25.2 MB",
+    "image": "Business-in-Real-Time-Using-Azure-IoT-and-Cortana-Intelligence-Suite.jpg",
+    "isbn_10": "1484226496",
+    "language": "English",
+    "pages": 525,
+    "read_link": "http://www.allitebooks.com/read/index.php?id=27792",
+    "sub_title": "Driving Your Digital Transformation",
+    "title": "Business in Real-Time Using Azure IoT and Cortana Intelligence Suite",
+    "year": 2017,
+    "id": 46
+  },
+  {
+    "author": [
+      "Andrew Chisholm"
+    ],
+    "category": [
+      "Java",
+      "Data Mining"
+    ],
+    "description": "Book Description:\n\nData is everywhere and the amount is increasing so much that the gap between what people can understand and what is available is widening relentlessly. There is a huge value in data, but much of this value lies untapped. 80% of data mining is about understanding data, exploring it, cleaning it, and structuring it so that it can be mined. RapidMiner is an environment for machine learning, data mining, text mining, predictive analytics, and business analytics. It is used for research, education, training, rapid prototyping, application development, and industrial applications.\n\nExploring Data with RapidMiner is packed with practical examples to help practitioners get to grips with their own data. The chapters within this book are arranged within an overall framework and can additionally be consulted on an ad-hoc basis. It provides simple to intermediate examples showing modeling, visualization, and more using RapidMiner.\n\nExploring Data with RapidMiner is a helpful guide that presents the important steps in a logical order. This book starts with importing data and then lead you through cleaning, handling missing values, visualizing, and extracting additional information, as well as understanding the time constraints that real data places on getting a result. The book uses real examples to help you understand how to set up processes, quickly..\n\nThis book will give you a solid understanding of the possibilities that RapidMiner gives for exploring data and you will be inspired to use it for your own work.\n\nWhat you will learn from this book\n\nImport real data from files in multiple formats and from databases\nExtract features from structured and unstructured data\nRestructure, reduce, and summarize data to help you understand it more easily and process it more quickly\nVisualize data in new ways to help you understand it\nDetect outliers and methods to handle them\nDetect missing data and implement ways to handle it\nUnderstand resource constraints and what to do about them",
+    "download_link": "http://file.allitebooks.com/20170712/Exploring%20Data%20with%20RapidMiner.pdf",
+    "file_format": "PDF",
+    "file_size": "5.1 MB",
+    "image": "Exploring-Data-with-RapidMiner.jpg",
+    "isbn_10": "1782169334",
+    "language": "English",
+    "pages": 162,
+    "read_link": "http://www.allitebooks.com/read/index.php?id=27780",
+    "sub_title": "Explore, understand, and prepare real data using RapidMiner's practical tips and tricks",
+    "title": "Exploring Data with RapidMiner",
+    "year": 2013,
+    "id": 47
+  },
+  {
+    "author": [
+      "Cecil Costa"
+    ],
+    "category": [
+      "Swift"
+    ],
+    "description": "Book Description:\n\nReactive programming helps you write applications that are more powerful and efficient. You can write more software, help more people, and create applications that scale. Reactive programming is a growing paradigm that we will help you set to work in Swift.\n\nReactive Programming with Swift guides you through migrating from the traditional way of developing to the new ReactiveCocoa framework, which uses Swift as its main programming language. You will learn how to develop with this framework, debug code, create unit tests, use additional frameworks, and convert a traditional framework into a ReactiveCocoa one.\n\nStarting with a crash course on the fundamental concepts of Reactive programming, we’ll set you up so you’re ready to create reactive applications. We’ll then move on to topics such as Graphical events, Streaming, and Core data, which will help you dive deeper with advanced programming. The concept of switching your programming concepts from imperative to functional reactive programming will also be covered. By the end of this book, you will be able to successfully create highly functional apps using Swift.\n\nWho This Book Is For\n\nReactive Programming with Swift is for Swift developers who want to start making more powerful and efficient applications. You need a basic understanding of Swift to follow along. This book takes a first-principles approach to what Reactive Programming is and how you can start implementing it in your next iOS applications.\n\nWhat You Will Learn\n\nSwitch your programming concepts from imperative to Functional reactive programming\nImprove your app’s maintenance by developing with a different paradigm\nCreate unit tests and automation tests using the ReactiveCocoa framework\nCreate clear code that is very easy to read\nGet accustomed to migrating mobile apps to the Reactive way of programming\nPerform asynchronous calls and join them later",
+    "download_link": "http://file.allitebooks.com/20170711/Reactive%20Programming%20with%20Swift.pdf",
+    "file_format": "PDF",
+    "file_size": "7.39 MB",
+    "image": "Reactive-Programming-with-Swift.jpg",
+    "isbn_10": "1785884263",
+    "language": "English",
+    "pages": 238,
+    "read_link": "http://www.allitebooks.com/read/index.php?id=27771",
+    "sub_title": "Leverage the power of the Functional Reactive Programming paradigm with Swift to develop robust iOS applications",
+    "title": "Reactive Programming with Swift",
+    "year": 2016,
+    "id": 48
+  },
+  {
+    "author": [
+      "Daniele Teti"
+    ],
+    "category": [
+      "Delphi"
+    ],
+    "description": "Book Description:\n\nDelphi is a cross-platform Integrated Development Environment (IDE) that supports rapid application development for Microsoft Windows, Apple Mac OS X, Google Android, and Apple iOS. It helps you to concentrate on the real business and save yourself the pain of wandering amid GUI widget details, or having to tackle inter-platform incompatibilities. It also has a wide range of drag-and-drop controls, helping you code your business logic into your business model, and it compiles natively for desktop and mobile platforms.\n\nThis book will teach you how to design and develop applications, deploy them on the cloud platform, and distribute them within an organization via Google Play and other similar platforms.\n\nYou will begin with the basics of Delphi and get acquainted with JSON format strings, XSLT transformations, unicode encodings and various types of streams. We then move on to more advanced topics such as developing higher-order functions and using enumerators and RTTI. You will get an understanding of how Delphi RTL functions and how to use FireMonkey in a VCL application. We will then cover topics such as multithreading, using the parallel programming library and putting Delphi on a server. We will also take a look at the new feature of WebBroker Apache modules and then ride the mobile revolution with FireMonkey.\n\nBy the end of the book, you will be able to develop and deploy cross-platform applications using Delphi.\n\nWho This Book Is For\n\nIf you are an intermediate developer with a basic knowledge of Delphi and you want to develop cross-platform applications, then this book is for you. Familiarity with the fundamentals of RAD (Rapid Application Development) Studio is expected.\n\nWhat You Will Learn\n\nDevelop visually stunning applications using FireMonkey\nDeploy LiveBinding effectively with the right OOP approach\nCreate server-side programs to serve RESTful web services and provide data to your mobile apps\nUse well-defined GUI design patterns to build mobile applications that provide a great user experience\nBuild mobile apps that read data from a remote server efficiently\nCall the platform native API on Android and iOS even for an unpublished API\nManage software customization for your customer by making better use of an extended RTTI\nImplement the most popular design pattern without wasting too much time on debugging and bug fixing",
+    "download_link": "http://file.allitebooks.com/20170710/Delphi%20Cookbook,%20Second%20Edition.pdf",
+    "file_format": "PDF",
+    "file_size": "3.9 MB",
+    "image": "Delphi-Cookbook,-Second-Edition.jpg",
+    "isbn_10": "1785287427",
+    "language": "English",
+    "pages": 470,
+    "read_link": "http://www.allitebooks.com/read/index.php?id=27765",
+    "sub_title": "Over 60 hands-on recipes to help you master the power of Delphi for cross-platform and mobile development on multiple platforms",
+    "title": "Delphi Cookbook, Second Edition",
+    "year": 2016,
+    "id": 49
+  },
+  {
+    "author": [
+      "Ben Dewey",
+      "Kevin Grossnicklaus",
+      "Philip Japikse"
+    ],
+    "category": [
+      ".NET"
+    ],
+    "description": "Book Description:\n\nLearn how to build web applications from three Microsoft MVPs. After building the data application layer using Entity Framework Core and a RESTful service using ASP.NET Core, you will then build the client side web application three ways: first, using ASP.NET Core, then using Angular 2, and, finally, using React.  You will be able to compare and contrast these UI frameworks and select the best one for your needs.\n\n.NET Core is a complete rewrite of the popular .NET and its related frameworks. While many concepts are similar between .NET Core and the .NET 4.6 framework, there are revolutionary changes as well, including updates to Entity Framework Core and ASP.NET Core. The first section of this book covers the three main parts of building applications with C#: Entity Framework, ASP.NET Core Services, and ASP.NET Core Web Applications.\n\nThere is also an explosion in popularity of JavaScript frameworks for client side development, and the authors cover two of the most popular UI frameworks. Start with TypeScript for developing clean JavaScript, along with a client side build tool such as Gulp, Grunt, and WebPack. Using the same data access layer and RESTful service from the .NET Core application, you can rebuild the UI using Angular 2. Then, repeat the process using React, for a true comparison of building client side applications using ASP.NET Core, Angular 2, and React.\n\nWhat You’ll Learn\n\nUnderstand the fundamentals of .NET Core and what that means to the traditional .NET developer\nBuild a data access layer with Entity Framework Core, a RESTful service with ASP.NET Core MVC, and a website with ASP.NET Core MVC and Bootstrap\nAutomate many build tasks with client side build utilities\nWho This Book Is For\nIntermediate to advanced .NET developers",
+    "download_link": "http://file.allitebooks.com/20170709/Building%20Web%20Applications%20with%20Visual%20Studio%202017.pdf",
+    "file_format": "PDF",
+    "file_size": "8.6 MB",
+    "image": "Building-Web-Applications-with-Visual-Studio-2017.jpg",
+    "isbn_10": "1484224779",
+    "language": "English",
+    "pages": 393,
+    "read_link": "http://www.allitebooks.com/read/index.php?id=27759",
+    "sub_title": "Using .NET Core and Modern JavaScript Frameworks",
+    "title": "Building Web Applications with Visual Studio 2017",
+    "year": 2017,
+    "id": 50
+  },
+  {
+    "author": [
+      "Nihad A. Hassan",
+      "Rami Hijazi"
+    ],
+    "category": [
+      "Security"
+    ],
+    "description": "Book Description:\n\nUse this hands-on guide to understand the ever growing and complex world of digital security. Learn how to protect yourself from digital crime, secure your communications, and become anonymous online using sophisticated yet practical tools and techniques.\n\nThis book teaches you how to secure your online identity and personal devices, encrypt your digital data and online communications, protect cloud data and Internet of Things (IoT), mitigate social engineering attacks, keep your purchases secret, and conceal your digital footprint. You will understand best practices to harden your operating system and delete digital traces using the most widely used operating system, Windows.\n\nDigital Privacy and Security Using Windows offers a comprehensive list of practical digital privacy tutorials in addition to being a complete repository of free online resources and tools assembled in one place. The book helps you build a robust defense from electronic crime and corporate surveillance. It covers general principles of digital privacy and how to configure and use various security applications to maintain your privacy, such as TOR, VPN, and BitLocker. You will learn to encrypt email communications using Gpg4win and Thunderbird.\n\nWhat You’ll Learn\n\nKnow the various parties interested in having your private data\nDifferentiate between government and corporate surveillance, and the motivations behind each one\nUnderstand how online tracking works technically\nProtect digital data, secure online communications, and become anonymous online\nCover and destroy your digital traces using Windows OS\nSecure your data in transit and at rest\nBe aware of cyber security risks and countermeasures\nWho This Book Is For\n\nEnd users, information security professionals, management, infosec students",
+    "download_link": "http://file.allitebooks.com/20170708/Digital%20Privacy%20and%20Security%20Using%20Windows.pdf",
+    "file_format": "PDF",
+    "file_size": "10.1 MB",
+    "image": "Digital-Privacy-and-Security-Using-Windows.jpg",
+    "isbn_10": "1484227980",
+    "language": "English",
+    "pages": 284,
+    "read_link": "http://www.allitebooks.com/read/index.php?id=27751",
+    "sub_title": "A Practical Guide",
+    "title": "Digital Privacy and Security Using Windows",
+    "year": 201,
+    "id": 51
+  },
+  {
+    "author": [
+      "Amir Shevat"
+    ],
+    "category": [
+      "Web Development"
+    ],
+    "description": "Book Description:\n\nFrom Facebook Messenger to Kik, and from Slack bots to Google Assistant, Amazon Alexa, and email bots, the new conversational apps are revolutionizing the way we interact with software. This practical guide shows you how to design and build great conversational experiences and delightful bots that help people be more productive, whether it’s for a new consumer service or an enterprise efficiency product.\n\nIdeal for designers, product managers, and entrepreneurs, this book explores what works and what doesn’t in real-world bot examples, and provides practical design patterns for your bot-building toolbox. You’ll learn how to use an effective onboarding process, outline different flows, define a bot personality, and choose the right balance of rich control and text.\n\nExplore different bot use-cases and design best practices\nUnderstand bot anatomy—such as brand and personality, conversations, advanced UI controls—and their associated design patterns\nLearn steps for building a Facebook Messenger consumer bot and a Slack business bot\nExplore the lessons learned and shared experiences of designers and entrepreneurs who have built bots\nDesign and prototype your first bot, and experiment with user feedback",
+    "download_link": "http://file.allitebooks.com/20170708/Designing%20Bots.pdf",
+    "file_format": "PDF",
+    "file_size": "11.3 MB",
+    "image": "Designing-Bots.jpg",
+    "isbn_10": "1491974826",
+    "language": "English",
+    "pages": 348,
+    "read_link": "http://www.allitebooks.com/read/index.php?id=27746",
+    "sub_title": "Creating Conversational Experiences",
+    "title": "Designing Bots",
+    "year": 2017,
+    "id": 52
+  },
+  {
+    "author": [
+      "Nikhil Pathania"
+    ],
+    "category": [
+      "Hardware & DIY"
+    ],
+    "description": "Book Description:\n\nFollow this step-by-step guide for creating a continuous delivery pipeline using all of the new features in Jenkins 2.0 such as Pipeline as a Code, multi-branch pipeline, and more. You will learn three crucial elements for achieving a faster software delivery pipeline: a fungible build/test environment, manageable and reproducible pipelines, and a scalable build/test infrastructure.\nPro Continuous Delivery demonstrates how to create a highly available, active/passive Jenkins server using some niche technologies.\nWhat You’ll Learn\nCreate a highly available, active/passive Jenkins server using CoreOS and Docker, and using Pacemaker and Corosync\nUse a Jenkins multi-branch pipeline to automatically perform continuous integration whenever there is a new branch in your source control system\nDescribe your continuous delivery pipeline with Jenkinsfile\nHost Jenkins server on a cloud solution\nRun Jenkins inside a container using Docker\nDiscover how the distributed nature of Git and the “merge before build” feature of Jenkins can be used to implement gated check-in\nImplement a scalable build farm using Docker and Kubernetes\nWho This Book Is For\nYou have experience implementing continuous integration and continuous delivery using Jenkins freestyle Jobs and wish to use the new Pipeline as a Code feature introduced in Jenkins 2.0\nYour source code is on a Git-like version control system (Git, GitHub, GitLab, etc.) and you wish to leverage the advantages of a multi-branch pipeline in Jenkins\nYour infrastructure is on a Unix-like platform and you wish to create a scalable, distributed build/test farm using Docker or Kubernetes\nYou are in need of a highly available system for your Jenkins Server using open source tools and technologies",
+    "download_link": "http://file.allitebooks.com/20170707/Pro%20Continuous%20Delivery.pdf",
+    "file_format": "PDF",
+    "file_size": "14.9 MB",
+    "image": "Pro-Continuous-Delivery.jpg",
+    "isbn_10": "1484229126",
+    "language": "English",
+    "pages": 288,
+    "read_link": "http://www.allitebooks.com/read/index.php?id=27742",
+    "sub_title": "With Jenkins 2.0",
+    "title": "Pro Continuous Delivery",
+    "year": 2017,
+    "id": 53
+  },
+  {
+    "author": [
+      "Hanish Bansal",
+      "Saurabh Chauhan",
+      "Shrey Mehrotra"
+    ],
+    "category": [
+      "Data Mining"
+    ],
+    "description": "Book Description:\n\nHive was developed by Facebook and later open sourced in Apache community. Hive provides SQL like interface to run queries on Big Data frameworks. Hive provides SQL like syntax also called as HiveQL that includes all SQL capabilities like analytical functions which are the need of the hour in today’s Big Data world.\n\nThis book provides you easy installation steps with different types of metastores supported by Hive. This book has simple and easy to learn recipes for configuring Hive clients and services. You would also learn different Hive optimizations including Partitions and Bucketing. The book also covers the source code explanation of latest Hive version.\n\nHive Query Language is being used by other frameworks including spark. Towards the end you will cover integration of Hive with these frameworks.\n\nWho This Book Is For\n\nThe book is intended for those who want to start in Hive or who have basic understanding of Hive framework. Prior knowledge of basic SQL command is also required\n\nWhat You Will Learn\n\nLearn different features and offering on the latest Hive\nUnderstand the working and structure of the Hive internals\nGet an insight on the latest development in Hive framework\nGrasp the concepts of Hive Data Model\nMaster the key concepts like Partition, Buckets and Statistics\nKnow how to integrate Hive with other frameworks such as Spark, Accumulo, etc",
+    "download_link": "http://file.allitebooks.com/20170706/Apache%20Hive%20Cookbook.pdf",
+    "file_format": "PDF",
+    "file_size": "7.7 MB",
+    "image": "Apache-Hive-Cookbook.jpg",
+    "isbn_10": "1782161082",
+    "language": "English",
+    "pages": 268,
+    "read_link": "http://www.allitebooks.com/read/index.php?id=27739",
+    "sub_title": "Easy, hands-on recipes to help you understand Hive and its integration with frameworks that are used widely in today's big data world",
+    "title": "Apache Hive Cookbook",
+    "year": 2016,
+    "id": 54
+  },
+  {
+    "author": [
+      "Aniel Sud",
+      "William Cava",
+      "William Rogers"
+    ],
+    "category": [
+      "Web Development"
+    ],
+    "description": "Book Description:\n\nThe first book to cover the Ektron content management system (CMS)\n\nEktron CMS400.NET provides a complete platform that features all the functionality needed to create, deploy, and manage your Web site. The power is in your hands when you use the built-in server controls to deploy a site or customize the deployment with the API. Authored by a trio of Ektron insiders, this book escorts you through the detailed steps of building a prototype company site. Upon completion, you will have a complete and functional coded Web site that you can use as a template for future projects.\n\nIntroduces the Ektron CMS400.NET as well as the Ektron architecture and includes an in-depth explanation of the Ektron framework\nAssumes no prior knowledge of the Ektron platform\nShows you how to install the CMS, software dependencies, and samples sites\nExplains how to implement a social network and construct a storefront\nEktron Users Guide provides you with everything you need to know about the exciting possibilities of working with this popular and powerful platform.",
+    "download_link": "http://file.allitebooks.com/20170704/Ektron%20Developer's%20Guide.pdf",
+    "file_format": "PDF",
+    "file_size": "103 MB",
+    "image": "Ektron-Developer’s-Guide.jpg",
+    "isbn_10": "0470885696",
+    "language": "English",
+    "pages": 672,
+    "read_link": "http://www.allitebooks.com/read/index.php?id=27736",
+    "sub_title": "Building an Ektron Powered Website",
+    "title": "Ektron Developer’s Guide",
+    "year": 2011,
+    "id": 55
+  },
+  {
+    "author": [
+      "Andrew Mangogna",
+      "Leon Starr",
+      "Stephen Mellor"
+    ],
+    "category": [
+      "Programming"
+    ],
+    "description": "Book Description:\n\nLearn how to translate an executable model of your application into running code. This is not a book about theory, good intentions or possible future developments. You’ll benefit from translation technology and solid software engineering principles that are demonstrated with concrete examples using an open source tool chain.\n\nModels don’t deliver enough value if they are not on a direct path to code production. But to waste time building models that are merely pictures of your code doesn’t add much value either. In this book, you’ll translate detailed, yet platform-independent models that solve real application problems.\n\nUsing a pragmatic approach, Models to Code quickly dives into two case studies of Executable UML models. The models and code are extensively annotated and illustrate key principles that are emphasized throughout the book.\n\nYou’ll work with code production using “C” as the implementation language and targeting microcomputer class processors. This might not be your particular target language or platform, but you can use you can use what you learn here to engineer or re-evaluate your own code translation system to dramatically increase the value of both your modeling and code generation solution.\n\nWritten by three leading experts, Models to Code is an exceptional resource for producing software by model translation― add it to your library today.\n\nWhat You’ll Learn\n\nSee how detailed models resolve ambiguity and contradiction common in requirements.\nExamine how a model can be detailed enough to be executable and testable while remaining platform independent\nProduce code from a model, leaving the model intact so it can be redeployed on new platforms or adapted to changing software and hardware technology.\nImplement platform independent model execution rules in platform specific run-time code\nWho This Book Is For\n\nModelers and systems engineers on active MBSE projects (using Executable UML or not), projects using Simulink, Matlab, Dymola, MatrixX and other math modelling tools.\n\nAny developers with current or past model experience, professors, students, systems engineers, embedded systems developers, or anyone interested in learning more about software modelling.",
+    "download_link": "http://file.allitebooks.com/20170703/Models%20to%20Code.pdf",
+    "file_format": "PDF",
+    "file_size": "18.7 MB",
+    "image": "Models-to-Code.jpg",
+    "isbn_10": "1484222164",
+    "language": "English",
+    "pages": 305,
+    "read_link": "http://www.allitebooks.com/read/index.php?id=27733",
+    "sub_title": "With No Mysterious Gaps",
+    "title": "Models to Code",
+    "year": 2017,
+    "id": 56
+  },
+  {
+    "author": [
+      "Ayan Chatterjee"
+    ],
+    "category": [
+      "Windows"
+    ],
+    "description": "Book Description:\n\nDevelop Windows 10 applications faster and more efficiently using the Universal Windows Platform. You will use Xamarin to create apps for macOS, iOS, and Android devices.\n\nBuilding Apps for the Universal Windows Platform is a complete guide covering PCs, tablets, phones, and other devices such as HoloLens. You will use Windows 10 to develop apps for desktop, mobile, holographic, wearable, and IoT devices. You will reuse code to easily create cross-platform apps.\n\nWhat You Will Learn\nDesign and develop apps using Visual Studio and Blend\nCreate Cortana-enabled apps for a hands-free experience\nBuild IoT apps and apps for wearables such as the Microsoft HoloLens\nMonitor apps post-publication to gain insights from actionable data using Windows Store Analytics and Azure\nWho This Book Is For\nProfessional developers working independently or in a team on Windows 10 applications, and students coming into the world of software development",
+    "download_link": "http://file.allitebooks.com/20170630/Building%20Apps%20for%20the%20Universal%20Windows%20Platform.pdf",
+    "file_format": "PDF",
+    "file_size": "10.4 MB",
+    "image": "Building-Apps-for-the-Universal-Windows-Platform.jpg",
+    "isbn_10": "1484226283",
+    "language": "English",
+    "pages": 270,
+    "read_link": "http://www.allitebooks.com/read/index.php?id=27717",
+    "sub_title": "Explore Windows 10 Native, IoT, HoloLens, and Xamarin",
+    "title": "Building Apps for the Universal Windows Platform",
+    "year": 2017,
+    "id": 57
+  },
+  {
+    "author": [
+      "Abhishek Mishra"
+    ],
+    "category": [
+      "Swift"
+    ],
+    "description": "Book Description:\n\nPut into motion practical examples to master Test-Driven Development (TDD) and acceptance testing in Swift.\nThis book uses a pragmatic approach to writing well-tested code and provides techniques that can be used to retrofit tests to legacy code bases. You’ll be introduced to basic principles of TDD, such as Test First, Red-Green-Refactor, Remove Duplicate code, Dependency Injection, and Single Responsibility. Approaches covered include TDD, behavior-driven development (BDD), UI, and acceptance testing with common standard/open source frameworks.\niOS Code Testing offers helpful instruction to teach iOS developers to retrospectively fit tests to legacy code, refactor legacy code so as to make the code more testable, install and configure a popular Swift BDD framework, practice BDD with Xcode, and create automated UI tests with Xcode. Additionally, many projects have legacy code bases. Legacy code is often seen as a blocker when it comes to implementing any kind of testing.\nWhat You Will Learn\n\nFit test to legacy code retrospectively\nInstall and configure popular Swift BDD frameworks\nPractice BDD with Xcode\nWho This Book Is For\n\nSoftware practitioners, such as Swift developers and mobile app testers.",
+    "download_link": "http://file.allitebooks.com/20170701/iOS%20Code%20Testing.pdf",
+    "file_format": "PDF",
+    "file_size": "11.6 MB",
+    "image": "iOS-Code-Testing.jpg",
+    "isbn_10": "1484226887",
+    "language": "English",
+    "pages": 440,
+    "read_link": "http://www.allitebooks.com/read/index.php?id=27723",
+    "sub_title": "Test-Driven Development and Behavior-Driven Development with Swift",
+    "title": "iOS Code Testing",
+    "year": 2017,
+    "id": 58
+  },
+  {
+    "author": [
+      "Rehan Zaidi"
+    ],
+    "category": [
+      "JavaScript"
+    ],
+    "description": "Book Description:\n\nEasily master JavaScript (JS) with this quick guide and develop mobile and desktop applications for SAP Fiori. This book equips ABAP/SAP developers with the essential topics to get started with JS.\n\nThe focus of JavaScript Essentials for SAP ABAP Developers is on the parts of the JS language that are useful from the perspective of an ABAP developer. The book starts with a brief intro to HTML, the basics of JS, and how to create and run a simple JS program. It then dives into the details of the language, showing how to make simple programs. It covers loops in detail, mathematical operations, and string and regular expressions in JS, as well as a taste of functions, followed by objects and object-oriented programming in JavaScript. The book provides:\n\nSample code and screenshots to help you fully understand JS\nA chapter on JS best practices and recommendations\nDifferences and comparisons of the elements and data structures of ABAP and JavaScript to help you quickly master the material\nWhat You’ll Learn\n\nCreate and run a simple JavaScript program\nUnderstand loops, operations, and expressions\nMaster the Create and Use functions\nUse objects and object-oriented programming in JS\nApply the best practices of JS programming\nWho This Book Is For\n\nSAP programmers and developers, ABAP users and developers, and university students learning ABAP and JavaScript",
+    "download_link": "http://file.allitebooks.com/20170629/JavaScript%20Essentials%20for%20SAP%20ABAP%20Developers.pdf",
+    "file_format": "PDF",
+    "file_size": "4.1 MB",
+    "image": "JavaScript-Essentials-for-SAP-ABAP-Developers.jpg",
+    "isbn_10": "1484222199",
+    "language": "English",
+    "pages": 169,
+    "read_link": "http://www.allitebooks.com/read/index.php?id=27714",
+    "sub_title": "A Guide to Mobile and Desktop Application Development",
+    "title": "JavaScript Essentials for SAP ABAP Developers",
+    "year": 2017,
+    "id": 59
+  },
+  {
+    "author": [
+      "Sunil Gulabani"
+    ],
+    "category": [
+      "Data Processing"
+    ],
+    "description": "Book Description:\n\nProvide solutions to all your Amazon EC2, SQS, Kinesis, and S3 problems, including implementation using the AWS Management Console, AWS CLI, and AWS SDK (Java).\n\nYou’ll find recipes on implementation and configuration of Amazon EC2, SQS, Kinesis, and S3 along with the code snippets and AWS CLI commands.\n\nPractical Amazon EC2, SQS, Kinesis, and S3 uses focused examples that include only the details you need to get things done. You’ll see production use cases of Amazon EC2, SQS, Kinesis, and S3 and how to implement cloud watch in projects for these services. Learn how to raise an alarm on Amazon EC2, SQS, Kinesis, and S3 as part of a continuous monitoring system designed to increase performance and avoid side effects in your services.\n\nWhat You’ll Learn\n\nManage Amazon EC2, SQS, Kinesis, and S3 using the AWS Management Console\nUse the AWS CLI\nEmploy the AWS Java SDK\nConfigure alarms on Amazon EC2, SQS, Kinesis, and S3\nWho This Book Is For\n\nSoftware developers and architects, system engineers, and project managers",
+    "download_link": "http://file.allitebooks.com/20170629/Practical%20Amazon%20EC2,%20SQS,%20Kinesis,%20and%20S3.pdf",
+    "file_format": "PDF",
+    "file_size": "16.9 MB",
+    "image": "Practical-Amazon-EC2,-SQS,-Kinesis,-and-S3.jpg",
+    "isbn_10": "1484228405",
+    "language": "English",
+    "pages": 312,
+    "read_link": "http://www.allitebooks.com/read/index.php?id=27708",
+    "sub_title": "A Hands-On Approach to AWS",
+    "title": "Practical Amazon EC2, SQS, Kinesis, and S3",
+    "year": 2017,
+    "id": 60
+  },
+  {
+    "author": [
+      "Igor Zhirkov"
+    ],
+    "category": [
+      "Hardware & DIY"
+    ],
+    "description": "Book Description:\n\nLearn Intel 64 assembly language and architecture, become proficient in C, and understand how the programs are compiled and executed down to machine instructions, enabling you to write robust, high-performance code.\n\nLow-Level Programming explains Intel 64 architecture as the result of von Neumann architecture evolution.  The book teaches the latest version of the C language (C11) and assembly language from scratch.  It covers the entire path from source code to program execution, including generation of ELF object files, and static and dynamic linking. Code examples and exercises are included along with the best code practices. Optimization capabilities and limits of modern compilers are examined, enabling you to balance between program readability and performance. The use of various performance-gain techniques is demonstrated, such as SSE instructions and pre-fetching. Relevant Computer Science topics such as models of computation and formal grammars are addressed, and their practical value explained.\n\nWhat You’ll Learn\n\nLow-Level Programming teaches programmers to:\n\nFreely write in assembly language\nUnderstand the programming model of Intel 64\nWrite maintainable and robust code in C11\nFollow the compilation process and decipher assembly listings\nDebug errors in compiled assembly code\nUse appropriate models of computation to greatly reduce program complexity\nWrite performance-critical code\nComprehend the impact of a weak memory model in multi-threaded applications\nWho This Book Is For\n\nIntermediate to advanced programmers and programming students",
+    "download_link": "http://file.allitebooks.com/20170629/Low-Level%20Programming.pdf",
+    "file_format": "PDF",
+    "file_size": "5.6 MB",
+    "image": "Low-Level-Programming.jpg",
+    "isbn_10": "1484224027",
+    "language": "English",
+    "pages": 435,
+    "read_link": "http://www.allitebooks.com/read/index.php?id=27705",
+    "sub_title": "C, Assembly, and Program Execution on Intel® 64 Architecture",
+    "title": "Low-Level Programming",
+    "year": 2017,
+    "id": 61
+  },
+  {
+    "author": [
+      "Matt Cavanagh"
+    ],
+    "category": [
+      "C#"
+    ],
+    "description": "Book Description:\n\nIn recent years, electronics have gone from something that only electronic engineers can understand, to a common hobby that is accessible to all. Netduino has grown to be a part of this revolution, providing a development board that is both easy to use, and allows existing .NET developers to build on knowledge they already have.\n\nMost developers have wild ideas about all the gadgets they would develop to make the world a better (or easier) place, but have no idea how to get beyond blinking an LED. The topics contained go beyond what most books cover, taking an in-depth look at how to use Netduino for practical projects.\n\nThis book starts off by showing you how to do the “hello world” of electronics – fade an LED in and out. It will take you right through all the fundamentals, including how to control a wide range of electronic sensors.\n\nYou will learn how easy it is to automate various parts of your home. You will learn how to open your gate with your smartphone, automatically water your plants, get emailed when someone invades your territory, connect up a keypad to unlock your door, make your own breathalyzer, control your home theatre, and much more!\n\nWhat you will learn from this book\n\nWrite some simple code for a Netduino\nUse a microphone to determine the noise level of the room\nPower the sensors and components with external power supplies\nControl existing technology and appliances around your house with transistors and relays\nLink your smartphone to your Netduino with Bluetooth as a controller\nDetermine alcohol on your breath\nUse servos to control physical objects\nUse a matrix keypad to secure your house and much more",
+    "download_link": "http://file.allitebooks.com/20170625/Netduino%20Home%20Automation%20Projects.pdf",
+    "file_format": "PDF",
+    "file_size": "1.9 MB",
+    "image": "Netduino-Home-Automation-Projects.jpg",
+    "isbn_10": "978-1849697828",
+    "language": "English",
+    "pages": 108,
+    "read_link": "http://www.allitebooks.com/read/index.php?id=27680",
+    "sub_title": "Automate your house, save lives, and survive the apocalypse with . NET on a Netduino!",
+    "title": "Netduino Home Automation Projects",
+    "year": 2013,
+    "id": 62
+  },
+  {
+    "author": [
+      "Ali Asad",
+      "Hamza Ali"
+    ],
+    "category": [
+      "Programming",
+      "Microsoft"
+    ],
+    "description": "Book Description:\n\nPrepare for Microsoft Certification Exam 70-483: Programming in C#. The “What, Why, and How” of each concept is presented along with quick summaries, code challenges, and exam questions to review and practice key concepts.\n\nYou will learn how to use:\n\nLambda expressions to write LINQ query expressions\nAsynchronous programming with the Async and Await keywords to maximize performance of slow applications\nRegular expressions to validate user input\nReflection to create and handle types at runtime\nand much more\nThe source code in the book will be available in the form of iCanCSharp notebooks and scripts that allow you to try out examples and extend them in interesting ways.\n\nWhat You Will Learn\nUnderstand the necessary knowledge and skill set to prepare for Microsoft Exam 70-483\nStudy the code challenges and practice questions on C# that are relevant to the exam\n\nMaster the C# programming language\nWho This Book Is For\nExperienced C# and .NET programmers and developers who are ready to take and pass the exam in order to get certified",
+    "download_link": "http://file.allitebooks.com/20170624/The%20C-%20Programmer%20s%20Study%20Guide%20(MCSD).pdf",
+    "file_format": "PDF",
+    "file_size": "5.1 MB",
+    "image": "The-C#-Programmer’s-Study-Guide-(MCSD).jpg",
+    "isbn_10": "1484228596",
+    "language": "English",
+    "pages": 475,
+    "read_link": "http://www.allitebooks.com/read/index.php?id=27671",
+    "sub_title": "Exam: 70-483",
+    "title": "The C# Programmer’s Study Guide (MCSD)",
+    "year": 2017,
+    "id": 63
+  },
+  {
+    "author": [
+      "Gary D. Knott"
+    ],
+    "category": [
+      "Programming"
+    ],
+    "description": "Book Description:\n\nLearn Lisp programming in a data structures context, including tables, functions, forms, expressions, typed-pointers, I/O, garbage collection and some applications. This short primer contains a careful description of the data structures manipulated by Lisp functions. These data structures and others, notably hash tables, are also used in constructing a Lisp interpreter.\nInterpreting Lisp will be of special interest to those learning and using programming languages and computer architecture as well as data structures. This book will be useful to autodidacts, professional programmers, and computer enthusiasts in a wide variety of fields.\nWhat You’ll Learn\nUse the atom table and the number table in Lisp\nMaster expressions, typed pointers, arguments and results in typed pointers, and more\nWrite lambda expressions in Lisp\nBind actual values to formal arguments\nDevelop games in Lisp\nWho This Book Is For\nExperienced programmers new to Lisp.",
+    "download_link": "http://file.allitebooks.com/20170624/Interpreting%20LISP,%202nd%20Edition.pdf",
+    "file_format": "PDF",
+    "file_size": "2.4 MB",
+    "image": "Interpreting-LISP,-2nd-Edition.jpg",
+    "isbn_10": "1484227069",
+    "language": "English",
+    "pages": 150,
+    "read_link": "http://www.allitebooks.com/read/index.php?id=27667",
+    "sub_title": "Programming and Data Structures",
+    "title": "Interpreting LISP, 2nd Edition",
+    "year": 2017,
+    "id": 64
+  },
+  {
+    "author": [
+      "Thomas Mailund"
+    ],
+    "category": [
+      "Programming"
+    ],
+    "description": "Book Description:\n\nLearn how to write object-oriented programs in R and how to construct classes and class hierarchies in the three object-oriented systems available in R. This book gives an introduction to object-oriented programming in the R programming language and shows you how to use and apply R in an object-oriented manner. You will then be able to use this powerful programming style in your own statistical programming projects to write flexible and extendable software.\nAfter reading Advanced Object-Oriented Programming in R, you’ll come away with a practical project that you can reuse in your own analytics coding endeavors. You’ll then be able to visualize your data as objects that have state and then manipulate those objects with polymorphic or generic methods. Your projects will benefit from the high degree of flexibility provided by polymorphism, where the choice of concrete method to execute depends on the type of data being manipulated.\nWhat You’ll Learn\nDefine and use classes and generic functions using R\nWork with the R class hierarchies\nBenefit from implementation reuse\nHandle operator overloading\nApply the S4 and R6 classes\nWho This Book Is For\nExperienced programmers and for those with at least some prior experience with R programming language.",
+    "download_link": "http://file.allitebooks.com/20170624/Advanced%20Object-Oriented%20Programming%20in%20R.pdf",
+    "file_format": "PDF",
+    "file_size": "1.1 MB",
+    "image": "Advanced-Object-Oriented-Programming-in-R.jpg",
+    "isbn_10": "1484229185",
+    "language": "English",
+    "pages": 110,
+    "read_link": "http://www.allitebooks.com/read/index.php?id=27663",
+    "sub_title": "Statistical Programming for Data Science, Analysis and Finance",
+    "title": "Advanced Object-Oriented Programming in R",
+    "year": 2017,
+    "id": 65
+  },
+  {
+    "author": [
+      "Dale Green"
+    ],
+    "category": [
+      "C & C++",
+      "Game Programming",
+      "Cloud & Virtualization"
+    ],
+    "description": "Book Description:\n\nProcedural generation is a growing trend in game development. It allows developers to create games that are bigger and more dynamic, giving the games a higher level of replayability. Procedural generation isn’t just one technique, it’s a collection of techniques and approaches that are used together to create dynamic systems and objects. C++ is the industry-standard programming language to write computer games. It’s at the heart of most engines, and is incredibly powerful. SFML is an easy-to-use, cross-platform, and open-source multimedia library. Access to computer hardware is broken into succinct modules, making it a great choice if you want to develop cross-platform games with ease.\n\nUsing C++ and SFML technologies, this book will guide you through the techniques and approaches used to generate content procedurally within game development.\n\nThroughout the course of this book, we’ll look at examples of these technologies, starting with setting up a roguelike project using the C++ template. We’ll then move on to using RNG with C++ data types and randomly scattering objects within a game map. We will create simple console examples to implement in a real game by creating unique and randomised game items, dynamic sprites, and effects, and procedurally generating game events. Then we will walk you through generating random game maps. At the end, we will have a retrospective look at the project.\n\nBy the end of the book, not only will you have a solid understanding of procedural generation, but you’ll also have a working roguelike game that you will have extended using the examples provided.",
+    "download_link": "http://file.allitebooks.com/20170623/Procedural%20Content%20Generation%20for%20C++%20Game%20Development.pdf",
+    "file_format": "PDF",
+    "file_size": "3.4 MB",
+    "image": "Procedural-Content-Generation-for-C++-Game-Development.jpg",
+    "isbn_10": "1785886711",
+    "language": "English",
+    "pages": 304,
+    "read_link": "http://www.allitebooks.com/read/index.php?id=27648",
+    "sub_title": "Get to know techniques and approaches to procedurally generate game content in C++ using Simple and Fast Multimedia Library",
+    "title": "Procedural Content Generation for C++ Game Development",
+    "year": 304,
+    "id": 66
+  },
+  {
+    "author": [
+      "Dr. Joshua F. Wiley"
+    ],
+    "category": [
+      "Algorithms",
+      "Data Mining"
+    ],
+    "description": "Book Description:\n\nDeep learning is a branch of machine learning based on a set of algorithms that attempt to model high-level abstractions in data by using model architectures. With the superb memory management and the full integration with multi-node big data platforms, the H2O engine has become more and more popular among data scientists in the field of deep learning.\n\nThis book will introduce you to the deep learning package H2O with R and help you understand the concepts of deep learning. We will start by setting up important deep learning packages available in R and then move towards building models related to neural networks, prediction, and deep prediction, all of this with the help of real-life examples.\n\nAfter installing the H2O package, you will learn about prediction algorithms. Moving ahead, concepts such as overfitting data, anomalous data, and deep prediction models are explained. Finally, the book will cover concepts relating to tuning and optimizing models.\n\nWhat you will learn\n\nSet up the R package H2O to train deep learning models\nUnderstand the core concepts behind deep learning models\nUse Autoencoders to identify anomalous data or outliers\nPredict or classify data automatically using deep neural networks\nBuild generalizable models using regularization to avoid overfitting the training data",
+    "download_link": "http://file.allitebooks.com/20170623/R%20Deep%20Learning%20Essentials.pdf",
+    "file_format": "PDF",
+    "file_size": "2.1 MB",
+    "image": "R-Deep-Learning-Essentials.jpg",
+    "isbn_10": "1785280589",
+    "language": "English",
+    "pages": 170,
+    "read_link": "http://www.allitebooks.com/read/index.php?id=27647",
+    "sub_title": "Build automatic classfication and predicition models using unsupervised learning",
+    "title": "R Deep Learning Essentials",
+    "year": 2016,
+    "id": 67
+  }
+]
