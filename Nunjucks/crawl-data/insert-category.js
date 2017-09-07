@@ -1,4 +1,4 @@
-const db = require('../models/pgp');
+const db = require('../pgp');
 
 const topcat = require('./json-data/topcat.json');
 const subcat1 = require('./json-data/subcat1.json');

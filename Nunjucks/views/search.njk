@@ -11,7 +11,7 @@
         <ul class="paddingless marginless nav">
           <li class="nav-item">
             <button class="dropbtn">
-              <a href="#">All IT eBooks</a>
+              <a href="/">All IT eBooks</a>
             </button>
           </li>
           <li class="nav-item">
@@ -21,11 +21,11 @@
                 <ul class="category paddingless">
                 {% for item in getCategory %}
                   <li class="dropdown sub-category paddingless marginless">
-                    <a href="#">{{item.name}}</a>
+                    <a href="/categories/{{item.name | replace(' &', '') | replace(' ', '-')}}">{{item.name}}</a>
                       <ul class="category dropdown-content paddingless">
                         {% for subCategory in item.category %}
                         <li class="sub-category paddingless marginless">
-                          <a href="#">{{subCategory.name}}</a>
+                          <a href="/categories/{{item.name | replace(' &', '') | replace(' ', '-')}}/{{subCategory.name | replace(' &', '') | replace(' ', '-')}}">{{subCategory.name}}</a>
                         </li>
                         {% endfor %}  
                       </ul>

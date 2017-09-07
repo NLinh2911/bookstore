@@ -2,7 +2,7 @@
 const path = require('path');
 const pgp = require('pg-promise');
 
-const db = require('../models/pgp');
+const db = require('../pgp');
 
 function sql(file) {
   return new pgp.QueryFile(path.join(__dirname, file), {

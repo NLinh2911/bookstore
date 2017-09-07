@@ -10,6 +10,7 @@ const {db} = require('./pgp')
 //Import Routes
 const index = require('./routes/index')
 const detail = require('./routes/detail')
+const category = require('./routes/category')
 const author = require('./routes/author')
 
 
@@ -27,8 +28,9 @@ app.set('view engine', 'njk')
 app.use(express.static(__dirname + '/public'));
 
 app.use('/', index)
-app.use('/categories', detail)
-app.use('/author', author)
+app.use('/categories', category)
+app.use('/books', detail)
+app.use('/authors', author)
 
 
 module.exports = app

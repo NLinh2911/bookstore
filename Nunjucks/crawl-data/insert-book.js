@@ -1,4 +1,4 @@
-const db = require('../models/pgp');
+const db = require('../pgp');
 const data = require('./total_product.json')
 
 data.forEach(book => {

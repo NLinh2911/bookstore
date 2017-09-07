@@ -1,7 +1,7 @@
 {% block body %}
     <ul>
   {% for item in getCategory %}
-      <li>{{item.name}}</li>
+      <li><a href="/categories/{{item.name | replace(' &', '') | replace(' ', '-')}}">{{item.name}}</a></li>
   {% endfor %}
     </ul>
 {% endblock %}
