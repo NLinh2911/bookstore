@@ -21,7 +21,7 @@ let realdata = [];
 
 //=========NIGHTMARE PROCESS ĐẦU TIÊN LẤY CÁC URL===================
 nightmare
-  .goto('http://www.allitebooks.com/')
+  .goto('http://www.allitebooks.com/web-development/')
   .wait(1000)
   .evaluate(function () {
     let res = document.querySelectorAll('.entry-title a')
@@ -66,18 +66,28 @@ function crawl (arr, cb) {
       .evaluate(function () {
         try {
           let obj = {}
-          let title = document.querySelector('.entry-header h1').innerText
+          let title = document.querySelector('.entry-header h1').innerText.trim()
           //let mini_title = document.querySelector('.entry-header h4').innerText || ''
-          let author = document.querySelectorAll('.book-detail dd')[0].innerText
-          let isbn = document.querySelectorAll('.book-detail dd')[1].innerText
-          let year = document.querySelectorAll('.book-detail dd')[2].innerText
-          let pages = document.querySelectorAll('.book-detail dd')[3].innerText
-          let lang = document.querySelectorAll('.book-detail dd')[4].innerText
-          let size = document.querySelectorAll('.book-detail dd')[5].innerText
-          let format = document.querySelectorAll('.book-detail dd')[6].innerText
-          let cate = document.querySelectorAll('.book-detail dd')[7].innerText
+          let authorLinks = document.querySelector(".book-detail dd").querySelectorAll("a");
+          let authors = []
+          authorLinks.forEach(a => {
+            authors.push(a.innerText.trim());
+          })
+          //let author = document.querySelectorAll('.book-detail dd')[0].innerText.trim()
+          let isbn = document.querySelectorAll('.book-detail dd')[1].innerText.trim()
+          let year = document.querySelectorAll('.book-detail dd')[2].innerText.trim()
+          let pages = document.querySelectorAll('.book-detail dd')[3].innerText.trim()
+          let lang = document.querySelectorAll('.book-detail dd')[4].innerText.trim()
+          let size = document.querySelectorAll('.book-detail dd')[5].innerText.trim()
+          let format = document.querySelectorAll('.book-detail dd')[6].innerText.trim()
+          //let cate = document.querySelectorAll('.book-detail dd')[7].innerText
           let desc = document.querySelector('.entry-content').innerHTML
-
+          let categoryLinks = document.querySelector(".book-detail dd:last-child").querySelectorAll("a");
+          let cate = []
+          categoryLinks.forEach(a => {
+            cate.push(a.innerText.trim());
+          })
+          let top_cate = 'Web Development'
           let img_link = document.querySelector('.entry-body-thumbnail > a > img').getAttribute('src')
 
           /*let b = img_link.split('/')
@@ -87,7 +97,7 @@ function crawl (arr, cb) {
 
           obj = {
             title,
-            author,
+            authors,
             isbn,
             year,
             pages,
@@ -96,7 +106,8 @@ function crawl (arr, cb) {
             format,
             cate,
             desc,
-            img_link
+            img_link,
+            top_cate
           }
           return obj
         } catch (err) {
@@ -122,6 +133,7 @@ function crawl (arr, cb) {
             .image(option)
             .then(({filename, image}) => {
               console.log('File saved ok')
+              res.img_link = filename.replace(`${destPath}/`, '');
             })
 
           //update data every crawl time
