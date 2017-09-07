@@ -16,6 +16,7 @@ CREATE TABLE book (
     page int,
     file_size varchar(255),
     file_format varchar(255),
+    top_category text,
     category text[],
     image varchar(255),
     description text,

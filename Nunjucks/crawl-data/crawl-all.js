@@ -67,6 +67,7 @@ function crawl(arr, cb) {
           categoryLinks.forEach(a => {
             categories.push(a.innerText.trim());
           })
+          // obj["top_category"] = 'Web Development';
           obj["category"] = categories;
           let detailSelector = document.querySelectorAll(".book-detail dd");
           obj["isbn_10"] = detailSelector[1].innerText.trim();
