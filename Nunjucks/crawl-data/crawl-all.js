@@ -11,7 +11,7 @@ let nightmare = Nightmare();
 let realdata = [];
 //=========NIGHTMARE PROCESS ĐẦU TIÊN LẤY CÁC URL===================
 nightmare
-  .goto('http://www.allitebooks.com/page/15')
+  .goto('http://www.allitebooks.com/web-development/')
   .wait(1000)
   .evaluate(function () {
     let links = document.querySelectorAll(".entry-title a");
@@ -67,7 +67,11 @@ function crawl(arr, cb) {
           categoryLinks.forEach(a => {
             categories.push(a.innerText.trim());
           })
+<<<<<<< HEAD
           // obj["top_category"] = 'Web Development';
+=======
+          obj["top_category"] = 'Web Development';
+>>>>>>> c2decbdb14ca8b399d0494ed5ad8a2e10484cff5
           obj["category"] = categories;
           let detailSelector = document.querySelectorAll(".book-detail dd");
           obj["isbn_10"] = detailSelector[1].innerText.trim();
@@ -108,7 +112,7 @@ function crawl(arr, cb) {
               res.image = filename.replace(`${destPath}/`, '');
               realdata.push(res);
               console.log(res);
-              exportJson(realdata, 'product_data15.json');
+              exportJson(realdata, 'product_data1.json');
               cb(null, res);
             })
             .catch((err) => {

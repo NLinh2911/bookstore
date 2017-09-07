@@ -11,17 +11,22 @@ CREATE TABLE book (
     title varchar(255)  NOT NULL,
     author text[],
     isbn_10 varchar(255),
-    year int,
+    year varchar(255),
     language varchar(255),
-    page int,
+    page varchar(255),
     file_size varchar(255),
     file_format varchar(255),
+<<<<<<< HEAD
     top_category text,
+=======
+    top_category varchar(255),
+>>>>>>> c2decbdb14ca8b399d0494ed5ad8a2e10484cff5
     category text[],
     image varchar(255),
     description text,
     download_link varchar(255),
     read_link varchar(255),
+    document tsvector
     CONSTRAINT book_pk PRIMARY KEY (id)
 );
 
@@ -31,5 +36,8 @@ CREATE TABLE category (
     parent_id int,
     CONSTRAINT category_pk PRIMARY KEY (id)
 );
+
+-- add index for document column
+CREATE INDEX idx_fts_search ON book USING gin(document);
 -- End of file.
 
