@@ -1,5 +1,7 @@
 const Nightmare = require('nightmare');
 const nightmare = Nightmare({show:true});
+const imageDownloader = require('image-downloader');
+const shell = require('shelljs');
 const async = require('async');
 const fs = require('fs');
 
@@ -11,12 +13,14 @@ nightmare.goto('http://www.allitebooks.com/')
   let header = document.querySelectorAll('.entry-title a');
   let bookUrls = [];
   header.forEach(function(element) {
-    bookUrls.push(element.getAttribute('href')); 
+    bookUrls.push(element.getAttribute('href'));
   });
   return bookUrls;
 })
 .end()
-.then( function(bookUrls) { 
+.then( function(bookUrls) {
+  // let destPath = __dirname + '/books-images';
+  // shell.mkdir('-p', destPath);
   console.log(bookUrls);
   console.log('So luong bai viet',bookUrls.length);
   crawl(bookUrls, (err,res) => {
@@ -30,7 +34,6 @@ nightmare.goto('http://www.allitebooks.com/')
     console.log('Search failed: ', err.message);
   })
 
-
   // Hàm cào dữ liệu các subcategories con crawl()
 
   function crawl(bookUrls,cb) {
@@ -40,7 +43,6 @@ nightmare.goto('http://www.allitebooks.com/')
         .wait(1000)
         .evaluate( () => {
           try {
-            let obj = {};
             let title = document.querySelector('.single-title').innerText.trim();
             let bookDetail = document.querySelectorAll('dd')
             let author = bookDetail[0].innerText;
@@ -51,25 +53,27 @@ nightmare.goto('http://www.allitebooks.com/')
             let fileSize = bookDetail[5].innerText;
             let fileFormat = bookDetail[6].innerText;
             let category = bookDetail[7].innerText;
-            let description = document.querySelector('.entry-content').innerText
+            let description = document.querySelector('.entry-content').innerHTML
             let link = document.querySelectorAll('.download-links a')
             let downloadLink = link[0].getAttribute('href')
             let readLink = link[1].getAttribute('href')
-
+            let imgName = document.querySelector('.entry-body-thumbnail > a > img').getAttribute('src').slice(54).split('-').join(" ")
           //Push book-detail vào một object
-            obj['title'] = title;
-            obj['author'] = author;
-            obj['ISBN'] = ISBN;
-            obj['year'] = year;
-            obj['pages'] = pages;
-            obj['language'] = language;
-            obj['fileSize'] = fileSize;
-            obj['fileFormat'] = fileFormat;
-            obj['category'] = category;
-            obj['description'] = description;
-            obj['downloadLink'] = downloadLink;
-            obj['readLink'] = readLink;
-
+          let obj = {
+            title:title,
+            author:author,
+            ISBN:ISBN,
+            year:year,
+            pages:pages,
+            language:language,
+            fileSize:fileSize,
+            fileFormat:fileFormat,
+            category:category,
+            description:description,
+            downloadLink:downloadLink,
+            readLink:readLink,
+            imgName:imgName
+          };
             return obj;
           }
           catch (error) {
@@ -106,11 +110,11 @@ nightmare.goto('http://www.allitebooks.com/')
     for (let i = 0; i < n; i++) {
       json[i] = bookUrls[i];
     }
-    let jsonString = JSON.stringify(json);
+    let jsonString = JSON.stringify(json,null,2);
     // lưu vào file json trong máy
     fs.writeFile(filename, jsonString, (err) => {
       if (err)
         throw err;
-      console.log('Sản phẩm lưu vào file json ok!');
+      console.log('Sách đã lưu vào file json ok!');
     });
   }
