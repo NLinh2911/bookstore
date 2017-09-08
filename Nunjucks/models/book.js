@@ -22,6 +22,6 @@ module.exports = {
   },
 
   searchBook: (text) => {
-    return db.any("SELECT title FROM book WHERE document @@ plainto_tsquery($1)", text)
+    return db.any("SELECT title FROM book WHERE document @@ to_tsquery($1)", text)
   }
 }

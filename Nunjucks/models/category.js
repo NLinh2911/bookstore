@@ -17,7 +17,7 @@ module.exports = {
     return db.any(`
     SELECT c.id, c.name,
     (array(
-          SELECT row_to_json(cc) 
+          SELECT row_to_json(cc)
           FROM category AS cc
           WHERE cc.parent_id = c.id)
       ) AS category
