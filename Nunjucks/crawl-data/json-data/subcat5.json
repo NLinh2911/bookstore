@@ -1,0 +1,47 @@
+[
+  {
+    "id": 48,
+    "name": "3D MAX",
+    "parent_id": 5
+  },
+  {
+    "id": 49,
+    "name": "CAD",
+    "parent_id": 5
+  },
+  {
+    "id": 50,
+    "name": "Coreldraw",
+    "parent_id": 5
+  },
+  {
+    "id": 51,
+    "name": "Dreamweaver",
+    "parent_id": 5
+  },
+  {
+    "id": 52,
+    "name": "Flash",
+    "parent_id": 5
+  },
+  {
+    "id": 53,
+    "name": "Illustrator",
+    "parent_id": 5
+  },
+  {
+    "id": 54,
+    "name": "Maya",
+    "parent_id": 5
+  },
+  {
+    "id": 55,
+    "name": "Photoshop",
+    "parent_id": 5
+  },
+  {
+    "id": 56,
+    "name": "Premiere",
+    "parent_id": 5
+  }
+]

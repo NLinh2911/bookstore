@@ -1,0 +1,77 @@
+[
+  {
+    "id": 1,
+    "name": "Web Development",
+    "parent_id": null
+  },
+  {
+    "id": 2,
+    "name": "Programming",
+    "parent_id": null
+  },
+  {
+    "id": 3,
+    "name": "Databases",
+    "parent_id": null
+  },
+  {
+    "id": 4,
+    "name": "Game Programming",
+    "parent_id": null
+  },
+  {
+    "id": 5,
+    "name": "Graphics & Design",
+    "parent_id": null
+  },
+  {
+    "id": 6,
+    "name": "Operating Systems",
+    "parent_id": null
+  },
+  {
+    "id": 7,
+    "name": "Networking & Cloud Computing",
+    "parent_id": null
+  },
+  {
+    "id": 8,
+    "name": "Administration",
+    "parent_id": null
+  },
+  {
+    "id": 9,
+    "name": "Computers & Technology",
+    "parent_id": null
+  },
+  {
+    "id": 10,
+    "name": "Certification",
+    "parent_id": null
+  },
+  {
+    "id": 11,
+    "name": "Enterprise",
+    "parent_id": null
+  },
+  {
+    "id": 12,
+    "name": "Marketing & SEO",
+    "parent_id": null
+  },
+  {
+    "id": 13,
+    "name": "Hardware & DIY",
+    "parent_id": null
+  },
+  {
+    "id": 14,
+    "name": "Security",
+    "parent_id": null
+  },
+  {
+    "id": 15,
+    "name": "Software",
+    "parent_id": null
+  }
+]
