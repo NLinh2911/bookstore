@@ -1,0 +1,7 @@
+{% block body %}
+    <ul>
+  {% for item in getCategory %}
+      <li>{{item.name}}</li>
+  {% endfor %}
+    </ul>
+{% endblock %}

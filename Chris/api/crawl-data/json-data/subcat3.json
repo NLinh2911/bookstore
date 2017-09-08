@@ -1,0 +1,42 @@
+[
+  {
+    "id": 40,
+    "name": "Big Data",
+    "parent_id": 3
+  },
+  {
+    "id": 41,
+    "name": "Data Analysis",
+    "parent_id": 3
+  },
+  {
+    "id": 42,
+    "name": "MongoDB",
+    "parent_id": 3
+  },
+  {
+    "id": 43,
+    "name": "MySQL",
+    "parent_id": 3
+  },
+  {
+    "id": 44,
+    "name": "NoSQL",
+    "parent_id": 3
+  },
+  {
+    "id": 45,
+    "name": "PostgreSQL",
+    "parent_id": 3
+  },
+  {
+    "id": 46,
+    "name": "Oracle",
+    "parent_id": 3
+  },
+  {
+    "id": 47,
+    "name": "SQL",
+    "parent_id": 3
+  }
+]

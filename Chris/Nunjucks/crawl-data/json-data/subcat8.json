@@ -1,0 +1,42 @@
+[
+  {
+    "id": 68,
+    "name": "Cloud & Virtualization",
+    "parent_id": 8
+  },
+  {
+    "id": 69,
+    "name": "Infrastructure",
+    "parent_id": 8
+  },
+  {
+    "id": 70,
+    "name": "Mail Servers",
+    "parent_id": 8
+  },
+  {
+    "id": 71,
+    "name": "Microsoft Platform",
+    "parent_id": 8
+  },
+  {
+    "id": 72,
+    "name": "Monitoring",
+    "parent_id": 8
+  },
+  {
+    "id": 73,
+    "name": "Task Automation",
+    "parent_id": 8
+  },
+  {
+    "id": 74,
+    "name": "Web Servers",
+    "parent_id": 8
+  },
+  {
+    "id": 75,
+    "name": "Other",
+    "parent_id": 8
+  }
+]

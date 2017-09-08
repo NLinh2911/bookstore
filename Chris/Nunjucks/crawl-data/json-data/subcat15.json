@@ -1,0 +1,17 @@
+[
+  {
+    "id": 80,
+    "name": "Mac",
+    "parent_id": 15
+  },
+  {
+    "id": 81,
+    "name": "Office",
+    "parent_id": 15
+  },
+  {
+    "id": 82,
+    "name": "Windows & PC",
+    "parent_id": 15
+  }
+]
