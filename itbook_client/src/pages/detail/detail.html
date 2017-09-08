@@ -1,0 +1,105 @@
+<!--
+  Generated template for the DetailPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Book Detail</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-list *ngIf="bookDetail">
+
+    <div *ngFor="let bd of bookDetail">
+
+      <ion-item>
+        <ion-grid>
+          <ion-row>
+            <h2 class="title">{{bd.title}}</h2>
+          </ion-row>
+        </ion-grid>
+      </ion-item>
+
+      <ion-item>
+        <ion-grid>
+          <ion-row>
+            <ion-col col-4>
+              <img src="http://www.allitebooks.com/wp-content/uploads/2017/09/Practical-LXC-and-LXD.jpg">
+            </ion-col>
+            <ion-col col-4>
+              <ion-row>
+                <span class="atri-name">Author:</span>
+              </ion-row>
+              <ion-row>
+                <span class="atri-name">ISBN-10</span>
+              </ion-row>
+              <ion-row>
+                <span class="atri-name">Year:</span>
+              </ion-row>
+              <ion-row>
+                <span class="atri-name">Pages:</span>
+              </ion-row>
+              <ion-row>
+                <span class="atri-name">Language:</span>
+              </ion-row>
+              <ion-row>
+                <span class="atri-name">File Size:</span>
+              </ion-row>
+              <ion-row>
+                <span class="atri-name">File Format:</span>
+              </ion-row>
+              <ion-row>
+                <span class="atri-name">Category:</span>
+              </ion-row>
+            </ion-col>
+
+            <ion-col col-4>
+              <ion-row>
+                <span class="atri-val">{{bd.author}}</span>
+              </ion-row>
+              <ion-row>
+                <span class="atri-val">{{bd.isbn_10}}</span>
+              </ion-row>
+              <ion-row>
+                <span class="atri-val">{{bd.year}}</span>
+              </ion-row>
+              <ion-row>
+                <span class="atri-val">{{bd.page}}</span>
+              </ion-row>
+              <ion-row>
+                <span class="atri-val">{{bd.language}}</span>
+              </ion-row>
+              <ion-row>
+                <span class="atri-val">{{bd.file_size}}</span>
+              </ion-row>
+              <ion-row>
+                <span class="atri-val">{{bd.file_format}}</span>
+              </ion-row>
+              <ion-row>
+                <span class="atri-val">{{bd.category}}</span>
+              </ion-row>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-item>
+
+      <ion-item>
+        <ion-grid>
+          <ion-row>
+            <p class="book-des">
+              {{bd.description}}
+            </p>
+          </ion-row>
+        </ion-grid>
+      </ion-item>
+
+    </div>
+  </ion-list>
+</ion-content>

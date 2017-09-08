@@ -1,0 +1,27 @@
+<ion-menu [content]="content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Category</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    <!-- <ion-list *ngIf="categoriesList">
+      <button menuClose ion-item *ngFor="let c of categoriesList">
+          {{c.name}}
+      </button>
+      
+      add menuClose to auto close menu item after clicking
+    </ion-list> -->
+
+    <ion-item-group *ngIf="categoriesList">
+      <div *ngFor="let c of categoriesList">
+        <button menuClose color="primary" ion-button full (click)="toListPage(c.name)">{{c.name}}</button>
+        <button menuClose ion-item *ngFor="let cc of c.array" (click)="toListPage(cc.name)">{{cc.name}}</button>
+      </div>
+    </ion-item-group>
+  </ion-content>
+
+</ion-menu>
+
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

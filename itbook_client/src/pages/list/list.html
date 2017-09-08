@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      List Page
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list *ngIf="books">
+    <ion-item *ngFor="let b of books">
+      <ion-thumbnail item-start>
+        <img class="image-style" src="http://localhost:3000/images/Redmine-Cookbook.jpg" />
+      </ion-thumbnail>
+      <h2 class="book-title">{{b.title}}</h2>
+      <p class="book-author">{{b.author}}</p>
+      <button ion-button clear item-end (click)="toDetailPage(b.id)" [value]="b.id">View</button>
+    </ion-item>
+  </ion-list>
+  <example></example>
+</ion-content>
