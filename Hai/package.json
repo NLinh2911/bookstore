@@ -1,0 +1,17 @@
+{
+  "name": "crawling-bookstore",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "VO XUAN HAI",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^2.5.0",
+    "image-downloader": "^3.2.2",
+    "nightmare": "^2.10.0",
+    "shelljs": "^0.7.8"
+  }
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "id": 57,
+    "name": "Windows",
+    "parent_id": 6
+  },
+  {
+    "id": 58,
+    "name": "Linux & Unix",
+    "parent_id": 6
+  },
+  {
+    "id": 59,
+    "name": "Macintosh",
+    "parent_id": 6
+  },
+  {
+    "id": 60,
+    "name": "Android",
+    "parent_id": 6
+  },
+  {
+    "id": 61,
+    "name": "iOS",
+    "parent_id": 6
+  },
+  {
+    "id": 62,
+    "name": "Windows Phone",
+    "parent_id": 6
+  }
+]
