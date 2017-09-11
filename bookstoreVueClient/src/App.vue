@@ -1,18 +1,14 @@
 <template>
   <div id="app">
-    <mainMenu></mainMenu>
     <router-view></router-view>
   </div>
 </template>
 
 <script>
-import mainMenu from '@/components/mainMenu'
-import menuSidebar from '@/components/menuSidebar'
 export default {
   name: 'app',
   components: {
-    mainMenu: mainMenu,
-    menuSidebar: menuSidebar
+
   }
 }
 </script>
@@ -105,69 +101,6 @@ body {
 .marginless {
     margin: 0
 }
-
-/* ------------------------------ */
-
-/* Section right */
-section.right {
-    font-size: 1rem;
-    width: 60vw;
-}
-
-.page-header {
-    margin-top: 1%;
-    margin-bottom: 2%;
-    font-weight: lighter;
-}
-
-.book {
-    display: flex;
-    flex-flow: row wrap;
-    padding-top: 2%;
-    padding-bottom: 2%;
-    border-top: solid 1px var(--light-grey-200);
-    width: 55vw;
-}
-
-.book .thumbnail {
-    margin-right: 3%;
-}
-
-.book .thumbnail img {
-    max-width: 130px;
-    width: 100%;
-    max-height: 160px;
-    height: 100%;
-}
-
-.book .body {
-    width: 100%;
-    max-width: 41vw;
-}
-
-.book .body .title a {
-    color: var(--black)
-}
-
-.book .body .author, .book .body .author a{
-    color: var(--light-grey-400);
-    font-style: italic;
-    font-size: 0.75rem
-}
-
-.book .body .author a:hover {
-    color: var(--dark-blue)
-}
-
-.book .body .summary {
-    width: 100%;
-    min-width: 42vw;
-    font-size: 0.9rem
-}
-
-
-
-/* ------------------------------ */
 
 /* Search Component */
 

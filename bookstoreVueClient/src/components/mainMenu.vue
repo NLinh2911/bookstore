@@ -15,9 +15,12 @@
                     </button>
                     <div class="dropdown-content">
                       <ul class="category paddingless" v-for="cate in category">
-                          <li class="sub-category paddingless marginless">
+                          <li class="sub-category paddingless marginless" >
                             <a href="#"><router-link to="/">{{cate.name}}</router-link></a>
-                            <ul>
+                            <ul class="category dropdown-content paddingless" >
+                                <li class="sub-category paddingless marginless" v-for="subcategory in cate.category" >
+                                      <a href="#"><router-link to="/">{{ subcategory.name}}</router-link></a>
+                                </li>
                             </ul>
                           </li>
                       </ul>
@@ -34,26 +37,10 @@
 </template>
 
 <script>
-import axios from 'axios'
 export default {
+  props: ['category'],
   data () {
     return {
-      category: []
-    }
-  },
-  created () {
-    this.fetchData()
-  },
-  methods: {
-    fetchData () {
-      axios.get(`http://localhost:3000/api/`)
-        .then(res => {
-          let category = res.data.getCategory
-          this.category = category
-        })
-        .catch(error => {
-          console.log(error)
-        })
     }
   }
 }

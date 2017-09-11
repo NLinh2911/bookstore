@@ -19,7 +19,6 @@ try {
     getCategory,
     getBookByAuthor
   }
-
   res.json(author)
 }
 catch (error) {

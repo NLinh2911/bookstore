@@ -1,27 +1,33 @@
 <template>
+<div>
+      <mainMenu :category="category"></mainMenu>
   <div class="container paddingless">
-    <section class="left" v-if >
-      <ul v-for="cate in category">
+    <section class="left" >
+      <ul v-for="cate in category" :key="cate.id">
         <li><a href="#"><router-link to="/">{{cate.name}}</router-link></a></li>
       </ul>
     </section>
     <section class="right">
-        <singleBook ></singleBook>
+        <thumnailBook :book="Book"></thumnailBook>
     </section>
   </div>
+</div>
 </template>
 
 <script>
-import singleBook from '@/components/singleBook'
+import mainMenu from '@/components/mainMenu'
+import thumnailBook from '@/components/thumnailBook'
 import axios from 'axios'
 export default {
   name: 'hello',
   components: {
-    singleBook: singleBook
+    thumnailBook: thumnailBook,
+    mainMenu: mainMenu
   },
   data () {
     return {
-      category: []
+      category: [],
+      Book: []
     }
   },
   created () {
@@ -32,8 +38,10 @@ export default {
       axios.get(`http://localhost:3000/api/`)
         .then(res => {
           let category = res.data.getCategory
-          // console.log(category)
+          let Book = res.data.getBook
           this.category = category
+          this.Book = Book
+          console.log('Book', Book)
         })
         .catch(error => {
           console.log(error)

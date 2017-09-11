@@ -1,10 +1,10 @@
 {
     "development": {
         "username": "postgres",
-        "password": "admin",
+        "password": "1",
         "database": "itbook2",
         "host": "localhost",
-        "port": 5435,
+        "port": 5432,
         "dialect": "postgres",
         "schema": "public",
         "logging": false

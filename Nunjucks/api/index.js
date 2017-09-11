@@ -18,14 +18,14 @@ router.get('/', async function(req, res, next) {
   }
 })
 
-router.get('/:category', async function(req, res, next) {
-  try {
-    let category = req.params.category
-    let getBookByCategory = await Book.getBookByCategory(category)
-    res.json(getBookByCategory)
-  } catch (error) {
-    console.log(error);
-  }
-})
+// router.get('/:category', async function(req, res, next) {
+//   try {
+//     let category = req.params.category
+//     let getBookByCategory = await Book.getBookByTopCategory(category)
+//     res.json(getBookByCategory)
+//   } catch (error) {
+//     console.log(error);
+//   }
+// })
 
 module.exports = router
