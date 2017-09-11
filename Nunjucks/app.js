@@ -12,7 +12,7 @@ const index = require('./routes/index')
 const detail = require('./routes/detail')
 const category = require('./routes/category')
 const author = require('./routes/author')
-
+const api = require('./routes/api')
 
 //Template Nunjucks
 const nunjucks = require('nunjucks')
@@ -31,6 +31,6 @@ app.use('/', index)
 app.use('/categories', category)
 app.use('/books', detail)
 app.use('/authors', author)
-
+app.use('/api/v1', api)
 
 module.exports = app

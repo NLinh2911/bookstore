@@ -430,7 +430,7 @@
       "Jeff Carpenter"
     ],
     "category": [
-      "Datebases"
+      "Databases"
     ],
     "description": "<p>Imagine what you could do if scalability wasn’t a problem. With this hands-on guide, you’ll learn how the Cassandra database management system handles hundreds of terabytes of data while remaining highly available across multiple data centers. This expanded second edition—updated for Cassandra 3.0—provides the technical details and practical examples you need to put this database to work in a production environment.</p>\n<p>Authors Jeff Carpenter and Eben Hewitt demonstrate the advantages of Cassandra’s non-relational design, with special attention to data modeling. If you’re a developer, DBA, or application architect looking to solve a database scaling issue or future-proof your application, this guide helps you harness Cassandra’s speed and flexibility.</p>\n<ul>\n<li>Understand Cassandra’s distributed and decentralized structure</li>\n<li>Use the Cassandra Query Language (CQL) and&nbsp;cqlsh—the CQL shell</li>\n<li>Create a working data model and compare it with an equivalent relational model</li>\n<li>Develop sample applications using client drivers for languages including Java, Python, and Node.js</li>\n<li>Explore cluster topology and learn how nodes exchange data</li>\n<li>Maintain a high level of performance in your cluster</li>\n<li>Deploy Cassandra on site, in the Cloud, or with Docker</li>\n<li>Integrate Cassandra with Spark, Hadoop, Elasticsearch, Solr, and Lucene</li>\n</ul>",
     "download_link": "http://file.allitebooks.com/20170901/Cassandra%20The%20Definitive%20Guide,%202nd%20Edition.pdf",
@@ -473,7 +473,7 @@
       "Rachel Warren"
     ],
     "category": [
-      "Datebases"
+      "Databases"
     ],
     "description": "<p>Apache Spark is amazing when everything clicks. But if you haven’t seen the performance improvements you expected, or still don’t feel confident enough to use Spark in production, this practical book is for you. Authors Holden Karau and Rachel Warren demonstrate performance optimizations to help your Spark queries run faster and handle larger data sizes, while using fewer resources.</p>\n<p>Ideal for software engineers, data engineers, developers, and system administrators working with large-scale data applications, this book describes techniques that can reduce data infrastructure costs and developer hours. Not only will you gain a more comprehensive understanding of Spark, you’ll also learn how to make it sing.</p>\n<p>With this book, you’ll explore:</p>\n<ul>\n<li>How Spark SQL’s new interfaces improve performance over SQL’s RDD data structure</li>\n<li>The choice between data joins in Core Spark and Spark SQL</li>\n<li>Techniques for getting the most out of standard RDD transformations</li>\n<li>How to work around performance issues in Spark’s key/value pair paradigm</li>\n<li>Writing high-performance Spark code without Scala or the JVM</li>\n<li>How to test for functionality and performance when applying suggested improvements</li>\n<li>Using Spark MLlib and Spark ML machine learning libraries</li>\n<li>Spark’s Streaming components and external community packages</li>\n</ul>",
     "download_link": "http://file.allitebooks.com/20170831/High%20Performance%20Spark.pdf",
@@ -563,7 +563,7 @@
       "Tim Mitchell"
     ],
     "category": [
-      "Datebases",
+      "Databases",
       "Computer Science"
     ],
     "description": "<p>SQL Server 2012 Integration Services Design Patterns&nbsp;is a book of recipes for SQL Server Integration Services (SSIS). Design patterns&nbsp;in the book show how to&nbsp;solve common problems encountered when developing data integration solutions.&nbsp;Because you do not have to build the code from scratch each time, using design patterns improves your efficiency as an SSIS developer. In&nbsp;SSIS Design Patterns, we take you through several of these snippets in detail, providing the technical details of the resolution.</p>\n<p>SQL Server 2012 Integration Services Design Patterns&nbsp;does not focus on the problems to be solved; instead, the book delves into why particular problems should be solved in certain ways. You’ll learn more about SSIS as a result, and you’ll learn by practical example. Where appropriate,&nbsp;SQL Server 2012 Integration Services Design Patternsprovides examples of alternative patterns and discusses when and where they should be used. Highlights of the book include sections on ETL Instrumentation, SSIS Frameworks, and Dependency Services.</p>\n<ul>\n<li>Takes you through solutions to several common data integration challenges</li>\n<li>Demonstrates new features in SQL Server 2012 Integration Services</li>\n<li>Teaches SSIS using practical examples</li>\n</ul>",
@@ -607,7 +607,7 @@
       "Peter Bruce"
     ],
     "category": [
-      "Datebases"
+      "Databases"
     ],
     "description": "<p>Statistical methods are a key part of of data science, yet very few data scientists have any formal statistics training. Courses and books on basic statistics rarely cover the topic from a data science perspective. This practical guide explains how to apply various statistical methods to data science, tells you how to avoid their misuse, and gives you advice on what’s important and what’s not.</p>\n<p>Many data science resources incorporate statistical methods but lack a deeper statistical perspective. If you’re familiar with the R programming language, and have some exposure to statistics, this quick reference bridges the gap in an accessible, readable format.</p>\n<p>With this book, you’ll learn:</p>\n<ul>\n<li>Why exploratory data analysis is a key preliminary step in data science</li>\n<li>How random sampling can reduce bias and yield a higher quality dataset, even with big data</li>\n<li>How the principles of experimental design yield definitive answers to questions</li>\n<li>How to use regression to estimate outcomes and detect anomalies</li>\n<li>Key classification techniques for predicting which categories a record belongs to</li>\n<li>Statistical machine learning methods that “learn” from data</li>\n<li>Unsupervised learning methods for extracting meaning from unlabeled data</li>\n</ul>",
     "download_link": "http://file.allitebooks.com/20170726/Practical%20Statistics%20for%20Data%20Scientists.pdf",
@@ -1772,7 +1772,7 @@
       "Tim Mitchell"
     ],
     "category": [
-      "Datebases",
+      "Databases",
       "Computer Science"
     ],
     "description": "<p>SQL Server 2012 Integration Services Design Patterns&nbsp;is a book of recipes for SQL Server Integration Services (SSIS). Design patterns&nbsp;in the book show how to&nbsp;solve common problems encountered when developing data integration solutions.&nbsp;Because you do not have to build the code from scratch each time, using design patterns improves your efficiency as an SSIS developer. In&nbsp;SSIS Design Patterns, we take you through several of these snippets in detail, providing the technical details of the resolution.</p>\n<p>SQL Server 2012 Integration Services Design Patterns&nbsp;does not focus on the problems to be solved; instead, the book delves into why particular problems should be solved in certain ways. You’ll learn more about SSIS as a result, and you’ll learn by practical example. Where appropriate,&nbsp;SQL Server 2012 Integration Services Design Patternsprovides examples of alternative patterns and discusses when and where they should be used. Highlights of the book include sections on ETL Instrumentation, SSIS Frameworks, and Dependency Services.</p>\n<ul>\n<li>Takes you through solutions to several common data integration challenges</li>\n<li>Demonstrates new features in SQL Server 2012 Integration Services</li>\n<li>Teaches SSIS using practical examples</li>\n</ul>",
