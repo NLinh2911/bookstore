@@ -1,0 +1,62 @@
+[
+  {
+    "id": 16,
+    "name": "ASP.NET",
+    "parent_id": 1
+  },
+  {
+    "id": 17,
+    "name": "CMS",
+    "parent_id": 1
+  },
+  {
+    "id": 18,
+    "name": "HTML, HTML5 & CSS",
+    "parent_id": 1
+  },
+  {
+    "id": 19,
+    "name": "JavaScript",
+    "parent_id": 1
+  },
+  {
+    "id": 20,
+    "name": "JSP",
+    "parent_id": 1
+  },
+  {
+    "id": 21,
+    "name": "PHP",
+    "parent_id": 1
+  },
+  {
+    "id": 22,
+    "name": "Python",
+    "parent_id": 1
+  },
+  {
+    "id": 23,
+    "name": "Ruby",
+    "parent_id": 1
+  },
+  {
+    "id": 24,
+    "name": "Rails",
+    "parent_id": 1
+  },
+  {
+    "id": 25,
+    "name": "XML",
+    "parent_id": 1
+  },
+  {
+    "id": 26,
+    "name": "Services & APIs",
+    "parent_id": 1
+  },
+  {
+    "id": 27,
+    "name": "Other",
+    "parent_id": 1
+  }
+]

@@ -1,0 +1,29 @@
+{
+  "name": "itbookstore",
+  "version": "0.0.1",
+  "description": "IT Book Store",
+  "main": "index.js",
+  "dependencies": {
+    "bluebird": "^3.5.0",
+    "body-parser": "^1.17.2",
+    "eslint": "^4.5.0",
+    "express": "^4.15.4",
+    "nunjucks": "^3.0.1",
+    "nunjucks-filters": "^1.4.2",
+    "pg-monitor": "^0.8.2",
+    "pg-promise": "^6.5.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  },
+  "scripts": {
+    "test": "node test",
+    "start": "node ./bin/www"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NLinh2911/bookstore"
+  },
+  "author": "Techmaster team",
+  "license": "ISC"
+}

@@ -1,0 +1,27 @@
+[
+  {
+    "id": 63,
+    "name": "Cloud Computing",
+    "parent_id": 7
+  },
+  {
+    "id": 64,
+    "name": "Network Administration",
+    "parent_id": 7
+  },
+  {
+    "id": 65,
+    "name": "Network Security",
+    "parent_id": 7
+  },
+  {
+    "id": 66,
+    "name": "Networks, Protocols & APIs",
+    "parent_id": 7
+  },
+  {
+    "id": 67,
+    "name": "Wireless Networks",
+    "parent_id": 7
+  }
+]
