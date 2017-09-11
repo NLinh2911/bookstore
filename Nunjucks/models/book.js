@@ -1,27 +1,34 @@
 const db = require('../pgp')
-module.exports = {
 
-  getBook: (limit) => {
-    return db.many("SELECT * FROM book LIMIT $1", limit);
+module.exports = {
+  getBookNums : () =>{
+    return db.one("SELECT COUNT(id) FROM book")
   },
 
-  getBookByTopCategory: (category) => {
-    return db.any("SELECT * FROM book WHERE top_category ILIKE $1", category);
+  getBookLimit: (limit, offset) =>{
+    return db.many("SELECT * FROM book LIMIT $1 OFFSET $2", [limit, offset])
+  },
+  getNumsBookByCategory: (kind) => {
+    return db.one("SELECT COUNT(id) FROM book WHERE top_category ILIKE $1", kind) 
+  },
+  getBookByTopCategory: (category, limit, offset) => {
+    return db.any("SELECT * FROM book WHERE top_category ILIKE $1 LIMIT $2 OFFSET $3", [category, limit, offset]);
   },
 
   getBookBySubCategory: (category) => {
     return db.any("SELECT * FROM book WHERE $1 ILIKE ANY (category)", category);
   },
 
-  getBookByAuthor: (author) => {
+  getBookByAuthor: (author)=>{
     return db.any("SELECT * FROM book WHERE $1 ILIKE ANY (author)", author);
   },
 
   getSingleBook: (title) => {
     return db.oneOrNone("SELECT * FROM book WHERE title ILIKE $1", title);
-  },
+  }, 
 
-  searchBook: (text) => {
-    return db.any("SELECT title FROM book WHERE document @@ to_tsquery($1)", text)
+  searchBook: (text)=>{
+    return db.any("SELECT * FROM book WHERE document @@ plainto_tsquery($1)", text)
   }
 }
+

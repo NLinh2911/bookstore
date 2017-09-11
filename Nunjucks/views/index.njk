@@ -33,4 +33,7 @@
       </div>
     </article>
   {% endfor %}
+  {% if paginate %}
+    {% include 'pagination.njk' %}
+  {% endif %}
 {% endblock %}
