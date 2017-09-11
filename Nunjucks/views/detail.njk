@@ -1,5 +1,49 @@
 {% extends "layout.njk" %}
 
     {% block right %}
-      <h1>{{book.title}}</h1>
+      <h2 class="detail-title">{{book.title}}</h2>
+      <article class="book">
+      <div class="thumbnail">
+        <a href="/books/{{ book.title | lower | replace(" ", "-") }}">
+          <img src="/img/{{ book.image }}" height="450" width="300" alt="{{book.title}}"/>
+        </a>
+      </div>
+      <div class="body">
+        <header class="header">
+          <dl>
+            <dt>Author: </dt>
+            <dd>
+              {% for item in book.author | list %} 
+                <a href="/authors/{{ item | replace(' ', '-') }}">
+                {{ item }}
+                </a>
+                {{ "," if not loop.last }}
+              {% endfor %}
+            </dd>
+            <dt>ISBN-10: </dt>
+            <dd>{{book.isbn_10}}</dd>
+            <dt>Year: </dt>
+            <dd>{{book.year}}</dd>
+            <dt>Pages: </dt>
+            <dd>{{book.page}}</dd>
+            <dt>Language: </dt>
+            <dd>{{book.language}}</dd>
+            <dt>File size: </dt>
+            <dd>{{book.file_size}}</dd>
+            <dt>File format: </dt>
+            <dd>{{book.file_format}}</a></dd>
+            <dt>Category: </dt>
+            <dd><a href="/categories/{{ book.top_category | lower | replace(" ", "-") }}">{{book.top_category}}</a></dd>
+          </dl>
+        <header>
+      </div>
+      <div class="summary" style="font-size:0.9rem">
+        <h3>Book Description:</h3>
+        {{book.description | safe}}
+      </div>
+      <div class="button">
+        <button class="download"><a href="{{book.download_link}}">Download PDF {{book.file_size}}</a></button>
+      </div>
+    </article>
     {% endblock %}
+    
