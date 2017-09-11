@@ -1,0 +1,35 @@
+{% extends "layout.njk" %}
+
+{% block right %}
+  {% for book in books %} 
+    <article class="book">
+      <div class="thumbnail">
+        <a href="/books/{{ book.title | lower | replace(" ", "-") }}">
+          <img src="/img/{{ book.image }}" height="230" width="180" alt="{{book.title}}"/>
+        </a>
+      </div>
+      <div class="body">
+        <header class="header">
+          <h3 class="title marginless">
+            <a href="/books/{{ book.title | lower | replace(" ", "-") }}" >
+              {{book.title}}
+            </a>
+          </h3>
+          <p class="author marginless">
+          By: {% for item in book.author %} 
+                <a href="/authors/{{ item | replace(' ', '-') }}">
+                  {{item}} 
+                </a>
+                {{ "," if not loop.last }}
+              {% endfor %}
+          </p>
+        <header>
+        <div class="summary">
+          <p>
+            {{book.description | safe | truncate(500)}}
+          </p>
+        </div>
+      </div>
+    </article>
+  {% endfor %}
+{% endblock %}

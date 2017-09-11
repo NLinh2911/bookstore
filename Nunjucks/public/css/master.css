@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
+=======
+>>>>>>> 72e91d26caa48033537703804fbd81f54a0afdef
 :root {
     --dark-blue: #2a3744;
     --light-blue: #3d5064;
@@ -10,6 +13,18 @@
     --light-grey-400: #BDBDBD
 }
 
+<<<<<<< HEAD
+=======
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 600;
+}
+
+>>>>>>> 72e91d26caa48033537703804fbd81f54a0afdef
 * {
     text-decoration: none;
     list-style-type: none;
@@ -18,6 +33,10 @@
 body {
     width: 100vw;
     font-size: 12px;
+<<<<<<< HEAD
+=======
+    font-weight: 400;
+>>>>>>> 72e91d26caa48033537703804fbd81f54a0afdef
     font-family: 'Open Sans', sans-serif;
     margin: auto;
     background-color: var(--light-grey-200);
@@ -40,7 +59,10 @@ body {
     background-color: var(--white);
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 72e91d26caa48033537703804fbd81f54a0afdef
 .paddingless {
     padding: 0
 }
@@ -49,12 +71,19 @@ body {
     margin: 0
 }
 
+<<<<<<< HEAD
 /* Section left */
+=======
+
+/* Section left */
+
+>>>>>>> 72e91d26caa48033537703804fbd81f54a0afdef
 section.left {
     font-size: 1rem;
     width: 15vw;
 }
 
+<<<<<<< HEAD
 section.left ul {
     color: var(--cherry-red);
     padding: 0 5% 5% 5%;
@@ -66,6 +95,26 @@ section.left li:not(:last-child) {
 /* ------------------------------ */
 
 /* Section right */
+=======
+section.left .categories {
+    padding: 0 5% 5% 5%;
+}
+
+section.left .categories li a {
+    color: var(--cherry-red);
+}
+
+section.left li:not(:last-child) {
+    margin-bottom: 0.5rem;
+}
+
+
+/* ------------------------------ */
+
+
+/* Section right */
+
+>>>>>>> 72e91d26caa48033537703804fbd81f54a0afdef
 section.right {
     font-size: 1rem;
     width: 60vw;
@@ -83,18 +132,29 @@ section.right {
     padding-top: 2%;
     padding-bottom: 2%;
     border-top: solid 1px var(--light-grey-200);
+<<<<<<< HEAD
     width: 55vw;
+=======
+    width: 58vw;
+>>>>>>> 72e91d26caa48033537703804fbd81f54a0afdef
 }
 
 .book .thumbnail {
     margin-right: 3%;
 }
 
+<<<<<<< HEAD
 .book .thumbnail img {
     max-width: 130px;
     width: 100%;
     max-height: 160px;
     height: 100%;
+=======
+.book .thumbnail a,
+.book .thumbnail img {
+    max-width: 100%;
+    height: auto;
+>>>>>>> 72e91d26caa48033537703804fbd81f54a0afdef
 }
 
 .book .body {
@@ -103,6 +163,7 @@ section.right {
 }
 
 .book .body .title a {
+<<<<<<< HEAD
     color: var(--black)
 }
 
@@ -110,6 +171,18 @@ section.right {
     color: var(--light-grey-400);
     font-style: italic;
     font-size: 0.75rem
+=======
+    color: var(--black);
+}
+
+.book .body .author,
+.book .body .author a {
+    color: var(--light-grey-400);
+    font-style: italic;
+    font-weight: 300;
+    font-size: 0.75rem;
+    margin-top: 0.25rem
+>>>>>>> 72e91d26caa48033537703804fbd81f54a0afdef
 }
 
 .book .body .author a:hover {
@@ -123,9 +196,15 @@ section.right {
 }
 
 
+<<<<<<< HEAD
 
 /* ------------------------------ */
 
+=======
+/* ------------------------------ */
+
+
+>>>>>>> 72e91d26caa48033537703804fbd81f54a0afdef
 /* Search Component */
 
 #search .left {
@@ -159,13 +238,20 @@ section.right {
     background-color: var(--dark-blue);
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 72e91d26caa48033537703804fbd81f54a0afdef
 #search a {
     text-decoration: none;
     color: var(--light-blue);
 }
 
+<<<<<<< HEAD
 #search .left ul li .dropbtn, 
+=======
+#search .left ul li .dropbtn,
+>>>>>>> 72e91d26caa48033537703804fbd81f54a0afdef
 #search .left ul li .dropbtn a {
     background-color: transparent;
     width: 9rem;
@@ -183,7 +269,10 @@ section.right {
     height: 100%;
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 72e91d26caa48033537703804fbd81f54a0afdef
 .dropdown-content {
     display: none;
     text-align: left;
@@ -191,7 +280,11 @@ section.right {
     position: absolute;
     background-color: var(--dark-blue);
     min-width: 160px;
+<<<<<<< HEAD
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+=======
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+>>>>>>> 72e91d26caa48033537703804fbd81f54a0afdef
     z-index: 1;
 }
 
@@ -202,6 +295,7 @@ section.right {
     height: 2.5rem;
     line-height: 2.5rem;
     padding-left: .75rem;
+<<<<<<< HEAD
 
 }
 
@@ -211,6 +305,16 @@ section.right {
 
 
 .dropbtn:hover, .dropdown-content a:hover {
+=======
+}
+
+.dropdown-content .category .sub-category:not(:last-child) {
+    border-bottom: 1px solid rgba(238, 238, 238, 0.2);
+}
+
+.dropbtn:hover,
+.dropdown-content a:hover {
+>>>>>>> 72e91d26caa48033537703804fbd81f54a0afdef
     background-color: var(--light-blue) !important;
 }
 
@@ -226,18 +330,100 @@ section.right {
     width: 15rem;
     max-width: 100%;
     position: relative;
+<<<<<<< HEAD
 
 }
 
 .dropdown-content .category .sub-category > .category {
+=======
+}
+
+.dropdown-content .category .sub-category>.category {
+>>>>>>> 72e91d26caa48033537703804fbd81f54a0afdef
     display: none;
     left: 100%;
     top: 0
 }
 
-.dropdown-content .category .sub-category:hover > .category {
+.dropdown-content .category .sub-category:hover>.category {
     display: block;
     position: absolute
+}
+
+
+/* ------------------------------ */
+
+
+/* Detail Component */
+
+.detail-title,
+h2 {
+    font-weight: 300
+}
+
+section.right .book .button .download {
+    background-color: var(--cherry-red);
+    max-width: 200px;
+    width: 100%;
+    height: 30px;
+    border: none;
+}
+
+section.right .book .button .download a {
+    color: var(--white);
+    font-size: 0.725rem
+}
+
+section.right .book .summary ul li {
+    list-style-type: disc
+}
+
+section.right .body {
+    max-width: 30vw
+}
+
+section.right .body .button {
+    padding: 2% 0;
+    border-top: solid 1px var(--light-grey-200);
+    max-width: 30vw;
+    height: auto;
+}
+
+dl {
+    letter-spacing: -0.31em;
+    *letter-spacing: normal;
+    word-spacing: -0.43em;
+    margin-top: 0;
+    font-size: 0.9rem
+}
+
+dl dt,
+dl dd {
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    letter-spacing: normal;
+    word-spacing: normal;
+    vertical-align: top;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 3%;
+}
+
+dl dt {
+    font-weight: 600;
+    width: 25%;
+    padding: 0 2% 0.5em 0;
+}
+
+dl dd {
+    margin-right: -1px;
+    width: 74%;
+    padding: 0 0 0.5em 0;
+}
+
+dd a {
+    color: var(--cherry-red)
 }
 
 /* ------------------------------ */

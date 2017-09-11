@@ -1,6 +1,7 @@
 const express = require("express");
 const router = express.Router()
 
+<<<<<<< HEAD
 const {db} = require('../pgp')
 
 
@@ -38,6 +39,32 @@ router.get('/', async function(req, res, next) {
 
 router.get('/top-category', function (req, res, next) {
   
+=======
+const db = require('../pgp')
+
+
+// Top Category database
+const category = require('../models/category')
+const books = require('../models/book')
+
+// Home page
+router.get('/', async function (req, res, next) {
+  try {
+    let getCategory = await category.getCategory()
+    let getBook = await books.getBook(10)
+    res.render('index', {
+      title: 'IT Book Store',
+      books: getBook,
+      getCategory
+    })
+  } catch (err) {
+    console.log(err);
+  }
+})
+
+router.get('/search/:text', function (req, res, next) {
+  let searchText = req.query.text;
+>>>>>>> 72e91d26caa48033537703804fbd81f54a0afdef
 })
 
 

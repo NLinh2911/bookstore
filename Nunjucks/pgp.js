@@ -20,5 +20,4 @@ const pgp = require('pg-promise')(options)
     // monitor.attach(options);
 monitor.setTheme('bright')
 
-module.exports.db = pgp(cn)
-module.exports.config = config
+module.exports = pgp(cn)
