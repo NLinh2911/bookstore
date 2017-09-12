@@ -12,6 +12,7 @@ router.get('/:name', async function (req, res, next) {
     res.render('index', {
       title: 'IT Book Store',
       books: getBookByAuthor,
+      paginate : false,
       getCategory
     })
   } catch (err) {

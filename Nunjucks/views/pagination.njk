@@ -1,0 +1,8 @@
+<div class='pagination'>
+    {# ---------- #}
+    <a href="{{root}}/">1</a>
+    {% for page in range(2, pages+1, 1) %}
+      <a href="{{root}}/?page={{page}}">{{page}}</a>
+    {% endfor%}
+</div>
+
