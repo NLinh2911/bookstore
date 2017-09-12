@@ -9,8 +9,12 @@ router.get('/:topCategory', async function (req, res, next) {
     let pages_num = req.query.page || 1
     let book_quantity = await books.getNumsBookByCategory(topCategory)
 
-    let arr = req.params.topCategory.split('/')
-    let root = '../' + arr[arr.length - 1]
+    
+    let root = req.params.topCategory;
+    if(req.query.page || req.url.slice(-1)=='/'){
+      root = '../' + req.params.topCategory
+    }
+    
 
     let offset = 7 * (pages_num - 1)
     let pages = Math.ceil(parseInt(book_quantity.count)/7)

@@ -13,7 +13,9 @@ router.get('/', async (req, res, next)=>{
 
   let offset = 10 * (pages_num - 1);
   let pages = Math.ceil(parseInt(book_quantity.count)/10)
-  
+
+  let currentPage = parseInt(pages_num)
+
   let getCategory = await category.getCategory()
   let getBook = await books.getBookLimit(10, offset)
 
@@ -21,6 +23,7 @@ router.get('/', async (req, res, next)=>{
     title: 'IT Book Store',
     books : getBook,
     paginate : true,
+    currentPage,
     root : '',
     getCategory,
     pages
