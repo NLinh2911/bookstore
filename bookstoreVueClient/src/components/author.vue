@@ -1,12 +1,12 @@
 <template>
   <div>
-    <mainMenu :category="Category"></mainMenu>
+    <mainMenu :category="Category"  @search="searchData($event)"></mainMenu>
     <div class="container paddingless">
       <section class="left">
         <ul v-for="cate in Category" :key="cate.id">
           <li>
             <a href="#">
-              <router-link to="/">{{cate.name}}</router-link>
+              <router-link :to="{path: `/${cate.name}`}">{{cate.name}}</router-link>
             </a>
           </li>
         </ul>
@@ -75,6 +75,20 @@ export default {
     },
     imagePath: (img) => {
       return require('../assets/images/' + img)
+    },
+    searchData (searchvalue) {
+      // console.log('searchvalue', searchvalue)
+      axios.post(`http://localhost:3000/api/search`, {
+        searchvalue
+      })
+      .then(res => {
+        console.log('res.data', res.data)
+        let Book = res.data.getBook
+        this.getBookByAuthor = Book
+      })
+      .catch(error => {
+        console.log(error)
+      })
     }
   },
   filters: {
@@ -86,6 +100,9 @@ export default {
 
 </script>
 <style>
+.container {
+  margin-bottom: 10px;
+}
 section.left {
   font-size: 1rem;
   width: 15vw;
@@ -97,8 +114,9 @@ section.left ul {
   padding: 0 5% 5% 5%;
 }
 
-section.left li {
+section.left li a{
   font-weight: bold;
+    color: #c40000
 }
 
 section.left li:not(:last-child) {
@@ -110,10 +128,10 @@ section.left li:not(:last-child) {
 }
 
 .entry-meta .entry-body-thumbnail img {
-  max-width: 130px;
-  width: 100%;
-  max-height: 160px;
-  height: 100%;
+    max-width: 270px;
+    width: 100%;
+    max-height: 350px;
+    height: 100%;
 }
 
 .book-detail span {

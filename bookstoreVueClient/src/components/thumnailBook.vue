@@ -1,16 +1,38 @@
 <template lang="html">
     <div >
-      <article v-for="item in book" class="book">
+    <!--Show book in Category-->
+      <article v-if="book" v-for="item in book" class="book">
         <div class="thumbnail">
             <a href=""><router-link :to="{path: `books/${item.title}`}"><img :src="imagePath(item.image)" alt=""></router-link></a>
         </div>
         <div class="body">
             <header class="header">
-                <h3 class="title marginless"><router-link :to="{path: `books/${item.title}`}">{{ item.title}}</router-link></h3>
+                <h3 class="title marginless"><router-link :to="{path: `${root}/books/${item.title}`}">{{ item.title}}</router-link></h3>
                 <h5 class="author marginless">By: 
                     <a href=""  v-for="items in item.author">
                         <span>
-                            <router-link :to="{path:`author/${items}`}">
+                            <router-link :to="{path:`${root}/author/${items}`}">
+                            {{ items}}
+                            </router-link>
+                        </span>
+                    </a>
+                </h5>
+                <header class="summary" v-html="$options.filters.truncate(item.description, 500)"></header>
+            </header>
+        </div>
+      </article>
+    <!--Show book in SUB Category-->
+      <article v-if="subBook" v-for="item in subBook" class="book">
+        <div class="thumbnail">
+            <a href=""><router-link :to="{path: `books/${item.title}`}"><img :src="imagePath(item.image)" alt=""></router-link></a>
+        </div>
+        <div class="body">
+            <header class="header">
+                <h3 class="title marginless"><router-link :to="{path: `${root}/books/${item.title}`}">{{ item.title}}</router-link></h3>
+                <h5 class="author marginless">By: 
+                    <a href=""  v-for="items in item.author">
+                        <span>
+                            <router-link :to="{path:`${root}/author/${items}`}">
                             {{ items}}
                             </router-link>
                         </span>
@@ -25,7 +47,12 @@
 
 <script>
 export default {
-  props: ['book'],
+  data () {
+    return {
+      root: ''
+    }
+  },
+  props: ['book', 'subBook'],
   methods: {
     imagePath: (img) => {
       return require('../assets/images/' + img)

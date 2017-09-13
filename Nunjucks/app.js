@@ -19,6 +19,7 @@ const author = require('./routes/author')
 const authorapi = require('./api/author')
 const detailapi = require('./api/detail')
 const indexapi = require('./api/index')
+const categoryapi = require('./api/category')
 
 //Template Nunjucks
 const nunjucks = require('nunjucks')
@@ -45,5 +46,6 @@ app.use('/authors', author)
 app.use('/api/author', authorapi)
 app.use('/api/detail', detailapi)
 app.use('/api/', indexapi)
+app.use('/api/category', categoryapi)
 
 module.exports = app

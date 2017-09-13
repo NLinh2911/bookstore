@@ -23,8 +23,8 @@ router.get('/', async function (req, res, next) {
   }
 })
 
-router.get('/search/:text', function (req, res, next) {
-  let searchText = req.query.text;
+router.get('/search', function (req, res, next) {
+  let searchText = req.query.search;
 })
 
 

@@ -12,6 +12,7 @@ const Book = require('../models/book')
 // Detail page
 router.get('/:title', async function(req, res, next) {
   try {
+    //Data
     let title = req.params.title;
     let getCategory = await Category.getCategory();
     let getSingleBook = await Book.getSingleBook(title);

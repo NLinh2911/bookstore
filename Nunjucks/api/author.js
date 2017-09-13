@@ -5,10 +5,10 @@ const db = require('../pgp');
 
 // Top Category database
 const Category = require('../models/category');
-// const category = new Category(db);
+
 const Book = require('../models/book')
 
-// Author page
+//Author page
 router.get('/:author', async function(req, res, next) {
 try {
   let authorName = req.params.author;
