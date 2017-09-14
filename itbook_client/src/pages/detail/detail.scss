@@ -1,5 +1,20 @@
 page-detail {
+    p {
+        color: black !important;
+        font-size:inherit !important;
+    }
+    .title {
+        white-space: normal;
+        font-size: 2em !important;
+    }
     .book-des {
         white-space: normal;
+    }
+    .text-description {
+        white-space: normal;
+        text-align: justify;
+    }
+    .title-description {
+        padding-bottom: 15px;
     }
 }

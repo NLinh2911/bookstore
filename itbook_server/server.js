@@ -1,78 +1,34 @@
+const session = require('express-session');
 const express = require('express');
-const Promise = require('bluebird');
-const bodyParser = require('body-parser');
-const cors = require('cors');
-const PORT = '3000';
 const app = express();
-
-app.use(cors());
 app.use(express.static('public'));
+
+const cors = require('cors');
+app.use(cors());
+
+const bodyParser = require('body-parser');
+app.use(bodyParser.json());
 app.use(
   bodyParser.urlencoded({
     extended: false
   })
 );
-app.use(bodyParser.json());
 
-const opts = {
-  promiseLib: Promise
-};
-const pgp = require('pg-promise')(opts);
-const cn = {
-  host: 'localhost',
-  port: '5432',
-  database: 'itbook2',
-  user: 'postgres',
-  password: 'abc123'
-};
+app.use(
+  session({
+    cookie: { maxAge: 3600 * 1000, secure: false },
+    secret: 'test',
+    resave: false,
+    saveUninitialized: true
+  })
+);
 
-const db = pgp(cn);
+const db = require('./pgp');
 
-app.get('/api/categories', (req, res) => {
-  db
-    .any(
-      `
-      SELECT c.id,c.name,ARRAY(
-        SELECT row_to_json(cc) 
-        FROM category as cc 
-        WHERE cc.parent_id = c.id
-      )
-      FROM category as c
-      WHERE parent_id IS NULL
-    `
-    )
-    .then(data => res.json(data));
-});
+const api = require('./routes/api');
+app.use('/', api);
 
-app.get('/api/books', (req, res) => {
-  // console.log(req);
-  console.log(req.query.filter);
-  let offsetNum = req.query.filter.offsetNum;
-  let fetchNum = req.query.filter.fetchNum;
-  db
-    .any(
-      'SELECT id,title,author,image FROM public.book ORDER BY id ASC OFFSET $1 ROWS FETCH NEXT $2 ROWS ONLY',
-      [+offsetNum, +fetchNum]
-    )
-    .then(data => res.json(data));
-});
-
-app.get('/api/book-detail', (req, res) => {
-  console.log(req.query.bookDetail.bookID);
-  let bookID = req.query.bookDetail.bookID;
-  db
-    .any('SELECT * FROM public.book WHERE id = $1', [+bookID])
-    .then(data => res.json(data));
-});
-
-app.get('/api/books-by-cateid/:cateID', (req, res) => {
-  let cateID = req.params.cateID;
-  console.log(req.params);
-  db
-    .any('SELECT * FROM public.book WHERE $1 ILIKE ANY (category)',[cateID])
-    .then(data => res.json(data));
-});
-
+const PORT = '3000';
 app.listen(PORT, () => {
   console.log(`RESTful server's listenning on port ${PORT}`);
 });

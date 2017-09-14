@@ -1,4 +1,4 @@
-webpackJsonp([2],{
+webpackJsonp([3],{
 
 /***/ 100:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -6,8 +6,9 @@ webpackJsonp([2],{
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ListPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(28);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_itbook_service_itbook_service__ = __webpack_require__(39);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__pages_detail_detail__ = __webpack_require__(52);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -17,6 +18,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+
 
 
 
@@ -39,12 +41,15 @@ var ListPage = (function () {
         var _this = this;
         return new Promise(function (resolve, reject) {
             _this.bookService
-                .getBookItemsByCateID(cateID)
+                .getBookItemsByCateName(cateID)
                 .subscribe(function (data) {
                 console.log(data);
                 _this.books = data;
             });
         });
+    };
+    ListPage.prototype.toDetailPage = function (id) {
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_3__pages_detail_detail__["a" /* DetailPage */], { id: id });
     };
     ListPage.prototype.ionViewDidLoad = function () {
         console.log('ionViewDidLoad ListPage');
@@ -54,7 +59,7 @@ var ListPage = (function () {
 ListPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* IonicPage */])(),
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-list',template:/*ion-inline-start:"/home/phanquan/Desktop/ITBookProjectWithIonic/itbook_client/src/pages/list/list.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>\n      List Page\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n\n<ion-content padding>\n  <ion-list *ngIf="books">\n    <ion-item *ngFor="let b of books">\n      <ion-thumbnail item-start>\n        <img class="image-style" src="http://localhost:3000/images/Redmine-Cookbook.jpg" />\n      </ion-thumbnail>\n      <h2 class="book-title">{{b.title}}</h2>\n      <p class="book-author">{{b.author}}</p>\n      <button ion-button clear item-end (click)="toDetailPage(b.id)" [value]="b.id">View</button>\n    </ion-item>\n  </ion-list>\n  <example></example>\n</ion-content>\n'/*ion-inline-end:"/home/phanquan/Desktop/ITBookProjectWithIonic/itbook_client/src/pages/list/list.html"*/
+        selector: 'page-list',template:/*ion-inline-start:"/home/phanquan/Desktop/bookstore/itbook_client/src/pages/list/list.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>\n      List Page\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n\n<ion-content padding>\n  <ion-list *ngIf="books">\n    <ion-item *ngFor="let b of books">\n      <ion-thumbnail item-start>\n        <img class="image-style" src="http://localhost:3000/images/{{b.image}}"  />\n      </ion-thumbnail>\n      <h2 class="book-title">{{b.title}}</h2>\n      <p class="book-author">{{b.author}}</p>\n      <button ion-button clear item-end (click)="toDetailPage(b.id)" [value]="b.id">View</button>\n    </ion-item>\n  </ion-list>\n</ion-content>\n'/*ion-inline-end:"/home/phanquan/Desktop/bookstore/itbook_client/src/pages/list/list.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */],
         __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */],
@@ -88,10 +93,14 @@ webpackEmptyAsyncContext.id = 109;
 var map = {
 	"../pages/detail/detail.module": [
 		271,
-		1
+		2
 	],
 	"../pages/list/list.module": [
 		272,
+		1
+	],
+	"../pages/login/login.module": [
+		273,
 		0
 	]
 };
@@ -117,9 +126,9 @@ module.exports = webpackAsyncContext;
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(28);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_itbook_service_itbook_service__ = __webpack_require__(39);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__detail_detail__ = __webpack_require__(99);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__detail_detail__ = __webpack_require__(52);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -140,19 +149,39 @@ var HomePage = (function () {
         this.bookService = bookService;
         this.books = [];
         this.start = 0;
+        this.bool = true; // true for homepage
         this.getBookFromQueryBook(this.start);
     }
+    HomePage.prototype.currentPage = function (bool) {
+        return (this.title = true ? 'IT Book Store' : 'List Book');
+    };
     HomePage.prototype.getBookFromQueryBook = function (limitNum) {
         var _this = this;
         return new Promise(function (resolve, reject) {
-            _this.bookService.getBookItems(limitNum)
-                .subscribe(function (data) {
-                console.log(data);
-                data.forEach(function (item) {
-                    _this.books.push(item);
+            if (_this.bool) {
+                _this.books = [];
+                _this.bookService
+                    .getBookItems(limitNum)
+                    .subscribe(function (data) {
+                    console.log(data);
+                    data.forEach(function (item) {
+                        _this.books.push(item);
+                    });
+                    resolve();
                 });
-                resolve();
-            });
+            }
+            else {
+                _this.books = [];
+                _this.bookService
+                    .getBookItemsBySearch(_this.searchQuery)
+                    .subscribe(function (data) {
+                    console.log(data);
+                    data.forEach(function (item) {
+                        _this.books.push(item);
+                    });
+                    resolve();
+                });
+            }
         });
     };
     // keep doing infiniteScroll even out of data...
@@ -161,12 +190,19 @@ var HomePage = (function () {
         return new Promise(function (resolve, reject) {
             console.log("Begin infinite scroll.");
             _this.start += 10;
-            _this.getBookFromQueryBook(_this.start).then(function () {
-                // infiniteScroll.complete();
+            _this.getBookFromQueryBook(_this.start)
+                .then(function () {
                 console.log("End Infinite Scroll.");
                 resolve();
-            });
+            })
+                .catch(function (err) { return console.log(err); });
         });
+    };
+    HomePage.prototype.getItems = function (e) {
+        this.searchQuery = e.target.value;
+        this.bool = false;
+        this.start = 0;
+        this.getBookFromQueryBook(this.start);
     };
     HomePage.prototype.toDetailPage = function (id) {
         this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_3__detail_detail__["a" /* DetailPage */], { id: id });
@@ -175,7 +211,7 @@ var HomePage = (function () {
 }());
 HomePage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-home',template:/*ion-inline-start:"/home/phanquan/Desktop/ITBookProjectWithIonic/itbook_client/src/pages/home/home.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button [menuToggle]="activeMenu">\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>\n      Book Store\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <ion-list *ngIf="books">\n    <ion-item *ngFor="let b of books">\n      <ion-thumbnail item-start>\n        <img class="image-style" src="http://localhost:3000/images/Redmine-Cookbook.jpg" />\n      </ion-thumbnail>\n      <h2 class="book-title">{{b.title}}</h2>\n      <p class="book-author">{{b.author}}</p>\n      <button ion-button clear item-end (click)="toDetailPage(b.id)" [value]="b.id">View</button>\n    </ion-item>\n  </ion-list>\n\n  <ion-infinite-scroll (ionInfinite)="$event.waitFor(doInfinite())">\n    <ion-infinite-scroll-content>\n    </ion-infinite-scroll-content>\n  </ion-infinite-scroll>\n</ion-content>\n'/*ion-inline-end:"/home/phanquan/Desktop/ITBookProjectWithIonic/itbook_client/src/pages/home/home.html"*/
+        selector: 'page-home',template:/*ion-inline-start:"/home/phanquan/Desktop/bookstore/itbook_client/src/pages/home/home.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button [menuToggle]="activeMenu">\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>\n      {{title}}\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <ion-searchbar\n    (ionInput)="getItems($event)" >\n  </ion-searchbar>\n\n  <ion-list *ngIf="books">\n    <ion-item *ngFor="let b of books">\n      <ion-thumbnail item-start>\n        <img class="image-style" src="http://localhost:3000/images/{{b.image}}" />\n      </ion-thumbnail>\n      <h2 class="book-title">{{b.title}}</h2>\n      <p class="book-author">{{b.author}}</p>\n      <button ion-button clear item-end (click)="toDetailPage(b.id)" [value]="b.id">View</button>\n    </ion-item>\n  </ion-list>\n\n  <ion-infinite-scroll (ionInfinite)="$event.waitFor(doInfinite())">\n    <ion-infinite-scroll-content>\n    </ion-infinite-scroll-content>\n  </ion-infinite-scroll>\n</ion-content>\n'/*ion-inline-end:"/home/phanquan/Desktop/bookstore/itbook_client/src/pages/home/home.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */],
         __WEBPACK_IMPORTED_MODULE_2__providers_itbook_service_itbook_service__["a" /* ItbookService */]])
@@ -189,8 +225,9 @@ HomePage = __decorate([
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ExampleComponent; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LoginPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(28);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -201,27 +238,32 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
-/**
- * Generated class for the ExampleComponent component.
- *
- * See https://angular.io/docs/ts/latest/api/core/index/ComponentMetadata-class.html
- * for more info on Angular Components.
- */
-var ExampleComponent = (function () {
-    function ExampleComponent() {
-        console.log('Hello ExampleComponent Component');
-        this.text = 'Hello World';
-    }
-    return ExampleComponent;
-}());
-ExampleComponent = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'example',template:/*ion-inline-start:"/home/phanquan/Desktop/ITBookProjectWithIonic/itbook_client/src/components/example/example.html"*/'<!-- Generated template for the ExampleComponent component -->\n<div>\n  {{text}}\n</div>\n'/*ion-inline-end:"/home/phanquan/Desktop/ITBookProjectWithIonic/itbook_client/src/components/example/example.html"*/
-    }),
-    __metadata("design:paramtypes", [])
-], ExampleComponent);
 
-//# sourceMappingURL=example.js.map
+/**
+ * Generated class for the LoginPage page.
+ *
+ * See http://ionicframework.com/docs/components/#navigation for more info
+ * on Ionic pages and navigation.
+ */
+var LoginPage = (function () {
+    function LoginPage(navCtrl, navParams) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+    }
+    LoginPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad LoginPage');
+    };
+    return LoginPage;
+}());
+LoginPage = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* IonicPage */])(),
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+        selector: 'page-login',template:/*ion-inline-start:"/home/phanquan/Desktop/bookstore/itbook_client/src/pages/login/login.html"*/'\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>login</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"/home/phanquan/Desktop/bookstore/itbook_client/src/pages/login/login.html"*/,
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */]])
+], LoginPage);
+
+//# sourceMappingURL=login.js.map
 
 /***/ }),
 
@@ -246,16 +288,16 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(25);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(28);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(192);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__ = __webpack_require__(195);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_http__ = __webpack_require__(152);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__app_component__ = __webpack_require__(270);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_home_home__ = __webpack_require__(196);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__providers_itbook_service_itbook_service__ = __webpack_require__(39);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_detail_detail__ = __webpack_require__(99);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_list_list__ = __webpack_require__(100);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__components_example_example__ = __webpack_require__(197);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_detail_detail__ = __webpack_require__(52);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_list_list__ = __webpack_require__(100);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_login_login__ = __webpack_require__(197);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__providers_itbook_service_itbook_service__ = __webpack_require__(39);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -284,16 +326,17 @@ AppModule = __decorate([
         declarations: [
             __WEBPACK_IMPORTED_MODULE_6__app_component__["a" /* MyApp */],
             __WEBPACK_IMPORTED_MODULE_7__pages_home_home__["a" /* HomePage */],
-            __WEBPACK_IMPORTED_MODULE_9__pages_detail_detail__["a" /* DetailPage */],
-            __WEBPACK_IMPORTED_MODULE_10__pages_list_list__["a" /* ListPage */],
-            __WEBPACK_IMPORTED_MODULE_11__components_example_example__["a" /* ExampleComponent */]
+            __WEBPACK_IMPORTED_MODULE_8__pages_detail_detail__["a" /* DetailPage */],
+            __WEBPACK_IMPORTED_MODULE_9__pages_list_list__["a" /* ListPage */],
+            __WEBPACK_IMPORTED_MODULE_10__pages_login_login__["a" /* LoginPage */]
         ],
         imports: [
             __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
             __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["c" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_6__app_component__["a" /* MyApp */], {}, {
                 links: [
                     { loadChildren: '../pages/detail/detail.module#DetailPageModule', name: 'DetailPage', segment: 'detail', priority: 'low', defaultHistory: [] },
-                    { loadChildren: '../pages/list/list.module#ListPageModule', name: 'ListPage', segment: 'list', priority: 'low', defaultHistory: [] }
+                    { loadChildren: '../pages/list/list.module#ListPageModule', name: 'ListPage', segment: 'list', priority: 'low', defaultHistory: [] },
+                    { loadChildren: '../pages/login/login.module#LoginPageModule', name: 'LoginPage', segment: 'login', priority: 'low', defaultHistory: [] }
                 ]
             }),
             __WEBPACK_IMPORTED_MODULE_5__angular_http__["b" /* HttpModule */]
@@ -302,15 +345,15 @@ AppModule = __decorate([
         entryComponents: [
             __WEBPACK_IMPORTED_MODULE_6__app_component__["a" /* MyApp */],
             __WEBPACK_IMPORTED_MODULE_7__pages_home_home__["a" /* HomePage */],
-            __WEBPACK_IMPORTED_MODULE_9__pages_detail_detail__["a" /* DetailPage */],
-            __WEBPACK_IMPORTED_MODULE_10__pages_list_list__["a" /* ListPage */],
-            __WEBPACK_IMPORTED_MODULE_11__components_example_example__["a" /* ExampleComponent */]
+            __WEBPACK_IMPORTED_MODULE_8__pages_detail_detail__["a" /* DetailPage */],
+            __WEBPACK_IMPORTED_MODULE_9__pages_list_list__["a" /* ListPage */],
+            __WEBPACK_IMPORTED_MODULE_10__pages_login_login__["a" /* LoginPage */]
         ],
         providers: [
             __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__["a" /* StatusBar */],
             __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */],
             { provide: __WEBPACK_IMPORTED_MODULE_1__angular_core__["v" /* ErrorHandler */], useClass: __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["b" /* IonicErrorHandler */] },
-            __WEBPACK_IMPORTED_MODULE_8__providers_itbook_service_itbook_service__["a" /* ItbookService */]
+            __WEBPACK_IMPORTED_MODULE_11__providers_itbook_service_itbook_service__["a" /* ItbookService */]
         ]
     })
 ], AppModule);
@@ -325,7 +368,7 @@ AppModule = __decorate([
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyApp; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(28);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(195);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(192);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_home_home__ = __webpack_require__(196);
@@ -384,7 +427,7 @@ __decorate([
     __metadata("design:type", Object)
 ], MyApp.prototype, "nav", void 0);
 MyApp = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({template:/*ion-inline-start:"/home/phanquan/Desktop/ITBookProjectWithIonic/itbook_client/src/app/app.html"*/'<ion-menu [content]="content">\n  <ion-header>\n    <ion-toolbar>\n      <ion-title>Category</ion-title>\n    </ion-toolbar>\n  </ion-header>\n\n  <ion-content>\n    <!-- <ion-list *ngIf="categoriesList">\n      <button menuClose ion-item *ngFor="let c of categoriesList">\n          {{c.name}}\n      </button>\n      \n      add menuClose to auto close menu item after clicking\n    </ion-list> -->\n\n    <ion-item-group *ngIf="categoriesList">\n      <div *ngFor="let c of categoriesList">\n        <button menuClose color="primary" ion-button full (click)="toListPage(c.name)">{{c.name}}</button>\n        <button menuClose ion-item *ngFor="let cc of c.array" (click)="toListPage(cc.name)">{{cc.name}}</button>\n      </div>\n    </ion-item-group>\n  </ion-content>\n\n</ion-menu>\n\n<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>\n'/*ion-inline-end:"/home/phanquan/Desktop/ITBookProjectWithIonic/itbook_client/src/app/app.html"*/
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({template:/*ion-inline-start:"/home/phanquan/Desktop/bookstore/itbook_client/src/app/app.html"*/'<ion-menu [content]="content">\n  <ion-header>\n    <ion-toolbar>\n      <ion-title>Category</ion-title>\n    </ion-toolbar>\n  </ion-header>\n\n  <ion-content>\n    <!-- <ion-list *ngIf="categoriesList">\n      <button menuClose ion-item *ngFor="let c of categoriesList">\n          {{c.name}}\n      </button>\n      \n      add menuClose to auto close menu item after clicking\n    </ion-list> -->\n\n    <ion-item-group *ngIf="categoriesList">\n      <div *ngFor="let c of categoriesList">\n        <button menuClose color="primary" ion-button full (click)="toListPage(c.name)">{{c.name}}</button>\n        <button menuClose ion-item *ngFor="let cc of c.array" (click)="toListPage(cc.name)">{{cc.name}}</button>\n      </div>\n    </ion-item-group>\n  </ion-content>\n\n</ion-menu>\n\n<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>\n'/*ion-inline-end:"/home/phanquan/Desktop/bookstore/itbook_client/src/app/app.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* Platform */],
         __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */],
@@ -435,35 +478,44 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var ItbookService = (function () {
     function ItbookService(http) {
         this.http = http;
-        this.urlApiCategories = 'http://localhost:3000/api/categories';
-        this.urlApiBooks = 'http://localhost:3000/api/books';
-        this.urlApiBookDetail = 'http://localhost:3000/api/book-detail';
-        this.urlApiBooksByCateID = 'http://localhost:3000/api/books-by-cateid';
+        // private url: string = '127.0.0.1:3000';
+        this.url = 'localhost:3000';
+        this.apiCategories = 'api/categories';
+        this.apiBooks = 'api/books';
+        this.apiBookDetail = 'api/book';
+        this.apiBooksByCateName = 'api/books-by-cate';
+        this.apiBooksBySearch = 'api/search';
         this.fetchNum = 10;
         console.log('Hello ItbookServiceProvider Provider');
     }
     ItbookService.prototype.getBookItems = function (offsetNum) {
         return this.http
-            .get(this.urlApiBooks + "?filter[offsetNum]=" + offsetNum + "&filter[fetchNum]=" + this.fetchNum)
+            .get("\n        " + this.url + "/" + this.apiBooks + "?filter[offsetNum]=" + offsetNum + "&filter[fetchNum]=" + this.fetchNum + "\n      ")
             .map(this.extractData)
             .catch(this.catchErr);
     };
     // .do((res: Response) => console.log(res))
     ItbookService.prototype.getBookCategories = function () {
         return this.http
-            .get(this.urlApiCategories)
+            .get(this.url + "/" + this.apiCategories)
             .map(this.extractData)
             .catch(this.catchErr);
     };
-    ItbookService.prototype.getBookItemsByCateID = function (cateID) {
+    ItbookService.prototype.getBookItemsByCateName = function (cateID) {
         return this.http
-            .get(this.urlApiBooksByCateID + "/" + cateID)
+            .get(this.url + "/" + this.apiBooksByCateName + "/" + cateID)
             .map(this.extractData)
             .catch(this.catchErr);
     };
     ItbookService.prototype.getBookDetail = function (bookID) {
         return this.http
-            .get(this.urlApiBookDetail + "?bookDetail[bookID]=" + bookID)
+            .get(this.url + "/" + this.apiBookDetail + "/" + bookID)
+            .map(this.extractData)
+            .catch(this.catchErr);
+    };
+    ItbookService.prototype.getBookItemsBySearch = function (strQuery) {
+        return this.http
+            .get(this.url + "/" + this.apiBooksBySearch + "/" + strQuery)
             .map(this.extractData)
             .catch(this.catchErr);
     };
@@ -478,20 +530,21 @@ var ItbookService = (function () {
 }());
 ItbookService = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* Injectable */])(),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Http */]])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Http */]) === "function" && _a || Object])
 ], ItbookService);
 
+var _a;
 //# sourceMappingURL=itbook-service.js.map
 
 /***/ }),
 
-/***/ 99:
+/***/ 52:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DetailPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(28);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_itbook_service_itbook_service__ = __webpack_require__(39);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -539,7 +592,7 @@ var DetailPage = (function () {
 DetailPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* IonicPage */])(),
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-detail',template:/*ion-inline-start:"/home/phanquan/Desktop/ITBookProjectWithIonic/itbook_client/src/pages/detail/detail.html"*/'<!--\n  Generated template for the DetailPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>Book Detail</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n  <ion-list *ngIf="bookDetail">\n\n    <div *ngFor="let bd of bookDetail">\n\n      <ion-item>\n        <ion-grid>\n          <ion-row>\n            <h2 class="title">{{bd.title}}</h2>\n          </ion-row>\n        </ion-grid>\n      </ion-item>\n\n      <ion-item>\n        <ion-grid>\n          <ion-row>\n            <ion-col col-4>\n              <img src="http://www.allitebooks.com/wp-content/uploads/2017/09/Practical-LXC-and-LXD.jpg">\n            </ion-col>\n            <ion-col col-4>\n              <ion-row>\n                <span class="atri-name">Author:</span>\n              </ion-row>\n              <ion-row>\n                <span class="atri-name">ISBN-10</span>\n              </ion-row>\n              <ion-row>\n                <span class="atri-name">Year:</span>\n              </ion-row>\n              <ion-row>\n                <span class="atri-name">Pages:</span>\n              </ion-row>\n              <ion-row>\n                <span class="atri-name">Language:</span>\n              </ion-row>\n              <ion-row>\n                <span class="atri-name">File Size:</span>\n              </ion-row>\n              <ion-row>\n                <span class="atri-name">File Format:</span>\n              </ion-row>\n              <ion-row>\n                <span class="atri-name">Category:</span>\n              </ion-row>\n            </ion-col>\n\n            <ion-col col-4>\n              <ion-row>\n                <span class="atri-val">{{bd.author}}</span>\n              </ion-row>\n              <ion-row>\n                <span class="atri-val">{{bd.isbn_10}}</span>\n              </ion-row>\n              <ion-row>\n                <span class="atri-val">{{bd.year}}</span>\n              </ion-row>\n              <ion-row>\n                <span class="atri-val">{{bd.page}}</span>\n              </ion-row>\n              <ion-row>\n                <span class="atri-val">{{bd.language}}</span>\n              </ion-row>\n              <ion-row>\n                <span class="atri-val">{{bd.file_size}}</span>\n              </ion-row>\n              <ion-row>\n                <span class="atri-val">{{bd.file_format}}</span>\n              </ion-row>\n              <ion-row>\n                <span class="atri-val">{{bd.category}}</span>\n              </ion-row>\n            </ion-col>\n          </ion-row>\n        </ion-grid>\n      </ion-item>\n\n      <ion-item>\n        <ion-grid>\n          <ion-row>\n            <p class="book-des">\n              {{bd.description}}\n            </p>\n          </ion-row>\n        </ion-grid>\n      </ion-item>\n\n    </div>\n  </ion-list>\n</ion-content>\n'/*ion-inline-end:"/home/phanquan/Desktop/ITBookProjectWithIonic/itbook_client/src/pages/detail/detail.html"*/
+        selector: 'page-detail',template:/*ion-inline-start:"/home/phanquan/Desktop/bookstore/itbook_client/src/pages/detail/detail.html"*/'<!--\n  Generated template for the DetailPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n  <ion-navbar>\n    <ion-title>Book Detail</ion-title>\n  </ion-navbar>\n</ion-header>\n\n\n<ion-content padding>\n\n  <ion-list *ngIf="bookDetail">\n\n    <div *ngFor="let bd of bookDetail">\n\n      <ion-item>\n        <ion-grid>\n          <ion-row>\n            <h2 class="title">{{bd.title}}</h2>\n          </ion-row>\n        </ion-grid>\n      </ion-item>\n\n      <ion-item>\n        <ion-grid>\n          <ion-row>\n            <ion-col col-12>\n              <img src="http://localhost:3000/images/{{bd.image}}">\n            </ion-col>\n          </ion-row>\n          <ion-row>\n            <ion-col col-4>\n              <ion-row>\n                <span class="atri-name">Author:</span>\n              </ion-row>\n              <ion-row>\n                <span class="atri-name">ISBN-10</span>\n              </ion-row>\n              <ion-row>\n                <span class="atri-name">Year:</span>\n              </ion-row>\n              <ion-row>\n                <span class="atri-name">Pages:</span>\n              </ion-row>\n              <ion-row>\n                <span class="atri-name">Language:</span>\n              </ion-row>\n              <ion-row>\n                <span class="atri-name">File Size:</span>\n              </ion-row>\n              <ion-row>\n                <span class="atri-name">File Format:</span>\n              </ion-row>\n              <ion-row>\n                <span class="atri-name">Category:</span>\n              </ion-row>\n            </ion-col>\n\n            <ion-col col-4 col-offset-6>\n              <ion-row>\n                <span class="atri-val">{{bd.author}}</span>\n              </ion-row>\n              <ion-row>\n                <span class="atri-val">{{bd.isbn_10}}</span>\n              </ion-row>\n              <ion-row>\n                <span class="atri-val">{{bd.year}}</span>\n              </ion-row>\n              <ion-row>\n                <span class="atri-val">{{bd.page}}</span>\n              </ion-row>\n              <ion-row>\n                <span class="atri-val">{{bd.language}}</span>\n              </ion-row>\n              <ion-row>\n                <span class="atri-val">{{bd.file_size}}</span>\n              </ion-row>\n              <ion-row>\n                <span class="atri-val">{{bd.file_format}}</span>\n              </ion-row>\n              <ion-row>\n                <span class="atri-val">{{bd.category}}</span>\n              </ion-row>\n            </ion-col>\n          </ion-row>\n        </ion-grid>\n      </ion-item>\n\n      <ion-item>\n        <ion-grid>\n          <ion-row>\n            <div>\n              <h3 class="title-description"><b>Book Description: </b></h3>\n            </div>\n            <div class="text-description" [innerHTML]="bd.description"></div>\n          </ion-row>\n        </ion-grid>\n      </ion-item>\n\n      <ion-item>\n        <ion-grid>\n          <ion-row>\n            <ion-col col-6>\n              <button ion-button small full color="danger">Download</button>\n            </ion-col>\n            <ion-col col-6>\n              <button ion-button small full color="danger">Read Online</button>\n            </ion-col>\n          </ion-row>\n        </ion-grid>\n      </ion-item>\n\n    </div>\n  </ion-list>\n</ion-content>\n'/*ion-inline-end:"/home/phanquan/Desktop/bookstore/itbook_client/src/pages/detail/detail.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */],
         __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */],

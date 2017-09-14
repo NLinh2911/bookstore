@@ -5,11 +5,9 @@
   Ionic pages and navigation.
 -->
 <ion-header>
-
   <ion-navbar>
     <ion-title>Book Detail</ion-title>
   </ion-navbar>
-
 </ion-header>
 
 
@@ -30,9 +28,11 @@
       <ion-item>
         <ion-grid>
           <ion-row>
-            <ion-col col-4>
-              <img src="http://www.allitebooks.com/wp-content/uploads/2017/09/Practical-LXC-and-LXD.jpg">
+            <ion-col col-12>
+              <img src="http://localhost:3000/images/{{bd.image}}">
             </ion-col>
+          </ion-row>
+          <ion-row>
             <ion-col col-4>
               <ion-row>
                 <span class="atri-name">Author:</span>
@@ -60,7 +60,7 @@
               </ion-row>
             </ion-col>
 
-            <ion-col col-4>
+            <ion-col col-4 col-offset-6>
               <ion-row>
                 <span class="atri-val">{{bd.author}}</span>
               </ion-row>
@@ -93,9 +93,23 @@
       <ion-item>
         <ion-grid>
           <ion-row>
-            <p class="book-des">
-              {{bd.description}}
-            </p>
+            <div>
+              <h3 class="title-description"><b>Book Description: </b></h3>
+            </div>
+            <div class="text-description" [innerHTML]="bd.description"></div>
+          </ion-row>
+        </ion-grid>
+      </ion-item>
+
+      <ion-item>
+        <ion-grid>
+          <ion-row>
+            <ion-col col-6>
+              <button ion-button small full color="danger">Download</button>
+            </ion-col>
+            <ion-col col-6>
+              <button ion-button small full color="danger">Read Online</button>
+            </ion-col>
           </ion-row>
         </ion-grid>
       </ion-item>

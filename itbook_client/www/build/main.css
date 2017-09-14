@@ -25199,17 +25199,32 @@ ion-navbar.toolbar {
   }
 }
 
+page-detail p {
+  color: black !important;
+  font-size: inherit !important;
+}
+
+page-detail .title {
+  white-space: normal;
+  font-size: 2em !important;
+}
+
 page-detail .book-des {
   white-space: normal;
+}
+
+page-detail .text-description {
+  white-space: normal;
+  text-align: justify;
+}
+
+page-detail .title-description {
+  padding-bottom: 15px;
 }
 
 page-home .book-image {
   width: 100%;
   height: 70%;
-}
-
-page-home .image-style {
-  max-width: 100%;
 }
 
 page-home .text-style > span {
@@ -25222,6 +25237,30 @@ page-home .author-style > span {
 }
 
 page-home .book-title {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+page-list .book-image {
+  width: 100%;
+  height: 70%;
+}
+
+page-list .image-style {
+  max-width: 100%;
+}
+
+page-list .text-style > span {
+  white-space: normal;
+}
+
+page-list .author-style > span {
+  font-size: 12px;
+  color: #494949;
+}
+
+page-list .book-title {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;

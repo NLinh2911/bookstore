@@ -7,18 +7,18 @@ import { HttpModule } from "@angular/http";
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
-import { ItbookService } from '../providers/itbook-service/itbook-service';
 import { DetailPage } from '../pages/detail/detail';
 import { ListPage } from '../pages/list/list';
-import { ExampleComponent } from '../components/example/example';
+import { LoginPage } from "../pages/login/login";
 
+import { ItbookService } from '../providers/itbook-service/itbook-service';
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
     DetailPage,
     ListPage,
-    ExampleComponent
+    LoginPage
   ],
   imports: [
     BrowserModule,
@@ -31,7 +31,7 @@ import { ExampleComponent } from '../components/example/example';
     HomePage,
     DetailPage,
     ListPage,
-    ExampleComponent
+    LoginPage
   ],
   providers: [
     StatusBar,

@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { ItbookService } from '../../providers/itbook-service/itbook-service';
+import { DetailPage } from "../../pages/detail/detail";
 
 /**
  * Generated class for the ListPage page.
@@ -29,12 +30,16 @@ export class ListPage {
   getBookByCategoryID(cateID) {
     return new Promise((resolve, reject) => {
       this.bookService
-        .getBookItemsByCateID(cateID)
+        .getBookItemsByCateName(cateID)
         .subscribe(data => {
           console.log(data);
           this.books = data;
         });
     });
+  }
+
+  toDetailPage(id) {
+    this.navCtrl.push(DetailPage, { id: id });
   }
 
   ionViewDidLoad() {

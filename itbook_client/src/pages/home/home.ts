@@ -8,8 +8,11 @@ import { DetailPage } from '../detail/detail';
   templateUrl: 'home.html'
 })
 export class HomePage {
-  books = [];
+  private books = [];
   private start: number = 0;
+  private searchQuery: string;
+  private bool: boolean = true; // true for homepage
+  private title: string;
 
   constructor(
     public navCtrl: NavController,
@@ -18,16 +21,35 @@ export class HomePage {
     this.getBookFromQueryBook(this.start);
   }
 
+  currentPage(bool: boolean) {
+    return (this.title = true ? 'IT Book Store' : 'List Book');
+  }
+
   getBookFromQueryBook(limitNum: number) {
     return new Promise((resolve, reject) => {
-      this.bookService.getBookItems(limitNum)
-        .subscribe(data => {
-          console.log(data);
-          data.forEach(item => {
-            this.books.push(item);
+      if (this.bool) {
+        this.books = [];
+        this.bookService
+          .getBookItems(limitNum)
+          .subscribe(data => {
+            console.log(data);
+            data.forEach(item => {
+              this.books.push(item);
+            });
+            resolve();
           });
-          resolve();
-        });
+      } else {
+        this.books = [];
+        this.bookService
+          .getBookItemsBySearch(this.searchQuery)
+          .subscribe(data => {
+            console.log(data);
+            data.forEach(item => {
+              this.books.push(item);
+            });
+            resolve();
+          });
+      }
     });
   }
 
@@ -36,12 +58,20 @@ export class HomePage {
     return new Promise((resolve, reject) => {
       console.log(`Begin infinite scroll.`);
       this.start += 10;
-      this.getBookFromQueryBook(this.start).then(() => {
-        // infiniteScroll.complete();
-        console.log(`End Infinite Scroll.`);
-        resolve();
-      });
+      this.getBookFromQueryBook(this.start)
+        .then(() => {
+          console.log(`End Infinite Scroll.`);
+          resolve();
+        })
+        .catch(err => console.log(err));
     });
+  }
+
+  getItems(e: any) {
+    this.searchQuery = e.target.value;
+    this.bool = false;
+    this.start = 0;    
+    this.getBookFromQueryBook(this.start);
   }
 
   toDetailPage(id) {

@@ -13,11 +13,14 @@ import { Observable } from 'rxjs/Observable';
 */
 @Injectable()
 export class ItbookService {
-  private urlApiCategories: string = 'http://localhost:3000/api/categories';
-  private urlApiBooks: string = 'http://localhost:3000/api/books';
-  private urlApiBookDetail: string = 'http://localhost:3000/api/book-detail';
-  private urlApiBooksByCateID: string = 'http://localhost:3000/api/books-by-cateid';
-  fetchNum:number = 10;
+  // private url: string = '127.0.0.1:3000';
+  private url: string = 'localhost:3000';
+  private apiCategories: string = 'api/categories';
+  private apiBooks: string = 'api/books';
+  private apiBookDetail: string = 'api/book';
+  private apiBooksByCateName: string = 'api/books-by-cate';
+  private apiBooksBySearch: string = 'api/search';
+  fetchNum: number = 10;
 
   constructor(private http: Http) {
     console.log('Hello ItbookServiceProvider Provider');
@@ -25,7 +28,9 @@ export class ItbookService {
 
   getBookItems(offsetNum: number) {
     return this.http
-      .get(`${this.urlApiBooks}?filter[offsetNum]=${offsetNum}&filter[fetchNum]=${this.fetchNum}`)
+      .get(`
+        ${this.url}/${this.apiBooks}?filter[offsetNum]=${offsetNum}&filter[fetchNum]=${this.fetchNum}
+      `)
       .map(this.extractData)
       .catch(this.catchErr);
   }
@@ -33,21 +38,28 @@ export class ItbookService {
   // .do((res: Response) => console.log(res))
   getBookCategories() {
     return this.http
-      .get(this.urlApiCategories)
+      .get(`${this.url}/${this.apiCategories}`)
       .map(this.extractData)
       .catch(this.catchErr);
   }
 
-  getBookItemsByCateID(cateID:string) {
+  getBookItemsByCateName(cateID: string) {
     return this.http
-      .get(`${this.urlApiBooksByCateID}/${cateID}`)
+      .get(`${this.url}/${this.apiBooksByCateName}/${cateID}`)
       .map(this.extractData)
-      .catch(this.catchErr)
+      .catch(this.catchErr);
   }
 
-  getBookDetail(bookID:string) {
+  getBookDetail(bookID: string) {
     return this.http
-      .get(`${this.urlApiBookDetail}?bookDetail[bookID]=${bookID}`)
+      .get(`${this.url}/${this.apiBookDetail}/${bookID}`)
+      .map(this.extractData)
+      .catch(this.catchErr);
+  }
+
+  getBookItemsBySearch(strQuery: string) {
+    return this.http
+      .get(`${this.url}/${this.apiBooksBySearch}/${strQuery}`)
       .map(this.extractData)
       .catch(this.catchErr);
   }
