@@ -49,14 +49,13 @@ Bookstore (ứng dụng đọc sách online) được xây dựng theo phong cá
             "database": "itbook2",
             "host": "localhost",
             "port": 5432,
-            và cấu hình lại cho trùng nhau. 
             "dialect": "postgres",
             "schema": "public",
             "logging": false
         }
         ```
         - Thay đổi mật khẩu tại dòng  `password` trùng với mật khẩu postgres trên máy mình 
-        - Kiểm tra `port` trên máy mình có giống với port trên file config hay ko 
+        - Kiểm tra và cấu hình `port` trên máy mình cho giống với port trên file `config.json`
 4. Tạo bảng và chèn dữ liệu:
     - Tạo các bảng mới, thêm cột và chèn dữ liệu cho CSDL bằng các câu lệnh theo thứ tự:
         ```bash
