@@ -2,8 +2,23 @@
 
 ## Mục lục
 
-[1.Giới thiệu](#giới-thiệu)  
-[2.Cài đặt](#cài-đặt)
+- [Giới thiệu](#giới-thiệu)  
+- [Cài đặt](#cài-đặt)  
+- [Tài liệu hướng dẫn](#tài-liệu-hướng-dẫn)  
+    - [Server side](#server-side)
+        - [Cấu trúc thư mục](#cấu-trúc-thư-mục)
+        - [Cấu hình server](#cấu-hình-server)
+        - [Models](#models)
+        - [Routes](#routes)
+    - [Client side](#client-side)
+        - [Template engine](#template-engine)
+        - [Layout](#layout)
+        - [Navigation component](#navigation-component)
+        - [Search component](#search-component)
+        - [Detail, Author component](#detail-author-component)
+        - [Pagination buttons](#pagination-buttons)
+
+---
 
 ## Giới thiệu
 Bookstore (ứng dụng đọc sách online) được xây dựng theo phong cách **Monolithic applications** (*kiến trúc hệ thống một khối*) dựa trên nền tảng thiết kế MVC design pattern, với các công nghệ được áp dụng như:
@@ -55,5 +70,7 @@ Bookstore (ứng dụng đọc sách online) được xây dựng theo phong cá
     ```
     npm start
     ```
+Ứng dụng chạy trên port 3000 nên mở trình duyệt và nhập đường dẫn:
+>localhost:3000 
 
-## a
+## Tài liệu hướng dẫn
