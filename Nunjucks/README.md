@@ -18,8 +18,6 @@
         - [Detail, Author component](#detail-author-component)
         - [Pagination buttons](#pagination-buttons)
 
----
-
 ## Giới thiệu
 Bookstore (ứng dụng đọc sách online) được xây dựng theo phong cách **Monolithic applications** (*kiến trúc hệ thống một khối*) dựa trên nền tảng thiết kế MVC design pattern, với các công nghệ được áp dụng như:
 - [Node.js (server)](https://nodejs.org)
