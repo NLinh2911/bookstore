@@ -84,13 +84,13 @@ Bookstore (ứng dụng đọc sách online) được xây dựng theo phong cá
 - `pgp.js`: file cấu hình cho database sử dụng thông số từ `/config/config.json` để kết nối database tới ứng dụng.
 #### Cấu hình server
 - bin/www  
-    - Gọi các file module và file app.js để chạy
+    - Gọi các file module và file `app.js` để chạy
         ```js
         var app = require('../app');
         var debug = require('debug')('itbooks:server');
         var http = require('http');
         ```
-    - Khởi tạo port và lưu trữ và express
+    - Khởi tạo port và lưu trữ vào express
         ```js
         var port = normalizePort(process.env.PORT || '3000');
         app.set('port', port);
@@ -123,7 +123,7 @@ Bookstore (ứng dụng đọc sách online) được xây dựng theo phong cá
             return false;
         }
         ```
-    - Tạo function cho sự kiện `error` để in ra kết quả thông báo khi có lỗi xảy ra
+    - Tạo function cho sự kiện **error** để in ra kết quả thông báo khi có lỗi xảy ra
         ```js
         function onError(error) {
             if (error.syscall !== 'listen') {
@@ -149,7 +149,7 @@ Bookstore (ứng dụng đọc sách online) được xây dựng theo phong cá
             }
         }
         ```
-    - Tạo function cho sự kiện `listening` khi server đã kết nối được đến cổng
+    - Tạo function cho sự kiện **listening** khi server đã kết nối được đến cổng
         ```js
         function onListening() {
             var addr = server.address();
@@ -160,7 +160,7 @@ Bookstore (ứng dụng đọc sách online) được xây dựng theo phong cá
         }
         ```
 - app.js  
-Đây là file quan trọng để kết nối mọi thứ với nhau nên ở đây sẽ nơi tập trung mọi module cần thiế   
+Đây là file quan trọng để kết nối mọi thứ với nhau nên ở đây sẽ nơi tập trung mọi module cần thiết   
     - Khởi tạo Express middleware
         ```js
         const express = require("express");
@@ -171,11 +171,11 @@ Bookstore (ứng dụng đọc sách online) được xây dựng theo phong cá
         const bodyParser = require('body-parser')
         const urlencodedParser = bodyParser.urlencoded({ extended: false })
         ```
-    - Gọi file pgp và định danh nó để sử dụng các dữ liệu trong database
+    - Gọi file `pgp` và định danh nó để sử dụng các dữ liệu trong database
         ```js
         const db = require('./pgp')
         ```
-    - Cấu hình Template engine (Nunjucks)
+    - Cấu hình *template engine* (Nunjucks)
         ```js
         const nunjucks = require('nunjucks')
         nunjucks.configure('views', {
@@ -183,7 +183,7 @@ Bookstore (ứng dụng đọc sách online) được xây dựng theo phong cá
             express: app
         })
         ```
-    - Cài đặt view engine để sử dụng file Nunjucks(.njk) và cấu hình cho folder views để chứa các file layout
+    - Cài đặt *view engine* để sử dụng file Nunjucks(.njk) và cấu hình cho folder `views` để chứa các file layout
         ```js
         app.set('views', './views')
         app.set('view engine', 'njk')
