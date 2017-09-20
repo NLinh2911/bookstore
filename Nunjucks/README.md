@@ -70,4 +70,17 @@ Bookstore (ứng dụng đọc sách online) được xây dựng theo phong cá
 Ứng dụng chạy trên port 3000 nên mở trình duyệt và nhập đường dẫn:
 >localhost:3000 
 
-## Tài liệu hướng dẫn
+## Tài liệu hướng dẫn  
+### Server side
+#### Cấu trúc thư mục  
+
+- `/bin`: folder chứa file khởi tạo ứng dụng www, dùng để khởi tạo ứng dụng khi chạy lệnh `npm start`.  
+- `/config`: chứa file `config.json` định nghĩa các thông số cấu hình cho database.  
+- `/crawl_data`: chứa các file dữ liệu đã được cào từ các nguồn có sẵn (trong folder `json_data`) và các file khởi tạo bảng cũng như thêm dữ liệu từ folder `json_data` cho các bảng trong database.  
+- `/node_modules`: chứa core framework và các thư viện khác.  
+- `/public`: chứa các file css, fs và images.  
+- `/routes`: định nghĩa url và method.  
+- `/view`: thư mục chứa các file layout front-end dùng để render dữ liệu, hình ảnh ra browser.  
+- `app.js`: file kết nối tất cả mọi thứ với nhau để ứng dụng có thể chạy được chính xác.  
+- `pgp.js`: file cấu hình cho database sử dụng thông số từ  
+- `/config/config.json` để kết nối database tới ứng dụng
