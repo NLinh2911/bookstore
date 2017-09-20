@@ -161,12 +161,12 @@ Bookstore (ứng dụng đọc sách online) được xây dựng theo phong cá
         ```
 - app.js  
 Đây là file quan trọng để kết nối mọi thứ với nhau nên ở đây sẽ là nơi gọi các module cần thiết   
-    - Khởi tạo Express middleware
+    - Khởi tạo Express middleware và gắn nó vào biến app
         ```js
         const express = require("express");
         const app = express()
         ```
-    - Gọi vào body-parser để Nodejs có thể xử lý các JSON file và mã hóa URL
+    - Gọi vào **body-parser** để Nodejs có thể xử lý các JSON file và mã hóa URL
         ```js
         const bodyParser = require('body-parser')
         const urlencodedParser = bodyParser.urlencoded({ extended: false })
