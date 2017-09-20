@@ -65,7 +65,7 @@ Bookstore (ứng dụng đọc sách online) được xây dựng theo phong cá
         ```
 5. Chạy ứng dụng:
     ```
-    npm start
+    $ npm start
     ```
 Ứng dụng chạy trên port 3000 nên mở trình duyệt và nhập đường dẫn:
 >localhost:3000 
