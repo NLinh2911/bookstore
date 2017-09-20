@@ -55,7 +55,7 @@ Bookstore (ứng dụng đọc sách online) được xây dựng theo phong cá
         - Thay đổi mật khẩu tại dòng  `password` trùng với mật khẩu postgres trên máy mình 
         - Kiểm tra và cấu hình `port` trên máy mình cho giống với port trên file `config.json`
 4. Tạo bảng và chèn dữ liệu:
-    - Tạo các bảng mới, thêm cột và chèn dữ liệu cho CSDL bằng các câu lệnh theo thứ tự:
+    - Tạo các bảng mới, thêm cột và chèn dữ liệu cho CSDL bằng các câu lệnh trên **Terminal** theo thứ tự:
         ```bash
         $ cd crawl-data
         $ node create-table.js
