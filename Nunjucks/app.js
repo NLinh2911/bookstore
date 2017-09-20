@@ -25,7 +25,7 @@ nunjucks.configure('views', {
 app.set('views', './views')
 app.set('view engine', 'njk')
 
-app.use(express.static(__dirname + '/public'));
+app.use(express.static(__dirname + '/public'))
 
 app.use('/', index)
 app.use('/categories', category)
