@@ -160,7 +160,7 @@ Bookstore (ứng dụng đọc sách online) được xây dựng theo phong cá
         }
         ```
 - app.js  
-Đây là file quan trọng để kết nối mọi thứ với nhau nên ở đây sẽ nơi tập trung mọi module cần thiết   
+Đây là file quan trọng để kết nối mọi thứ với nhau nên ở đây sẽ là nơi gọi các module cần thiết   
     - Khởi tạo Express middleware
         ```js
         const express = require("express");
