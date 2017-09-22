@@ -2,9 +2,9 @@
 
 ## Mục lục
 
-- [Giới thiệu](#giới-thiệu)  
-- [Cài đặt](#cài-đặt)  
-- [Tài liệu hướng dẫn](#tài-liệu-hướng-dẫn)  
+- [Giới thiệu](#giới-thiệu)
+- [Cài đặt](#cài-đặt)
+- [Tài liệu hướng dẫn](#tài-liệu-hướng-dẫn)
     - [Server side](#server-side)
         - [Cấu trúc thư mục](#cấu-trúc-thư-mục)
         - [Cấu hình server](#cấu-hình-server)
@@ -52,7 +52,7 @@ Bookstore (ứng dụng đọc sách online) được xây dựng theo phong cá
             "logging": false
         }
         ```
-        - Thay đổi mật khẩu tại dòng  `password` trùng với mật khẩu postgres trên máy mình 
+        - Thay đổi mật khẩu tại dòng  `password` trùng với mật khẩu postgres trên máy mình
         - Kiểm tra và cấu hình `port` trên máy mình cho giống với port trên file `config.json`
 4. Tạo bảng và chèn dữ liệu:
     - Tạo các bảng mới, thêm cột và chèn dữ liệu cho CSDL bằng các câu lệnh trên **Terminal** theo thứ tự:
@@ -68,22 +68,22 @@ Bookstore (ứng dụng đọc sách online) được xây dựng theo phong cá
     $ npm start
     ```
 Ứng dụng chạy trên port 3000 nên mở trình duyệt và nhập đường dẫn:
->localhost:3000 
+>localhost:3000
 
-## Tài liệu hướng dẫn  
+## Tài liệu hướng dẫn
 ### Server side
-#### Cấu trúc thư mục  
-- `/bin`: folder chứa file khởi tạo ứng dụng www, dùng để khởi tạo ứng dụng khi chạy lệnh `npm start`.  
-- `/config`: chứa file `config.json` định nghĩa các thông số cấu hình cho database.  
-- `/crawl_data`: chứa các file dữ liệu đã được cào từ các nguồn có sẵn (trong folder `json_data`) và các file khởi tạo bảng cũng như thêm dữ liệu từ folder `json_data` cho các bảng trong database.  
-- `/node_modules`: chứa core framework và các thư viện khác.  
-- `/public`: chứa các file css, fs và images.  
-- `/routes`: định nghĩa url và method.  
-- `/view`: thư mục chứa các file layout front-end dùng để render dữ liệu, hình ảnh ra browser.  
-- `app.js`: file kết nối tất cả mọi thứ với nhau để ứng dụng có thể chạy được chính xác.  
+#### Cấu trúc thư mục
+- `/bin`: folder chứa file khởi tạo ứng dụng www, dùng để khởi tạo ứng dụng khi chạy lệnh `npm start`.
+- `/config`: chứa file `config.json` định nghĩa các thông số cấu hình cho database.
+- `/crawl_data`: chứa các file dữ liệu đã được cào từ các nguồn có sẵn (trong folder `json_data`) và các file khởi tạo bảng cũng như thêm dữ liệu từ folder `json_data` cho các bảng trong database.
+- `/node_modules`: chứa core framework và các thư viện khác.
+- `/public`: chứa các file css, fs và images.
+- `/routes`: định nghĩa url và method.
+- `/view`: thư mục chứa các file layout front-end dùng để render dữ liệu, hình ảnh ra browser.
+- `app.js`: file kết nối tất cả mọi thứ với nhau để ứng dụng có thể chạy được chính xác.
 - `pgp.js`: file cấu hình cho database sử dụng thông số từ `/config/config.json` để kết nối database tới ứng dụng.
 #### Cấu hình server
-- bin/www  
+- bin/www
     - Gọi các file module và file `app.js` để chạy
         ```js
         var app = require('../app');
@@ -159,8 +159,8 @@ Bookstore (ứng dụng đọc sách online) được xây dựng theo phong cá
             debug('Listening on ' + bind);
         }
         ```
-- app.js  
-Đây là file quan trọng để kết nối mọi thứ với nhau nên ở đây sẽ là nơi gọi các module cần thiết   
+- app.js
+Đây là file quan trọng để kết nối mọi thứ với nhau nên ở đây sẽ là nơi gọi các module cần thiết
     - Khởi tạo Express middleware và gắn nó vào biến app
         ```js
         const express = require("express");
@@ -206,3 +206,89 @@ Bookstore (ứng dụng đọc sách online) được xây dựng theo phong cá
         app.use('/authors', author)
         app.use('/api/v1', api)
         ```
+#### Models
+Folder gồm 2 file `book.js` và `category.js` lấy dữ liệu từ database theo đúng chức năng riêng biệt của mỗi file dùng để xuất dữ liệu cho tầng **View**   
+
+- **book.js** bao gồm các function như:
+    - `getBookNums`: sử dụng cho việc phân trang để hiển thị các đầu sách
+        ```js
+        getBookNums : () =>{
+            return db.one("SELECT COUNT(id) FROM book")
+        }
+        ```
+    - `getBookLimit`: số lượng book hiển thị trên 1 trang
+        ```js
+        getBookLimit: (limit, offset) =>{
+            return db.many("SELECT * FROM book LIMIT $1 OFFSET $2", [limit, offset])
+        }
+        ```
+    - `getNumsBookByCategory`: tổng số sách trong 1 danh mục
+        ```js
+        getNumsBookByCategory: (kind) => {
+            return db.one("SELECT COUNT(id) FROM book WHERE top_category ILIKE $1", kind) 
+        }
+        ```
+    - `getBookByTopCategory`: hiển thị danh sách các book trong 1 danh mục sách chính
+        ```js
+        getBookByTopCategory: (category, limit, offset) => {
+            return db.any("SELECT * FROM book WHERE top_category ILIKE $1 LIMIT $2 OFFSET $3", [category, limit, offset]);
+        }
+        ```
+    - `getBookBySubCategory`: hiển thị danh sách các book trong 1 danh mục sách con
+        ```js
+        getBookBySubCategory: (category) => {
+            return db.any("SELECT * FROM book WHERE $1 ILIKE ANY (category)", category);
+        }
+        ```
+    - `getBookByAuthor`: liệt kê các đầu sách của một(hoặc nhiều) tác giả
+        ```js
+        getBookByAuthor: (author)=>{
+            return db.any("SELECT * FROM book WHERE $1 ILIKE ANY (author)", author);
+        }
+        ```
+    - `getSingleBook`: trình bày nội dung chi tiết của 1 tựa sách 
+        ```js
+        getSingleBook: (title) => {
+            return db.oneOrNone("SELECT * FROM book WHERE title ILIKE $1", title);
+        }
+        ```
+    - `searchBook`: dùng để tìm kiếm tên sách trên khung tìm kiếm
+        ```js
+        searchBook: (text)=>{
+            return db.any("SELECT * FROM book WHERE document @@ plainto_tsquery($1)", text)
+        }
+        ```
+- **category.js**
+    - `getAllCategory`: lấy ra tất cả danh sách danh mục
+        ```js
+        getAllCategory: () => {
+            return db.many(`SELECT * FROM category`)
+        }
+        ```
+    - `getTopCategory`: xuất ra danh sách danh mục chính
+        ```js
+        getTopCategory: () => {
+            return db.any(`SELECT name, id FROM category WHERE parent_id IS NULL`)
+        }
+        ```
+    - `getSubCategory`: danh sách danh mục con
+        ```js
+        getSubCategory: (parent_id) => {
+            return db.any(`SELECT name FROM category WHERE parent_id = $1`, parent_id)
+        }
+        ```
+    - `getCategory`: lọc danh sách bằng *raw_to_json* để lấy ra được danh sách các danh mục chính và các danh mục con của từng danh mục chính
+        ```js
+        getCategory: () => {
+            return db.any(`
+                SELECT c.id, c.name,
+                (array(
+                SELECT row_to_json(cc) 
+                FROM category AS cc
+                WHERE cc.parent_id = c.id)
+                ) AS category
+                FROM category as c WHERE parent_id IS Null
+            `)
+        }
+        ```
+### Routes
