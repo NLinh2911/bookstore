@@ -477,85 +477,101 @@ Folder gồm 2 file `book.js` và `category.js` lấy dữ liệu từ database 
     - Navigation menu & search form (luôn hiển thị ở mọi trang) trong vùng Navigation
     ```html
     <section>
-        {% block search %}
-        {% include "search.njk" %}
-        {% endblock %}
+      {% block search %}
+      {% include "search.njk" %}
+      {% endblock %}
     </section>
     ```
     - Categories component ở **section left** và Detail component ở **section right** trong vùng Container 
     ```html
     <div class="container paddingless">
-        <!-- Categories component -->
-        <section class='left'>
-        {% block left %}
-            <!-- Hiển thị danh sách các danh mục sách(cố định ở mọi trang) -->
-            {% include "categories.njk" %}
+      <!-- Categories component -->
+      <section class='left'>
+      {% block left %}
+        <!-- Hiển thị danh sách các danh mục sách(cố định ở mọi trang) -->
+        {% include "categories.njk" %}
+      {% endblock %}
+      </section>
+      <!-- Detail component -->
+      <section class='right'>
+      <!-- Dùng để hiển thị các trang còn lại như index(trang chủ), author, detail, search -->
+        {% block right %}
         {% endblock %}
-        </section>
-
-        <!-- Detail component -->
-        <section class='right'>
-            <!-- Dùng để hiển thị các trang còn lại như index(trang chủ), author, detail, search -->
-            {% block right %}
-            {% endblock %}
-        </section>
+      </section>
     </div>
     ```
 ### Navigation, search component
 - `search.njk`: Component nằm ở đầu mỗi trang, bao gồm 2 phần là Navigation menu và search form
-	```html
-	{% block body %}
-  	<div id="search">
-    	<div class="wrapper">
-      	<!---->
-      	<div class="left">
-        	<ul class="paddingless marginless nav">
-          	<li class="nav-item">
-            	<button class="dropbtn">
-              	<a href="/">All IT eBooks</a>
-            	</button>
-          	</li>
-          	<li class="nav-item">
-            	<div class="dropdown">
-              	<button class="dropbtn">Categories</button>
-              	<div class="dropdown-content">
-                	<ul class="category paddingless">
-                	{% for item in getCategory %}
-                  	<li class="dropdown sub-category paddingless marginless">
-                    	<a href="/categories/{{item.name | replace(' &', '') | replace(' ', '-')}}">
-												{{item.name}}
-											</a>
-                      <ul class="category dropdown-content paddingless">
-                        {% for subCategory in item.category %}
-                        <li class="sub-category paddingless marginless">
-                          <a href="/categories/{{item.name | replace(' &', '') | replace(' ', '-')}}/{{subCategory.name | replace(' &', '') | replace(' ', '-')}}">
-														{{subCategory.name}}
-													</a>
-                        </li>
-                        {% endfor %}  
-                      </ul>
-                  	</li>
-                	{% endfor %}
-                	</ul>
-              	</div>
-            	</div>
-          	</li>
-        	</ul>
-      	</div>
-        <!---->
-      	<div class="right">
-        	<form method="get" action="/search/">
-          	<input name="search" />
-            <input type="submit" value="Search" />
-        	</form>
-      	</div>
-  		</div>
-  	</div>
-	{% endblock %}
-	````
-	
+  ```html
+  {% block body %}
+    <div id="search">
+      <div class="wrapper">
+        <div class="left">
+          <ul class="paddingless marginless nav">
+            <li class="nav-item">
+              <button class="dropbtn">
+                <!-- Menu trang chủ -->
+                <a href="/">All IT eBooks</a>
+              </button>
+            </li>
+            <li class="nav-item">
+              <div class="dropdown">
+                <!-- Dropdown Categories và subCategories -->
+                <button class="dropbtn">Categories</button>
+                  <div class="dropdown-content">
+                    <ul class="category paddingless">
+                      {% for item in getCategory %}
+                      <li class="dropdown sub-category paddingless marginless">
+                        <a href="/categories/{{item.name | replace(' &', '') | replace(' ', '-')}}">
+                          {{item.name}}
+                        </a>
+                        <ul class="category dropdown-content paddingless">
+                          {% for subCategory in item.category %}
+                          <li class="sub-category paddingless marginless">
+                            <a href="/categories/{{item.name | replace(' &', '') | replace(' ', '-')}}/{{subCategory.name | replace(' &', '') | replace(' ', '-')}}">
+                              {{subCategory.name}}
+                            </a>
+                          </li>
+                          {% endfor %}  
+                        </ul>
+                      </li>
+	                    {% endfor %}
+                    </ul>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="right">
+          <!-- Form search -->
+          <form method="get" action="/search/">
+            <input name="search" />
+            <input type="submit" value="Search"/>
+          </form>
+        </div>
+      </div>
+    </div>
+  {% endblock %}
+	```
+
 ### Categories component
--	`categories.njk`:
+-	`categories.njk`: Component in ra danh sách tất cả các danh mục chính cho **section left** trong `layout.njk`
+  ```html
+  {% block body %}
+    <ul class="categories">
+      <!-- Tạo vòng lặp để in ra danh sách các danh mục -->
+      {% for item in getCategory %}
+      <li>
+        <!-- filter tên danh mục để thay thế các khoảng cách ở mỗi kí tự thành dấu '-' -->
+        <a href="/categories/{{item.name | replace(' &', '') | replace(' ', '-') | lower}}">
+          {{item.name}}
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  {% endblock %}
+  ```
+
 ### Index, detail, author component
 Bằng cách cấu hình phân vùng **block right** trong file `layout.njk` ta có thể tạo ra các trang có nội dung khác nhau để phù hợp với từng mục đích của trang
 - `index.njk`: trang chủ của bookstore
@@ -576,35 +592,35 @@ Bằng cách cấu hình phân vùng **block right** trong file `layout.njk` ta 
             <img src="/img/{{ book.image }}" height="230" width="180" alt="{{book.title}}"/>
           </a>
         </div>
-      	<div class="body">
-        	<header class="header">
-          	<!-- Tiêu đề sách -->
-          	<h3 class="title marginless">
-            	<a href="/books/{{ book.title | lower | replace(" ", "-") }}" >
-              	{{book.title}}
-            	</a>
-          	</h3>
-          	<!-- Tên tác giả của mỗi đầu sách -->
-          	<p class="author marginless">
-            	By: {% for item in book.author %} 
-            	<a href="/authors/{{ item | replace(' ', '-') }}">
-              	{{item}} 
-            	</a>
-            		<!-- Tạo ra dấu phẩy (,) ngăn cách mỗi tác giả nếu sách có nhiều hơn 1 tác giả -->
-            		{{ "," if not loop.last }}
-            	{% endfor %}
-          	</p>
-        	</header>
-        	<div class="summary">
-          	<!-- Tóm tắt nội dung sách (trong 500 từ) -->
-          	<p>
-            	{{book.description | safe | truncate(500)}}
-          	</p>
-        	</div>
-      	</div>
+        <div class="body">
+          <header class="header">
+            <!-- Tiêu đề sách -->
+            <h3 class="title marginless">
+              <a href="/books/{{ book.title | lower | replace(" ", "-") }}" >
+                {{book.title}}
+              </a>
+            </h3>
+            <!-- Tên tác giả của mỗi đầu sách -->
+            <p class="author marginless">
+              By: {% for item in book.author %} 
+              <a href="/authors/{{ item | replace(' ', '-') }}">
+                {{item}} 
+              </a>
+                <!-- Tạo ra dấu phẩy (,) ngăn cách mỗi tác giả nếu sách có nhiều hơn 1 tác giả -->
+                {{ "," if not loop.last }}
+              {% endfor %}
+            </p>
+          </header>
+          <div class="summary">
+            <!-- Tóm tắt nội dung sách (trong 500 từ) -->
+            <p>
+              {{book.description | safe | truncate(500)}}
+            </p>
+          </div>
+        </div>
       </article>
       {% endfor %}
-      <!-- Tạo ra nút chuyển trang (vì trang chủ chỉ hiện 10 đầu sách cho mỗi trang nên có thể nhiều hơn 10 sách) bằng cách gọi vào file pagination.njk -->
+       <!-- Tạo ra nút chuyển trang (vì trang chủ chỉ hiện 10 đầu sách cho mỗi trang nên có thể nhiều hơn 10 sách) bằng cách gọi vào file pagination.njk -->
       {% if paginate %}
         {% include 'pagination.njk' %}
       {% endif %}
@@ -617,86 +633,89 @@ Bằng cách cấu hình phân vùng **block right** trong file `layout.njk` ta 
   {% block right %}
 		<!-- Tiêu đề sách -->
     <h2 class="detail-title">{{book.title}}</h2>
-      <article class="book">
+	    <article class="book">
 				<!-- Hình bìa sách -->
-        <div class="thumbnail">
-          <a href="/books/{{ book.title | lower | replace(" ", "-") }}">
-            <img src="/img/{{ book.image }}" height="450" width="300" alt="{{book.title}}"/>
-          </a>
+	      <div class="thumbnail">
+	        <a href="/books/{{ book.title | lower | replace(" ", "-") }}">
+	          <img src="/img/{{ book.image }}" height="450" width="300" alt="{{book.title}}"/>
+	        </a>
         </div>
-        <div class="body">
-          <header class="header">
-            <dl>
-							<!-- Tên giá giả -->
-              <dt>Author: </dt>
-              <dd>
-                {% for item in book.author | list %} 
-                <a href="/authors/{{ item | replace(' ', '-') }}">
-                  {{ item }}
-                </a>
-									<!-- Ngăn cách mỗi tác giả bằng dấu phẩy(,) nếu sách có nhiều hơn 1 tác giả -->
-                  {{ "," if not loop.last }}
-                {% endfor %}
-              </dd>
-							<!-- Mã sách -->
-              <dt>ISBN-10: </dt>
-              <dd>{{book.isbn_10}}</dd>
-							<!-- Năm xuất bản -->
-              <dt>Year: </dt>
-              <dd>{{book.year}}</dd>
-							<!-- Tổng số trang -->
-              <dt>Pages: </dt>
-              <dd>{{book.page}}</dd>
-							<!-- Ngôn sữ sách -->
-              <dt>Language: </dt>
-              <dd>{{book.language}}</dd>
-							<!-- Dung lượng sách online -->
-              <dt>File size: </dt>
-              <dd>{{book.file_size}}</dd>
-							<!-- Định dạng sách online -->
-              <dt>File format: </dt>
-              <dd>{{book.file_format}}</a></dd>
-							<!-- Thể loại sách -->
-              <dt>Category: </dt>
-              <dd>
-								<a href="/categories/{{ book.top_category | lower | replace(" ", "-") }}">
-									{{book.top_category}}
-								</a>
-							</dd>
-            </dl>
-          <header>
-        </div>
-        <div class="summary" style="font-size:0.9rem">
-					<!-- Tóm tắt nội dung sách (đầy đủ nội dung tóm tắt) -->
-          <h3>Book Description:</h3>
-            {{book.description | safe}}
-        </div>
-        <div class="button">
-					<!-- Link download sách online -->
-          <button class="download">
-            <a href="{{book.download_link}}">
-              Download PDF {{book.file_size}}
-            </a>
-          </button>
-        </div>
-      </article>
-  {% endblock %}
+	      <div class="body">
+	        <header class="header">
+	          <dl>
+
+	            <dt>Author: <!-- Tên tác giả --></dt>
+	            <dd>
+	              {% for item in book.author | list %} 
+	              <a href="/authors/{{ item | replace(' ', '-') }}">
+	                {{ item }}
+	              </a>
+	              <!-- Ngăn cách mỗi tác giả bằng dấu phẩy(,) nếu sách có nhiều hơn 1 tác giả -->
+	                {{ "," if not loop.last }}
+	              {% endfor %}
+	            </dd>
+
+	            <dt>ISBN-10: <!-- Mã sách --></dt>
+	            <dd>{{book.isbn_10}}</dd>
+							
+	            <dt>Year: <!-- Năm xuất bản --></dt>
+	            <dd>{{book.year}}</dd>
+							
+	            <dt>Pages: <!-- Tổng số trang --></dt>
+	            <dd>{{book.page}}</dd>
+							
+	            <dt>Language: <!-- Ngôn sữ sách --></dt>
+	            <dd>{{book.language}}</dd>
+							
+	            <dt>File size: <!-- Dung lượng sách online --></dt>
+	            <dd>{{book.file_size}}</dd>
+							
+	            <dt>File format: <!-- Định dạng sách online --></dt>
+	            <dd>{{book.file_format}}</a></dd>
+							
+	            <dt>Category: <!-- Thể loại sách --></dt>
+	            <dd>
+	              <a href="/categories/{{ book.top_category | lower | replace(" ", "-") }}">
+	                {{book.top_category}}
+	              </a>
+	            </dd>
+	          </dl>
+	        <header>
+	      </div>
+	      <div class="summary" style="font-size:0.9rem">
+	      <!-- Tóm tắt nội dung sách (đầy đủ nội dung tóm tắt) -->
+	        <h3>Book Description:</h3>
+	          {{book.description | safe}}
+	      </div>
+	      <div class="button">
+	      <!-- Link download sách online -->
+	        <button class="download">
+	          <a href="{{book.download_link}}">
+	            Download PDF {{book.file_size}}
+	          </a>
+	        </button>
+	      </div>
+	    </article>
+	{% endblock %}
   ```
-### `pagination.njk`:
+### Pagination
+- `pagination.njk`:
 	- Trang tạo ra paginate button
 	```html
 	<div class='pagination'>
-		<!-- Vị trí mặc định cho mỗi phân trang(trang 1) -->
-    <a href="{{root}}/">1</a>
-			<!-- Tạo vòng lặp để xuất ra tất cả các phân trang theo số lượng sách, tác giả, tìm kiếm của người dùng theo từng route -->
-    	{% for page in range(2, pages, 1) %}
-      	{% if currentPage-page === 1 or page - currentPage === 1 or currentPage === page%}
-        	<a href="{{root}}/?page={{page}}">{{page}}</a>
-      	{%endif%}
-    	{% endfor%}
-		<!-- Số phân trang cuối cùng của mỗi route -->
-    <a href="{{root}}/?page={{pages}}">
-			{{pages}}
-		</a>
+	<!-- Vị trí mặc định cho mỗi phân trang(trang 1) -->
+  <a href="{{root}}/">1</a>
+
+	<!-- Tạo vòng lặp để xuất ra tất cả các phân trang theo số lượng sách, tác giả, tìm kiếm của người dùng theo từng route -->
+  {% for page in range(2, pages, 1) %}
+    {% if currentPage-page === 1 or page - currentPage === 1 or currentPage === page%}
+      <a href="{{root}}/?page={{page}}">{{page}}</a>
+    {%endif%}
+  {% endfor%}
+
+	<!-- Số phân trang cuối cùng của mỗi route -->
+  <a href="{{root}}/?page={{pages}}">
+		{{pages}}
+	</a>
 	</div>
 	```
