@@ -30,22 +30,4 @@ router.get('/', async (req, res, next)=>{
   });
 });
 
-//Search
-router.get('/search', async function (req, res, next) {
-  let searchText = req.query.search
-  try{
-    const getCategory = await category.getCategory()
-    const getBook = await books.searchBook(searchText)
-    res.render('index',{ 
-      title: `Search for ${searchText}`,
-      books: getBook,
-      getCategory
-    })
-  } catch(err){
-    console.log(err.message);
-  }
-  
-})
-
-
 module.exports = router
