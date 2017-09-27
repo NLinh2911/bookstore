@@ -4,7 +4,7 @@
         "password": "1",
         "database": "itbook2",
         "host": "localhost",
-        "port": 5432,
+        "port": 5435,
         "dialect": "postgres",
         "schema": "public",
         "logging": false

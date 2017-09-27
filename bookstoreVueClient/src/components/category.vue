@@ -37,7 +37,6 @@ export default {
   },
   created () {
     this.fetchCategory()
-    // this.fetchSubcategory()
   },
   watch: {
     '$route.params.subcategory' (to, from) {
