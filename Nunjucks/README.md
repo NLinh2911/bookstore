@@ -10,7 +10,7 @@
 		- [Cấu hình server](#cấu-hình-server)
 		- [Models](#models)
 		- [Routes](#routes)
-	- [Client side](#client-side)
+	- [Client side (Nunjucks)](#client-side-nunjucks)
 		- [Layout](#layout)
 		- [Navigation, Search component](#navigation-search-component)
 		- [Categories component](#categories-component)
