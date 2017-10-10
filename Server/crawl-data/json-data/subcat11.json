@@ -1,0 +1,17 @@
+[
+  {
+    "id": 77,
+    "name": "Business Applications",
+    "parent_id": 11
+  },
+  {
+    "id": 78,
+    "name": "Communications",
+    "parent_id": 11
+  },
+  {
+    "id": 79,
+    "name": "ERP & CRM",
+    "parent_id": 11
+  }
+]

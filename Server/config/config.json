@@ -1,0 +1,26 @@
+{
+    "development": {
+        "username": "postgres",
+        "password": "1",
+        "database": "itbook2",
+        "host": "localhost",
+        "port": 5435,
+        "dialect": "postgres",
+        "schema": "public",
+        "logging": false
+    },
+    "test": {
+        "username": "root",
+        "password": null,
+        "database": "database_test",
+        "host": "payroll",
+        "dialect": "postgres"
+    },
+    "production": {
+        "username": "root",
+        "password": null,
+        "database": "database_production",
+        "host": "127.0.0.1",
+        "dialect": "postgres"
+    }
+}
