@@ -1,6 +1,6 @@
 <template>
 <div>
-   <button v-if="isAdding" type="submit" @click="addToCart(title = item)" id="addToCart"><i class="fa fa-cart-plus"></i>  Add to Cart</button>
+   <button v-if="isAdding" type="submit" @click="addToCart(item)" id="addToCart"><i class="fa fa-cart-plus"></i>  Add to Cart</button>
    <button v-if="!isAdding" @click="removeFromCart" id="removeToCart"><i class="fa fa-trash"></i>  Remove from Cart</button>
   </div>
 </template>
@@ -9,19 +9,17 @@
    props: ['item'],
    data () {
      return {
-       Cart: []
+       isAdding: true
      }
    },
    methods: {
-     addToCart (title) {
-       this.Cart.push(title)
-       console.log('Cart', this.Cart)
-      // return this.Cart
-     }
-   },
-   computed: {
-     isAdding () {
-       return 1
+     addToCart (index) {
+       this.$emit('addCart', index)
+       this.isAdding = false
+     },
+     removeFromCart (index) {
+       this.$emit('removeCart', index)
+       this.isAdding = true
      }
    }
  }

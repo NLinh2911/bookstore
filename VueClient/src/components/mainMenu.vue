@@ -40,7 +40,8 @@
          </div>
             <div class="cart">
                <i class="fa fa-shopping-cart"></i>
-             <span >Cart (0)</span>
+             <span v-if="update">Cart ({{update}})</span>
+             <span v-else>Cart (0)</span>
             </div>         
       </div>
     </div>
@@ -48,7 +49,7 @@
 
 <script>
 export default {
-  props: ['category'],
+  props: ['category', 'update'],
   data () {
     return {
       searchvalue: ''
@@ -68,8 +69,9 @@ export default {
 }
 
 .cart {
-      display: block;
-    color: white;
-    margin: 1rem;
+  display: block;
+  color: white;
+  margin: 1.2rem;
+  width: 10%;
 }
 </style>

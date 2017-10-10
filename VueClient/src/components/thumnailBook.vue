@@ -20,7 +20,7 @@
                     </a>
                 </h5>
                 <header class="summary" v-html="$options.filters.truncate(item.description, 500)">   </header>    <span  id="price">Price: 200.000 VND</span>
-                  <div style="margin-top: 10px;"> <addCartButton :item="item"></addCartButton>  </div> 
+                  <div style="margin-top: 10px;"> <addCartButton :item="item" @removeCart="remove($event)" @addCart="add($event)"></addCartButton>  </div> 
             </header>
         </div>
       </article>
@@ -42,8 +42,8 @@
                     </a>
                 </h5>
                 <header class="summary" v-html="$options.filters.truncate(item.description, 500)"></header>
-         
             </header>
+
         </div>
       </article>
     </div>
@@ -58,13 +58,26 @@ export default {
   data () {
     return {
       root: '',
-      addCart: ''
+      addCart: '',
+      Cart: [],
+      num: ''
     }
   },
   props: ['book', 'subBook'],
   methods: {
     imagePath: (img) => {
       return require('../assets/images/' + img)
+    },
+    add (item) {
+      this.Cart.push(item)
+      let num = this.Cart.length
+      this.$emit('updateNum', num)
+    },
+    remove (moveItem) {
+      let index = this.Cart.findIndex(p => p.id === moveItem)
+      this.Cart.splice(index, 1)
+      let num = this.Cart.length
+      this.$emit('updateNum', num)
     }
   },
   filters: {

@@ -8,7 +8,7 @@
       </ul>
     </section>
     <section class="right">
-        <thumnailBook :book="Book" :subBook="subBook"></thumnailBook>
+        <thumnailBook :book="Book" :subBook="subBook" ></thumnailBook>
     </section>
   </div>
   <!-- <pagination :Pages ="pages" @change = "fetchDataInPage()"></pagination> -->
@@ -32,7 +32,8 @@ export default {
       id: this.$route.params.id,
       category: [],
       Book: [],
-      subBook: []
+      subBook: [],
+      update: ''
     }
   },
   created () {

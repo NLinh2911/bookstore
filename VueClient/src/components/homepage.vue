@@ -1,6 +1,6 @@
 <template>
 <div>
-      <mainMenu :category="category"  @search="searchData($event)"></mainMenu>
+      <mainMenu :category="category"  @search="searchData($event)" :update="update"></mainMenu>
   <div class="container paddingless">
     <section class="left" >
       <ul v-for="cate in category" :key="cate.id">
@@ -8,7 +8,7 @@
       </ul>
     </section>
     <section class="right">
-        <thumnailBook :book="Book"></thumnailBook>
+        <thumnailBook :book="Book" @updateNum="addNum($event)"></thumnailBook>
     </section>
   </div>
   <pagination :Pages ="pages" @change = "fetchDataInPage()"></pagination>
@@ -31,7 +31,8 @@ export default {
     return {
       category: [],
       Book: [],
-      pages: []
+      pages: [],
+      update: ''
     }
   },
   created () {
@@ -82,6 +83,11 @@ export default {
       .catch(error => {
         console.log(error)
       })
+    },
+    addNum (index) {
+      // console.log('Hello World')
+      this.update = index
+      console.log('this.update', this.update)
     }
   }
 }
