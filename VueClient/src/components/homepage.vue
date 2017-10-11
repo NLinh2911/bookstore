@@ -86,8 +86,9 @@ export default {
     },
     addNum (index) {
       // console.log('Hello World')
-      this.update = index
-      console.log('this.update', this.update)
+      this.update = index.length
+      // console.log('this.update', this.update)
+      // console.log('index', index)
     }
   }
 }
@@ -113,5 +114,9 @@ section.left li a{
 }
 section.left li:not(:last-child) {
     margin-bottom: 0.5rem;
+}
+.book {
+      margin: 0 !important;
+    float: right;
 }
 </style>

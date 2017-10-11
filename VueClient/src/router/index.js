@@ -4,6 +4,7 @@ import homepage from '@/components/homepage'
 import books from '@/components/books'
 import author from '@/components/author'
 import category from '@/components/category'
+import cart from '@/components/cart'
 Vue.use(Router)
 
 export default new Router({
@@ -37,6 +38,11 @@ export default new Router({
       path: '/category/:topCategory/:subcategory',
       name: 'Subcategory',
       component: category
+    },
+    {
+      path: '/cart',
+      name: 'Cart',
+      component: cart
     }
   ]
 })

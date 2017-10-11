@@ -4,9 +4,9 @@
         <div class="left">
             <ul class="paddingless marginless nav">
                 <li class="nav-item">
-                  <button type="button" class="dropbtn">
-                    <a href="#">All IT eBooks</a>
-                  </button>
+                <a href="#">  <button type="button" class="dropbtn">
+                    All IT eBooks
+                  </button></a>
                 </li>
                 <li class="nav-item">
                   <div class="dropdown">
@@ -38,10 +38,12 @@
             </form>
             </div>
          </div>
-            <div class="cart">
+            <div class="cart" >
+              <router-link to="/cart" id="cart">
                <i class="fa fa-shopping-cart"></i>
              <span v-if="update">Cart ({{update}})</span>
              <span v-else>Cart (0)</span>
+             </router-link>
             </div>         
       </div>
     </div>
@@ -73,5 +75,11 @@ export default {
   color: white;
   margin: 1.2rem;
   width: 10%;
+}
+.cart  > #cart{
+  color:white
+}
+.cart a.router-link-active{
+  display:none
 }
 </style>

@@ -14,7 +14,6 @@ export default {
 
 <style>
 body {
-    width: 100vw;
     font-size: 12px;
     font-family: 'Open Sans', sans-serif;
     margin: auto;

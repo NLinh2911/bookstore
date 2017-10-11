@@ -51,6 +51,7 @@
 
 <script>
 import addCartButton from './addCartButton.vue'
+
 export default {
   components: {
     'addCartButton': addCartButton
@@ -70,8 +71,9 @@ export default {
     },
     add (item) {
       this.Cart.push(item)
-      let num = this.Cart.length
-      this.$emit('updateNum', num)
+    //   let num = this.Cart.length
+      this.$emit('updateNum', this.Cart)
+      localStorage.setItem('yourItemCart', JSON.stringify(this.Cart))
     },
     remove (moveItem) {
       let index = this.Cart.findIndex(p => p.id === moveItem)

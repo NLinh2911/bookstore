@@ -1,0 +1,203 @@
+<template>
+  <div>
+    <mainMenu :category="category"  @search="searchData($event)" ></mainMenu>
+    <h1 style="text-transform: uppercase"> Giỏ hàng</h1>
+    <!-- Product List -->
+  <section class="info">
+      <ul class="products" v-for="(items, index) in itemCart" :key="items.index">
+        <li class="row">
+          <div class="col left">
+            <div class="thumbnail1">
+              <a href="#">
+                <img :src="imagePath(items.image)">
+              </a>
+            </div>
+            <div class="detail">
+              <div class="name"><h1>{{ items.title }}</h1></div>
+              <div class="description" v-html=" $options.filters.truncate(items.description, 500)"></div>
+              <div class="price">200.000 VND</div>
+            </div>
+          </div>
+
+          <div class="col right">
+            <div class="quantity">
+              <input type="number" class="quantity" value="1" @input="updateQuantity(index, $event)"  />
+            </div>
+            <div class="remove">
+            <i class="fa fa-times" aria-hidden="true" @click="removeItemCart(index)"></i>
+            </div>
+          </div>
+        </li>
+    </ul>
+  </section>
+  <hr>
+  <!-- End Product List -->
+
+  <!-- Subtotal -->
+      <ul id="totalPrice"> 
+      <li><span>Tổng cộng</span></li>
+        <li><span>VAT</span></li>
+        <li><span>Thành tiền</span></li>
+        <li><button  >Shopping now</button></li>
+    </ul>
+      
+  <!-- End Subtotal -->
+  </div>
+</template>
+<script>
+import mainMenu from '@/components/mainMenu'
+import axios from 'axios'
+
+export default {
+  components: {
+    mainMenu: mainMenu
+  },
+  data () {
+    return {
+      category: [],
+      image: 'https://via.placeholder.com/200x150',
+      itemCart: []
+    }
+  },
+  created () {
+    this.fetchData()
+    this.itemCart = JSON.parse(localStorage.getItem('yourItemCart'))
+    console.log('this.itemCart', this.itemCart)
+    // localStorage.removeItem('yourItemCart')
+  },
+  methods: {
+    fetchData () {
+      axios.get(`http://localhost:3000/api/`)
+        .then(res => {
+          // console.log('res', res)
+          let category = res.data.getCategory
+          let Book = res.data.getBook
+          let pages = res.data.pages
+          this.category = category
+          this.Book = Book
+          this.pages = pages
+          // console.log('Book', Book)
+        })
+        .catch(error => {
+          console.log(error)
+        })
+    },
+    imagePath: (img) => {
+      return require('../assets/images/' + img)
+    },
+    removeItemCart (index) {
+      // console.log('index', index)
+      this.itemCart.splice(index, 1)
+      localStorage.setItem('yourItemCart', JSON.stringify(this.itemCart))
+    },
+    updateQuantity: function (index, event) {
+      let quantity = event.target.value
+      let product = this.itemCart[index]
+      console.log('quantity', quantity)
+      console.log('product', product)
+    }
+  },
+  computed: {
+    totalPrice: function () {
+      return this.subTotal + this.Tax
+    }
+  },
+  filters: {
+    truncate: function (string, value) {
+      return string.substring(0, value) + '...'
+    }
+  }
+}
+</script>
+<style>
+
+.info {
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+  border-radius: 4px;
+}
+
+.row{
+  display: flex;
+}
+.col.left{
+  width: 50%;
+  flex-grow: 2;
+    justify-content: flex-start;
+    display: flex;
+}
+
+.thumbnail1{
+  width: 40%
+}
+.thumbnail1 > a > img {
+  width: 20vh;
+}
+.detail{
+  width: 60%;
+    text-align: left;
+}
+.col.right{
+  flex-grow: 1;
+  display: flex;
+}
+.detail {
+  padding: 0 0.5rem;
+  line-height: 1.5rem;
+}
+
+.detail .name {
+  font-size: 1.2rem;
+}
+
+.detail .description {
+  color: #7d7d7d;
+  font-size: 1rem;
+}
+
+.detail .price {
+  font-size: 1.5rem;
+}
+
+.quantity, .remove {
+  width: 50%;
+  text-align: center;
+  align-self: center;
+}
+.quantity > input {
+  display: inline-block;
+  width: 40px;
+  font-size: 1.5rem
+}
+.remove i{
+  font-size: 2rem;
+  cursor: pointer;
+}
+#totalPrice > li > span{
+  font-size: 1.2rem;
+  display: inline-block;
+  font-weight: bold
+}
+#totalPrice {
+      display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-bottom: 10px;
+}
+#totalPrice li {
+  padding: 8px;
+}
+#totalPrice button {
+  font-size: 1.3rem;
+   padding: 10px 30px;
+  background-color: #16cc9b;
+  border: 2px solid #16cc9b;
+  color:white;
+  cursor: pointer;
+}
+</style>
