@@ -19,7 +19,7 @@
                       
                     </a>
                 </h5>
-                <header class="summary" v-html="$options.filters.truncate(item.description, 500)">   </header>    <span  id="price">Price: 200.000 VND</span>
+                <header class="summary" v-html="$options.filters.truncate(item.description, 500)">   </header>    <span  id="price">Price: {{ item.price}} VND</span>
                   <div style="margin-top: 10px;"> <addCartButton :item="item" @removeCart="remove($event)" @addCart="add($event)"></addCartButton>  </div> 
             </header>
         </div>

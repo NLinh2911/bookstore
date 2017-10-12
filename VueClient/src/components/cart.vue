@@ -15,13 +15,13 @@
             <div class="detail">
               <div class="name"><h1>{{ items.title }}</h1></div>
               <div class="description" v-html=" $options.filters.truncate(items.description, 500)"></div>
-              <div class="price">200.000 VND</div>
+              <div class="price">{{ items.price }} VND</div>
             </div>
           </div>
 
           <div class="col right">
             <div class="quantity">
-              <input type="number" class="quantity" value="1" @input="updateQuantity(index, $event)"  />
+              <input type="number" class="quantity" value="1" @input="updateQuantity(index, $event)" />
             </div>
             <div class="remove">
             <i class="fa fa-times" aria-hidden="true" @click="removeItemCart(index)"></i>
@@ -35,12 +35,9 @@
 
   <!-- Subtotal -->
       <ul id="totalPrice"> 
-      <li><span>Tổng cộng</span></li>
-        <li><span>VAT</span></li>
-        <li><span>Thành tiền</span></li>
-        <li><button  >Shopping now</button></li>
-    </ul>
-      
+        <li>Thành tiền<span> {{subTotal}}</span></li>
+        <li><button  @click="sendItem">Shopping now</button></li>
+      </ul> 
   <!-- End Subtotal -->
   </div>
 </template>
@@ -55,14 +52,16 @@ export default {
   data () {
     return {
       category: [],
-      image: 'https://via.placeholder.com/200x150',
-      itemCart: []
+      itemCart: [],
+      product: {},
+      newCart: []
     }
   },
   created () {
     this.fetchData()
     this.itemCart = JSON.parse(localStorage.getItem('yourItemCart'))
     console.log('this.itemCart', this.itemCart)
+    this.AddNewCart()
     // localStorage.removeItem('yourItemCart')
   },
   methods: {
@@ -88,18 +87,41 @@ export default {
     removeItemCart (index) {
       // console.log('index', index)
       this.itemCart.splice(index, 1)
+      this.newCart.splice(index, 1)
+      console.log('this.itemCartthis.itemCart', this.itemCart)
+      console.log('this.newCart', this.newCart)
+      // this.AddNewCart()
       localStorage.setItem('yourItemCart', JSON.stringify(this.itemCart))
     },
     updateQuantity: function (index, event) {
-      let quantity = event.target.value
-      let product = this.itemCart[index]
-      console.log('quantity', quantity)
-      console.log('product', product)
+      let count = event.target.value
+      let productID = this.itemCart[index].id
+      console.log('count', count)
+      console.log('productID', productID)
+      console.log('this.newCart', this.newCart)
+      this.$set(this.newCart[index], 'quantity', count)
+    },
+    AddNewCart () {
+      for (let i = 0; i < this.itemCart.length; i++) {
+        let temp = {}
+        temp.id = this.itemCart[i].id
+        temp.price = this.itemCart[i].price
+        temp.quantity = 1
+        this.newCart.push(temp)
+      }
+      return this.newCart
+    },
+    sendItem () {
+      console.log('this.newCart', this.newCart)
     }
   },
   computed: {
-    totalPrice: function () {
-      return this.subTotal + this.Tax
+    subTotal: function () {
+      let subTotal = 0
+      for (let i = 0; i < this.newCart.length; i++) {
+        subTotal += parseInt(this.newCart[i].quantity) * parseInt(this.newCart[i].price)
+      }
+      return subTotal
     }
   },
   filters: {
@@ -181,6 +203,12 @@ img {
 #totalPrice > li > span{
   font-size: 1.2rem;
   display: inline-block;
+  font-weight: bold;
+  margin-left: 20px;
+}
+#totalPrice > li{
+  font-size: 1.2rem;
+  display: inline-block;
   font-weight: bold
 }
 #totalPrice {
@@ -200,4 +228,5 @@ img {
   color:white;
   cursor: pointer;
 }
+
 </style>

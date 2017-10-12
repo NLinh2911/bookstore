@@ -82,4 +82,12 @@ export default {
 .cart a.router-link-active{
   display:none
 }
+@media all and (max-width: 1024px) {
+  .cart > a{
+    font-size: 13px;
+  }
+  .right {
+    margin-top: 2%
+  }
+}
 </style>

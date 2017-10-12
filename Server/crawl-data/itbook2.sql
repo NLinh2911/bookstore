@@ -22,6 +22,7 @@ CREATE TABLE book (
     description text,
     download_link varchar(255),
     read_link varchar(255),
+    price varchar(200),
     document tsvector,
     CONSTRAINT book_pk PRIMARY KEY (id)
 );
