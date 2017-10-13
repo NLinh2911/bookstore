@@ -3,7 +3,7 @@
 - #### Nút thêm giỏ hàng sẽ được đặt ở trang chủ
 - #### Các Component được thêm là `addCartButton.vue` và `cart.vue`
 
-###1. Trang `addCartButton.vue`:
+### 1. Trang `addCartButton.vue`:
 - Khi Click vào nút thêm vào giỏ hàng `Add to Cart`:
   - emit sự kiện `addCart` để lưu item cần add vào Cart.
   - Thay đổi giá trị của data `isAdding` để thay đổi button từ `Add to Cart` sang `Remove from Cart`.
@@ -11,7 +11,7 @@
 - Khi Click vào nút `Remove from Cart`:
   - emit sự kiện `removeCart` để xóa item đã add vào Cart
   - Thay đổi giá trị của data `isAdding` để thay đổi button từ `Remove from Cart` sang `Add to Cart`
-###2. Trang `thumnailBook.vue`:
+### 2. Trang `thumnailBook.vue`:
 Xử lý data nhận được từ sự kiện emit của component con `addCartButton.vue`.
 - Tạo một data là mảng rỗng: `Cart`
 - Tạo 1 methods `add` để nhận sự kiện `addCart`:
@@ -36,10 +36,10 @@ Xử lý data nhận được từ sự kiện emit của component con `addCart
   this.$emit('updateNum', num)
   ```
 
-###3.Trang `homepage.vue`:
+### 3.Trang `homepage.vue`:
  Cập nhật data từ sự kiện emit ở trang `thumnailBook.vue`, truyền data sang components con là `mainmenu.vue` để hiện thị số lượng item đã add vào Cart.
 
-###4. Trang `Cart.vue`
+### 4. Trang `Cart.vue`
 Xử lý item đã lưu trong giỏ hàng
 - Lấy item trong mảng `Cart` đã lưu trong `localstorage` ra và render ra browser.
 ```js
