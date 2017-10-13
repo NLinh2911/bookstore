@@ -114,7 +114,7 @@ body {
 }
 
 #search .left .nav .nav-item {
-    display: inline-block;
+   display: inline-flex;
     width: 9rem;
     height: 100%;
     line-height: 100%;

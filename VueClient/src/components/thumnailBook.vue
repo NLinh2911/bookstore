@@ -20,7 +20,7 @@
                     </a>
                 </h5>
                 <header class="summary" v-html="$options.filters.truncate(item.description, 500)">   </header>    <span  id="price">Price: {{ item.price}} VND</span>
-                  <div style="margin-top: 10px;"> <addCartButton :item="item" @removeCart="remove($event)" @addCart="add($event)"></addCartButton>  </div> 
+                  <div style="margin-top: 10px;"> <addCartButton :added="added" :item="item" @removeCart="remove($event)" @addCart="add($event)"></addCartButton>  </div> 
             </header>
         </div>
       </article>
@@ -43,7 +43,6 @@
                 </h5>
                 <header class="summary" v-html="$options.filters.truncate(item.description, 500)"></header>
             </header>
-
         </div>
       </article>
     </div>
@@ -64,7 +63,7 @@ export default {
       num: ''
     }
   },
-  props: ['book', 'subBook'],
+  props: ['book', 'subBook', 'added'],
   methods: {
     imagePath: (img) => {
       return require('../assets/images/' + img)

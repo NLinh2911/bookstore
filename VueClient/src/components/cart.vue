@@ -1,7 +1,7 @@
 <template>
   <div>
     <mainMenu :category="category"  @search="searchData($event)" ></mainMenu>
-    <h1 style="text-transform: uppercase"> Giỏ hàng</h1>
+    <h1 style="text-transform: uppercase; font-size: 30px;margin:10px; font-weight:bold"> Giỏ hàng</h1>
     <!-- Product List -->
   <section class="info">
       <ul class="products" v-for="(items, index) in itemCart" :key="items.index">
@@ -21,7 +21,7 @@
 
           <div class="col right">
             <div class="quantity">
-              <input type="number" class="quantity" value="1" @input="updateQuantity(index, $event)" />
+              <input type="number" class="quantity" min="1" value="1" @input="updateQuantity(index, $event)" />
             </div>
             <div class="remove">
             <i class="fa fa-times" aria-hidden="true" @click="removeItemCart(index)"></i>
@@ -39,6 +39,24 @@
         <li><button  @click="sendItem">Shopping now</button></li>
       </ul> 
   <!-- End Subtotal -->
+  <!-- Modal-->
+<div class="modal " :class="actived">
+  <div class="modal-background"></div>
+  <div class="modal-card">
+    <header class="modal-card-head">
+      <p class="modal-card-title">Please Confirm Your Cart</p>
+      <button class="delete" aria-label="close" @click="close"></button>
+    </header>
+    <section class="modal-card-body">
+      <h2>Are you ready to buy these book?</h2>
+    </section>
+    <footer class="modal-card-foot">
+      <button class="button is-success">ENROLL NOW</button>
+      <button class="button"  @click="close">Cancel</button>
+    </footer>
+  </div>
+</div>
+  <!--End Modal-->
   </div>
 </template>
 <script>
@@ -54,7 +72,8 @@ export default {
       category: [],
       itemCart: [],
       product: {},
-      newCart: []
+      newCart: [],
+      actived: ''
     }
   },
   created () {
@@ -88,8 +107,8 @@ export default {
       // console.log('index', index)
       this.itemCart.splice(index, 1)
       this.newCart.splice(index, 1)
-      console.log('this.itemCartthis.itemCart', this.itemCart)
-      console.log('this.newCart', this.newCart)
+      // console.log('this.itemCartthis.itemCart', this.itemCart)
+      // console.log('this.newCart', this.newCart)
       // this.AddNewCart()
       localStorage.setItem('yourItemCart', JSON.stringify(this.itemCart))
     },
@@ -113,6 +132,10 @@ export default {
     },
     sendItem () {
       console.log('this.newCart', this.newCart)
+      this.actived = 'is-active'
+    },
+    close () {
+      this.actived = ''
     }
   },
   computed: {
@@ -163,14 +186,12 @@ img {
 .detail{
   width: 60%;
     text-align: left;
+    padding: 1rem 0.5rem;
+  line-height: 1.5rem;
 }
 .col.right{
   flex-grow: 1;
   display: flex;
-}
-.detail {
-  padding: 0 0.5rem;
-  line-height: 1.5rem;
 }
 
 .detail .name {
@@ -228,5 +249,13 @@ img {
   color:white;
   cursor: pointer;
 }
-
+.modal-card-body{
+  font-size: 18px;
+}
+.modal-card-title{
+  font-size: 22px;
+  text-transform: uppercase;
+  color:#16cc9b;
+  font-weight: bold
+}
 </style>
